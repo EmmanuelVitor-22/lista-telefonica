@@ -1,0 +1,17 @@
+{
+  "name": "semge/lista-telefonica",
+  "description": "Projeto de pratica da SEMGE, para praticar conhecimentos em Orientação a objetos, MVC e CRUD",
+  "authors": [
+    {
+      "name": "emmanuelvitor",
+      "email": "emmanuelvitor.ti@gmail.com"
+    }
+  ],
+  "require": {
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app"
+    }
+  }
+}
