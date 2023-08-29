@@ -4,7 +4,10 @@ namespace Src\config;
 
 use PDOException;
 
-class Connection
+/**
+ *
+ */
+class DatabaseConnection
 {
     private static $dbConnect;
 
@@ -13,7 +16,11 @@ class Connection
         $this->creatConnection();
     }
 
-    private function creatConnection()
+
+    /**
+     * @return \PDO
+     */
+    private function creatConnection() : \PDO
     {
         $envPath = parse_ini_file(__DIR__ . '/../env.ini');
 
@@ -27,26 +34,27 @@ class Connection
         try {
             //DSN = Data Source Name, contem  informações do banco  que sãp requeridoas para fazer a conexão (host e dbname);
             self::$dbConnect = new \PDO($dataSourceName, $user, $password);
-            print_r(self::$dbConnect);
+            self::$dbConnect->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
+            self::$dbConnect->setAttribute(\PDO::ATTR_DEFAULT_FETCH_MODE, \PDO::FETCH_ASSOC);
             return self::$dbConnect;
         } catch (PDOException $exception) {
             throw new \PDOException($exception->getMessage());
         }
     }
 
-    public static function connect()
+    /**
+     * @return \PDO
+     */
+    public static function connect(): \PDO
     {
        // se não tiver instancia, cria
         if(!self::$dbConnect) {
-            print_r("valor do teste do if-------> ", self::$dbConnect);
-            new Connection();
+            new DatabaseConnection();
         }
         // caso ja tenha ele só usa a conexão existente
         return self::$dbConnect;
 
     }
-
-
 
 }
 
