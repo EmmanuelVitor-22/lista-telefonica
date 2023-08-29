@@ -4,4 +4,4 @@ use App\Model\Contact;
 
 $ct = new Contact();
 
-print_r($ct::findAll());
+print_r($ct->findAll());

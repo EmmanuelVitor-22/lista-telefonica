@@ -12,14 +12,11 @@ class Contact extends DatabaseConnection
     private ?int $id;
     private string $name;
     private string $email;
-    private array $phone = [];
+    private array $phones = [];
+
     private Address $address;
 
-    /**
-     * @param int|null $id
-     * @param string $name
-     * @param string $email
-     */
+
     public function __construct(?int $id = null, string $name = " ", string $email=" ")
     {
         self::$pdo = DatabaseConnection::connect();
@@ -27,27 +24,54 @@ class Contact extends DatabaseConnection
         $this->name = $name;
         $this->email = $email;
     }
-
     /**
      * @return array
      */
-    public static function findAll(): array
+//    public static function findAll(): array
+//    {
+//        $find = self::$pdo;
+//        $query = $find->query('select * from contatos;');
+//        $telefones = $query->fetchAll(\PDO::FETCH_ASSOC);
+//
+//        $tels = [];
+//        foreach ($telefones as $t) {
+//            $tel = new Contact($t['contato_id'],
+//                $t['name'],
+//                $t['email'],
+//
+//            );
+//            $tels[] = $tel;
+//        }
+//
+//        return $tels;
+//    }
+
+    public function findAll()
     {
-        $find = self::$pdo;
-        $query = $find->query('select * from contatos;');
-        $telefones = $query->fetchAll(\PDO::FETCH_ASSOC);
+        $pdo = self::$pdo;
+        $result = $pdo->query('SELECT contacts.*, addresses.* phones.*
+                                                     FROM phones
+                                                     LEFT JOIN contacts ON contacts.address_id = addreses.address_id
+                                                     JOIN contacts ON contacts.contact_id = phones.contact_id
+                                                     WHERE contacts.contact_id = 1;');
 
-        $tels = [];
-        foreach ($telefones as $t) {
-            $tel = new Contact($t['contato_id'],
-                $t['name'],
-                $t['email'],
+        $dataListContact = [];
 
-            );
-            $tels[] = $tel;
+        foreach ($result as $row) {
+            if (!array_key_exists($row['contact_id'], $dataListContact)) {
+                $dataListContact[$row['contact_id']] = new Contact(
+                    $row['contact_id'],
+                    $row["name"],
+                    $row["email"],
+                    new Address()
+                );
+            }
+
+            $dataListContact[$row['contact_id']]->setPhones($row['phone_id'], $row['area_code'], $row['number']);
         }
 
-        return $tels;
+        return $dataListContact;
+
     }
 
     /**
@@ -58,9 +82,11 @@ class Contact extends DatabaseConnection
      */
     public function setPhones(?int $id, $area_code, $number): void
     {
-        $phone = new Phone($id, $area_code, $number);
-        $this->phones[] = $phone;
+        $phones = new Phone($id, $area_code, $number);
+        $this->phones[] = $phones;
     }
+
+
 
     /**
      * Metodo para definir o id caso no momento da criação não tenha sido definido
@@ -116,7 +142,6 @@ class Contact extends DatabaseConnection
     {
         return $this->phone;
     }
-
     /**
      * @return Address
      */
