@@ -4,14 +4,14 @@ namespace App\Model;
 
 class Phone
 {
-    private ?int $id;
+    private ?int $phone_id;
     private string $areaCode;
     private string $number;
 
 
-    public function __construct(?int $id, string $areaCode, string $number)
+    public function __construct(?int $phone_id = null, string $areaCode, string $number)
     {
-        $this->id = $id;
+        $this->phone_id = $phone_id;
         $this->areaCode = $areaCode;
         $this->number = $number;
     }
@@ -25,15 +25,15 @@ class Phone
 
     public function getId(): ?int
     {
-        return $this->id;
+        return $this->phone_id;
     }
 
-    public function defineId(int $id):void
+    public function defineId(int $phone_id):void
     {
-        if (!is_null($this->id)){
+        if (!is_null($this->phone_id)){
             throw  new  \DomainException("Você só pode definir um ID por vez");
         }
-        $this->id = $id;
+        $this->phone_id = $phone_id;
 
     }
 

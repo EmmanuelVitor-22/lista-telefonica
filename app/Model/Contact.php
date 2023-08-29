@@ -16,14 +16,23 @@ class Contact extends DatabaseConnection
 
     private Address $address;
 
-
-    public function __construct(?int $id = null, string $name = " ", string $email=" ")
+    /**
+     * @param int|null $id
+     * @param string $name
+     * @param string $email
+     * @param array $phones
+     * @param Address $address
+     */
+    public function __construct(?int $id = null, string $name = ' ', string $email = ' ', Address $address =  new Address())
     {
         self::$pdo = DatabaseConnection::connect();
         $this->id = $id;
         $this->name = $name;
         $this->email = $email;
+        $this->address = $address;
+        print_r($this->address = $address);
     }
+
     /**
      * @return array
      */
@@ -49,11 +58,10 @@ class Contact extends DatabaseConnection
     public function findAll()
     {
         $pdo = self::$pdo;
-        $result = $pdo->query('SELECT contacts.*, addresses.* phones.*
-                                                     FROM phones
-                                                     LEFT JOIN contacts ON contacts.address_id = addreses.address_id
-                                                     JOIN contacts ON contacts.contact_id = phones.contact_id
-                                                     WHERE contacts.contact_id = 1;');
+        $result = $pdo->query('SELECT contacts.*, addresses.*, phones.*
+                                                     FROM contacts
+                                                     LEFT JOIN addresses ON contacts.address_id = addresses.address_id
+                                                     JOIN phones ON contacts.contact_id = phones.contact_id');
 
         $dataListContact = [];
 
@@ -62,18 +70,25 @@ class Contact extends DatabaseConnection
                 $dataListContact[$row['contact_id']] = new Contact(
                     $row['contact_id'],
                     $row["name"],
-                    $row["email"],
-                    new Address()
+                    $row["email"]
                 );
             }
-
+            $dataListContact[$row['contact_id']]->setAddress($row['address_id'],$row ['street'],$row['number']
+                                                                ,$row['complement'],$row['zip_code'],$row['city'],$row['state']);
             $dataListContact[$row['contact_id']]->setPhones($row['phone_id'], $row['area_code'], $row['number']);
         }
 
         return $dataListContact;
-
     }
 
+    public function deleteContato(Contact $contact)
+    {
+        $pdo = self::$pdo;
+        $smt = $pdo->prepare('DELETE FROM contacts WHERE contact_id = :contact_id');
+        $smt->bindValue(':contact_id',$contact->getId(),PDO::PARAM_INT);
+        return $smt->execute();
+
+    }
     /**
      * @param ?int $id
      * @param string $area_code
@@ -152,9 +167,11 @@ class Contact extends DatabaseConnection
     /**
      * @param Address $address
      */
-    public function setAddress(Address $address): void
+    public function setAddress(?int $address_id ,string $street , string $number ,string $complement ,
+                               string $zip_code ,string $city ,string $state ): void
     {
-        $this->address = $address;
+        $this->address = new Address($address_id , $street , $number ,
+                                     $complement , $zip_code , $city , $state );
     }
 
 
