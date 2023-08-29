@@ -2,33 +2,52 @@
 
 namespace Src\config;
 
+use PDOException;
+
 class Connection
 {
-    private $host;
-    private $dbname;
-    private $user;
-    private $password;
-
+    private static $dbConnect;
 
     public function __construct()
     {
+        $this->creatConnection();
     }
 
-
-    public function setAttribute($conn)
+    private function creatConnection()
     {
+        $envPath = parse_ini_file(__DIR__ . '/../env.ini');
 
-        $this->host = $conn['host'];
-        $this->dbname = $conn['dbname'];
-        $this->user = $conn['user'];
-        $this->password = $conn['password'];
-        return $conn;
+        $host = $envPath['host'];
+        $dbname = $envPath['dbname'];
+        $user = $envPath['user'];
+        $password = $envPath['password'];
 
+        $dataSourceName = "mysql:host=$host;dbname=$dbname";
+
+        try {
+            //DSN = Data Source Name, contem  informações do banco  que sãp requeridoas para fazer a conexão (host e dbname);
+            self::$dbConnect = new \PDO($dataSourceName, $user, $password);
+            print_r(self::$dbConnect);
+            return self::$dbConnect;
+        } catch (PDOException $exception) {
+            throw new \PDOException($exception->getMessage());
+        }
     }
 
-    public  function getConnection()
+    public static function connect()
     {
+       // se não tiver instancia, cria
+        if(!self::$dbConnect) {
+            print_r("valor do teste do if-------> ", self::$dbConnect);
+            new Connection();
+        }
+        // caso ja tenha ele só usa a conexão existente
+        return self::$dbConnect;
 
     }
+
+
 
 }
+
+
