@@ -56,7 +56,10 @@ class Contact extends DatabaseConnection
 //        return $tels;
 //    }
 
-    public function findAll()
+    /**
+     * @return array
+     */
+    public function findAll(): array
     {
         $pdo = self::$pdo;
         $result = $pdo->query('SELECT contacts.*, addresses.*, phones.*

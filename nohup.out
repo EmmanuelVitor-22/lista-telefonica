@@ -2018,3 +2018,36 @@ New Roots: [phar:///home/emmanuel-vitor/Documentos/lista-telefonica/composer.pha
 2023-08-29 20:19:11,721 [6582979]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
 2023-08-29 20:19:13,651 [6584909]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
 2023-08-29 20:19:15,479 [6586737]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-29 21:55:42,868 [12374126] SEVERE - com.jediterm.terminal.model.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2023-08-29 21:55:42,869 [12374127] SEVERE - com.jediterm.terminal.model.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2023-08-29 21:55:43,348 [12374606] SEVERE - com.jediterm.terminal.model.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2023-08-29 21:55:43,856 [12375114] SEVERE - com.jediterm.terminal.model.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2023-08-29 21:55:43,857 [12375115] SEVERE - com.jediterm.terminal.model.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2023-08-29 21:55:44,360 [12375618] SEVERE - com.jediterm.terminal.model.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2023-08-29 21:55:44,675 [12375933] SEVERE - com.jediterm.terminal.model.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2023-08-29 21:55:45,980 [12377238] SEVERE - com.jediterm.terminal.model.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2023-08-29 21:55:45,981 [12377239] SEVERE - com.jediterm.terminal.model.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2023-08-29 21:55:46,004 [12377262] SEVERE - com.jediterm.terminal.model.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2023-08-30 14:03:13,082 [70424340] SEVERE - com.jediterm.terminal.model.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2023-08-30 14:03:13,083 [70424341] SEVERE - com.jediterm.terminal.model.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2023-08-30 14:03:13,357 [70424615] SEVERE - com.jediterm.terminal.model.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2023-08-30 14:03:13,358 [70424616] SEVERE - com.jediterm.terminal.model.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2023-08-30 14:03:13,615 [70424873] SEVERE - com.jediterm.terminal.model.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2023-08-30 14:03:13,616 [70424874] SEVERE - com.jediterm.terminal.model.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2023-08-30 14:03:14,218 [70425476] SEVERE - com.jediterm.terminal.model.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2023-08-30 14:03:14,759 [70426017] SEVERE - com.jediterm.terminal.model.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2023-08-30 14:03:14,760 [70426018] SEVERE - com.jediterm.terminal.model.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2023-08-30 14:06:57,228 [70648486]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 14:07:03,037 [70654295]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 14:07:08,045 [70659303]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 14:13:38,284 [71049542]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 14:17:16,259 [71267517]   WARN - #c.j.p.PhpIndex - Invalid Signature '∆f'
+2023-08-30 14:17:23,959 [71275217]   WARN - #c.j.p.PhpIndex - Invalid Signature '∆f'
+2023-08-30 14:17:29,047 [71280305]   WARN - #c.j.p.PhpIndex - Invalid Signature '∆f'
+2023-08-30 14:17:36,978 [71288236]   WARN - #c.j.p.PhpIndex - Invalid Signature '∆f'
+2023-08-30 14:17:46,994 [71298252]   WARN - #c.j.p.PhpIndex - Invalid Signature '∆f'
+2023-08-30 15:33:12,375 [75823633] SEVERE - com.jediterm.terminal.model.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2023-08-30 15:33:12,376 [75823634] SEVERE - com.jediterm.terminal.model.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2023-08-30 15:33:12,411 [75823669]   WARN - #c.i.o.a.i.ActionUpdater - 325 ms to grab EDT for ToolWindowHeader$2#update@ToolwindowTitle (com.intellij.toolWindow.ToolWindowHeader$2)
+2023-08-30 15:33:12,421 [75823679] SEVERE - com.jediterm.terminal.model.TerminalTextBuffer - Attempt to erase characters in line: -1
+2023-08-30 15:33:12,422 [75823680] SEVERE - com.jediterm.terminal.model.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0

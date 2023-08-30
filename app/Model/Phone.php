@@ -9,7 +9,7 @@ class Phone
     private string $number;
 
 
-    public function __construct(?int $phone_id = null, string $areaCode, string $number)
+    public function __construct(?int $phone_id , string $areaCode, string $number)
     {
         $this->phone_id = $phone_id;
         $this->areaCode = $areaCode;
