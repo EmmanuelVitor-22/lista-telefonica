@@ -12,10 +12,6 @@ class Address
     private string $city ;
     private string $state ;
 
-
-
-
-
     /**
      * @param int|null $address_id
      * @param string $street
@@ -113,6 +109,5 @@ class Address
     {
         $this->state = $state;
     }
-
 
 }

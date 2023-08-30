@@ -2,6 +2,7 @@
 
 namespace App\Model;
 
+use http\Exception;
 use Src\config\DatabaseConnection;
 require_once __DIR__ . '/../../vendor/autoload.php';
 
@@ -30,7 +31,7 @@ class Contact extends DatabaseConnection
         $this->name = $name;
         $this->email = $email;
         $this->address = $address;
-        print_r($this->address = $address);
+
     }
 
     /**
@@ -73,22 +74,35 @@ class Contact extends DatabaseConnection
                     $row["email"]
                 );
             }
-            $dataListContact[$row['contact_id']]->setAddress($row['address_id'],$row ['street'],$row['number']
-                                                                ,$row['complement'],$row['zip_code'],$row['city'],$row['state']);
+            $dataListContact[$row['contact_id']]->setAddress($row['address_id'],$row ['street'],$row['number'],
+                                                                 $row['complement'],$row['zip_code'],$row['city'],$row['state']);
             $dataListContact[$row['contact_id']]->setPhones($row['phone_id'], $row['area_code'], $row['number']);
         }
 
         return $dataListContact;
     }
 
-    public function deleteContato(Contact $contact)
+    public function removeById($id): bool
     {
         $pdo = self::$pdo;
+
         $smt = $pdo->prepare('DELETE FROM contacts WHERE contact_id = :contact_id');
-        $smt->bindValue(':contact_id',$contact->getId(),PDO::PARAM_INT);
+        $smt->bindValue(':contact_id',$id,\PDO::PARAM_INT);
+
         return $smt->execute();
+    }
+    public function removeAll(): bool
+    {
+        $pdo = self::$pdo;
+        try {
+            $smt = $pdo->prepare('DELETE FROM contacts');
+            return $smt->execute();
+        }catch (\PDOException $exception){
+            throw new \PDOException($exception->getMessage());
+        }
 
     }
+
     /**
      * @param ?int $id
      * @param string $area_code
@@ -101,6 +115,13 @@ class Contact extends DatabaseConnection
         $this->phones[] = $phones;
     }
 
+    /**@param Address $address*/
+    public function setAddress(?int $address_id ,string $street , string $number ,string $complement ,
+                               string $zip_code ,string $city ,string $state ): void
+    {
+        $this->address = new Address($address_id , $street , $number,
+            $complement , $zip_code , $city , $state );
+    }
 
 
     /**
@@ -164,15 +185,7 @@ class Contact extends DatabaseConnection
     {
         return $this->address;
     }
-    /**
-     * @param Address $address
-     */
-    public function setAddress(?int $address_id ,string $street , string $number ,string $complement ,
-                               string $zip_code ,string $city ,string $state ): void
-    {
-        $this->address = new Address($address_id , $street , $number ,
-                                     $complement , $zip_code , $city , $state );
-    }
+
 
 
 
