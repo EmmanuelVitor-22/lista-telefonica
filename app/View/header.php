@@ -9,7 +9,7 @@
     </head>
     <body>
         <div class=" mb-4 bg-dark" style="height: 85px;">
-            <header class="align-middle" >
+            <header >
                 <h1 class="text-light text-center ">Hello, world!</h1>
             </header>
         </div>

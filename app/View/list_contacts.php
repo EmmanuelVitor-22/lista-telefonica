@@ -5,7 +5,7 @@
 
     require_once __DIR__ . '/../../vendor/autoload.php';
     include __DIR__ . '/../Model/Contact.php';
-    $obj = new Contact();
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    $obj = new Contact();
     ?>
 
         <table>

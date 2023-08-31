@@ -21,7 +21,7 @@ class Address
      * @param string $city
      * @param string $state
      */
-    public function __construct(?int $address_id = null , string $street = '', string $number = '', string $complement = '', string $zip_code = '', string $city = '', string $state = '')
+    public function __construct(?int $address_id = null , string $street = '', string $number = '', string $complement = '---', string $zip_code = '', string $city = '', string $state = '')
     {
         $this->address_id = $address_id;
         $this->street = $street;
