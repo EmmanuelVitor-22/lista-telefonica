@@ -2051,3 +2051,578 @@ New Roots: [phar:///home/emmanuel-vitor/Documentos/lista-telefonica/composer.pha
 2023-08-30 15:33:12,411 [75823669]   WARN - #c.i.o.a.i.ActionUpdater - 325 ms to grab EDT for ToolWindowHeader$2#update@ToolwindowTitle (com.intellij.toolWindow.ToolWindowHeader$2)
 2023-08-30 15:33:12,421 [75823679] SEVERE - com.jediterm.terminal.model.TerminalTextBuffer - Attempt to erase characters in line: -1
 2023-08-30 15:33:12,422 [75823680] SEVERE - com.jediterm.terminal.model.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2023-08-30 20:36:05,929 [93997187]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.PhpClassImpl]
+2023-08-30 20:36:08,814 [94000072]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.PhpClassImpl]
+2023-08-30 20:36:09,717 [94000975]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.PhpClassImpl]
+2023-08-30 20:36:10,779 [94002037]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.PhpClassImpl]
+2023-08-30 20:36:11,391 [94002649]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.PhpClassImpl]
+2023-08-30 20:36:12,213 [94003471]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.PhpClassImpl]
+2023-08-30 20:36:15,790 [94007048]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.PhpClassImpl]
+2023-08-30 20:36:16,786 [94008044]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.PhpClassImpl]
+2023-08-30 20:36:18,152 [94009410]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.PhpClassImpl]
+2023-08-30 20:36:20,924 [94012182]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 20:36:24,380 [94015638]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 20:36:27,607 [94018865]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 20:36:27,767 [94019025]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 20:46:05,137 [94596395]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.PhpNamespaceImpl]
+2023-08-30 20:46:05,823 [94597081]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.PhpNamespaceImpl]
+2023-08-30 20:46:06,652 [94597910]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.PhpNamespaceImpl]
+2023-08-30 20:46:07,388 [94598646]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.PhpNamespaceImpl]
+2023-08-30 20:46:07,636 [94598894]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.PhpNamespaceImpl]
+2023-08-30 20:46:19,401 [94610659]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.PhpNamespaceImpl]
+2023-08-30 20:46:38,622 [94629880]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.PhpClassImpl]
+2023-08-30 20:46:45,736 [94636994]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 20:46:46,791 [94638049]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 20:46:48,959 [94640217]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 20:46:50,267 [94641525]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 20:46:50,511 [94641769]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 20:46:51,721 [94642979]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 20:46:53,880 [94645138]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 20:46:54,861 [94646119]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 20:46:59,535 [94650793]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 20:47:05,701 [94656959]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 20:47:06,368 [94657626]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 20:47:07,488 [94658746]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 20:47:08,055 [94659313]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 20:47:11,281 [94662539]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 20:48:48,005 [94759263]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 20:48:48,317 [94759575]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 20:48:57,303 [94768561]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 20:49:00,153 [94771411]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 20:49:04,609 [94775867]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 20:53:48,018 [95059276]   WARN - #c.i.o.a.i.ActionUpdater - 362 ms to grab EDT for FontEditorPreview$RestorePreviewTextAction#update@ContextToolbar (com.intellij.application.options.colors.FontEditorPreview$RestorePreviewTextAction)
+2023-08-30 20:54:08,616 [95079874]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 20:54:09,267 [95080525]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.ParameterImpl]
+2023-08-30 20:54:09,639 [95080897]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.ParameterImpl]
+2023-08-30 20:54:10,441 [95081699]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.ParameterImpl]
+2023-08-30 20:54:11,524 [95082782]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 20:54:15,856 [95087114]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 20:54:17,346 [95088604]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.ParameterImpl]
+2023-08-30 20:54:17,703 [95088961]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.ParameterImpl]
+2023-08-30 20:54:18,414 [95089672]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 20:54:19,810 [95091068]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.ParameterImpl]
+2023-08-30 20:54:20,485 [95091743]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 20:54:22,411 [95093669]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.ParameterImpl]
+2023-08-30 20:54:23,338 [95094596]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 20:54:24,299 [95095557]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.ParameterImpl]
+2023-08-30 20:54:24,580 [95095838]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 20:54:25,181 [95096439]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 20:54:25,796 [95097054]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 20:54:26,436 [95097694]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 20:54:27,566 [95098824]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.ParameterImpl]
+2023-08-30 20:54:33,050 [95104308]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 20:54:33,788 [95105046]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 20:54:33,950 [95105208]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 20:54:34,904 [95106162]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 20:54:35,504 [95106762]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 20:54:36,885 [95108143]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 20:54:37,286 [95108544] SEVERE - #c.i.o.a.i.CoroutineExceptionHandlerImpl - Unhandled exception in [CoroutineName(com.intellij.ui.IconCalculatingService), StandaloneCoroutine{Cancelling}@69f38794, Dispatchers.Default]
+com.intellij.psi.PsiInvalidElementAccessException: Element class com.intellij.psi.impl.source.tree.CompositeElement of type CLASS (class com.jetbrains.php.lang.psi.stubs.PhpClassElementType)
+	at com.intellij.psi.PsiInvalidElementAccessException.createByNode(PsiInvalidElementAccessException.java:80)
+	at com.intellij.psi.impl.source.SubstrateRef$2.getContainingFile(SubstrateRef.java:74)
+	at com.intellij.extapi.psi.StubBasedPsiElementBase.getContainingFile(StubBasedPsiElementBase.java:235)
+	at com.intellij.extapi.psi.StubBasedPsiElementBase.getProject(StubBasedPsiElementBase.java:271)
+	at com.jetbrains.php.lang.psi.elements.impl.PhpClassImpl.lambda$static$1(PhpClassImpl.java:95)
+	at com.jetbrains.php.lang.psi.elements.impl.PhpClassImpl.lambda$static$2(PhpClassImpl.java:146)
+	at com.jetbrains.php.lang.psi.elements.impl.PhpClassImpl.lambda$getIcon$22(PhpClassImpl.java:721)
+	at com.intellij.ui.DeferredIconImpl.evaluate(DeferredIconImpl.kt:279)
+	at com.intellij.ui.DeferredIconImpl$scheduleCalculationIfNeeded$1$result$1$1.invoke(DeferredIconImpl.kt:218)
+	at com.intellij.ui.DeferredIconImpl$scheduleCalculationIfNeeded$1$result$1$1.invoke(DeferredIconImpl.kt:218)
+	at com.intellij.openapi.application.rw.InternalReadAction.insideReadAction(InternalReadAction.kt:105)
+	at com.intellij.openapi.application.rw.InternalReadAction.access$insideReadAction(InternalReadAction.kt:14)
+	at com.intellij.openapi.application.rw.InternalReadAction$tryReadCancellable$2.invoke(InternalReadAction.kt:95)
+	at com.intellij.openapi.application.rw.InternalReadAction$tryReadCancellable$2.invoke(InternalReadAction.kt:94)
+	at com.intellij.openapi.application.rw.CancellableReadActionKt$cancellableReadActionInternal$1.invoke$lambda$1$lambda$0(cancellableReadAction.kt:41)
+	at com.intellij.openapi.application.impl.ApplicationImpl.tryRunReadAction(ApplicationImpl.java:1133)
+	at com.intellij.openapi.application.rw.CancellableReadActionKt$cancellableReadActionInternal$1.invoke$lambda$1(cancellableReadAction.kt:39)
+	at com.intellij.openapi.progress.util.ProgressIndicatorUtilService.runActionAndCancelBeforeWrite(ProgressIndicatorUtilService.java:63)
+	at com.intellij.openapi.progress.util.ProgressIndicatorUtils.runActionAndCancelBeforeWrite(ProgressIndicatorUtils.java:133)
+	at com.intellij.openapi.application.rw.CancellableReadActionKt$cancellableReadActionInternal$1.invoke(cancellableReadAction.kt:37)
+	at com.intellij.openapi.progress.CoroutinesKt.blockingContext(coroutines.kt:248)
+	at com.intellij.openapi.application.rw.CancellableReadActionKt.cancellableReadActionInternal(cancellableReadAction.kt:34)
+	at com.intellij.openapi.application.rw.InternalReadAction.tryReadCancellable(InternalReadAction.kt:94)
+	at com.intellij.openapi.application.rw.InternalReadAction.tryReadAction(InternalReadAction.kt:76)
+	at com.intellij.openapi.application.rw.InternalReadAction.readLoop(InternalReadAction.kt:63)
+	at com.intellij.openapi.application.rw.InternalReadAction.access$readLoop(InternalReadAction.kt:14)
+	at com.intellij.openapi.application.rw.InternalReadAction$runReadAction$4.invokeSuspend(InternalReadAction.kt:42)
+	at com.intellij.openapi.application.rw.InternalReadAction$runReadAction$4.invoke(InternalReadAction.kt)
+	at com.intellij.openapi.application.rw.InternalReadAction$runReadAction$4.invoke(InternalReadAction.kt)
+	at kotlinx.coroutines.intrinsics.UndispatchedKt.startUndispatchedOrReturn(Undispatched.kt:78)
+	at kotlinx.coroutines.BuildersKt__Builders_commonKt.withContext(Builders.common.kt:167)
+	at kotlinx.coroutines.BuildersKt.withContext(Unknown Source)
+	at com.intellij.openapi.application.rw.InternalReadAction.runReadAction(InternalReadAction.kt:38)
+	at com.intellij.openapi.application.rw.PlatformReadWriteActionSupport.executeReadAction(PlatformReadWriteActionSupport.kt:38)
+	at com.intellij.openapi.application.ReadWriteActionSupport.executeReadAction$default(ReadWriteActionSupport.kt:15)
+	at com.intellij.openapi.application.CoroutinesKt.constrainedReadAction(coroutines.kt:58)
+	at com.intellij.openapi.application.CoroutinesKt.readAction(coroutines.kt:25)
+	at com.intellij.ui.DeferredIconImpl$scheduleCalculationIfNeeded$1$invokeSuspend$$inlined$evaluateDeferred$1.invokeSuspend(IconDeferrerImpl.kt:91)
+	at com.intellij.ui.DeferredIconImpl$scheduleCalculationIfNeeded$1$invokeSuspend$$inlined$evaluateDeferred$1.invoke(IconDeferrerImpl.kt)
+	at com.intellij.ui.DeferredIconImpl$scheduleCalculationIfNeeded$1$invokeSuspend$$inlined$evaluateDeferred$1.invoke(IconDeferrerImpl.kt)
+	at kotlinx.coroutines.intrinsics.UndispatchedKt.startUndispatchedOrReturn(Undispatched.kt:78)
+	at kotlinx.coroutines.BuildersKt__Builders_commonKt.withContext(Builders.common.kt:167)
+	at kotlinx.coroutines.BuildersKt.withContext(Unknown Source)
+	at com.intellij.ui.DeferredIconImpl$scheduleCalculationIfNeeded$1.invokeSuspend(DeferredIconImpl.kt:374)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:584)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:793)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:697)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:684)
+2023-08-30 20:54:37,300 [95108558] SEVERE - #c.i.o.a.i.CoroutineExceptionHandlerImpl - IntelliJ IDEA 2023.2.1  Build #IU-232.9559.62
+2023-08-30 20:54:37,306 [95108564] SEVERE - #c.i.o.a.i.CoroutineExceptionHandlerImpl - JDK: 17.0.8; VM: OpenJDK 64-Bit Server VM; Vendor: JetBrains s.r.o.
+2023-08-30 20:54:37,306 [95108564] SEVERE - #c.i.o.a.i.CoroutineExceptionHandlerImpl - OS: Linux
+2023-08-30 20:54:37,308 [95108566] SEVERE - #c.i.o.a.i.CoroutineExceptionHandlerImpl - Plugin to blame: PHP version: 232.9559.64
+Exception in thread "DefaultDispatcher-worker-4" com.intellij.psi.PsiInvalidElementAccessException: Element class com.intellij.psi.impl.source.tree.CompositeElement of type CLASS (class com.jetbrains.php.lang.psi.stubs.PhpClassElementType)
+	at com.intellij.psi.PsiInvalidElementAccessException.createByNode(PsiInvalidElementAccessException.java:80)
+	at com.intellij.psi.impl.source.SubstrateRef$2.getContainingFile(SubstrateRef.java:74)
+	at com.intellij.extapi.psi.StubBasedPsiElementBase.getContainingFile(StubBasedPsiElementBase.java:235)
+	at com.intellij.extapi.psi.StubBasedPsiElementBase.getProject(StubBasedPsiElementBase.java:271)
+	at com.jetbrains.php.lang.psi.elements.impl.PhpClassImpl.lambda$static$1(PhpClassImpl.java:95)
+	at com.jetbrains.php.lang.psi.elements.impl.PhpClassImpl.lambda$static$2(PhpClassImpl.java:146)
+	at com.jetbrains.php.lang.psi.elements.impl.PhpClassImpl.lambda$getIcon$22(PhpClassImpl.java:721)
+	at com.intellij.ui.DeferredIconImpl.evaluate(DeferredIconImpl.kt:279)
+	at com.intellij.ui.DeferredIconImpl$scheduleCalculationIfNeeded$1$result$1$1.invoke(DeferredIconImpl.kt:218)
+	at com.intellij.ui.DeferredIconImpl$scheduleCalculationIfNeeded$1$result$1$1.invoke(DeferredIconImpl.kt:218)
+	at com.intellij.openapi.application.rw.InternalReadAction.insideReadAction(InternalReadAction.kt:105)
+	at com.intellij.openapi.application.rw.InternalReadAction.access$insideReadAction(InternalReadAction.kt:14)
+	at com.intellij.openapi.application.rw.InternalReadAction$tryReadCancellable$2.invoke(InternalReadAction.kt:95)
+	at com.intellij.openapi.application.rw.InternalReadAction$tryReadCancellable$2.invoke(InternalReadAction.kt:94)
+	at com.intellij.openapi.application.rw.CancellableReadActionKt$cancellableReadActionInternal$1.invoke$lambda$1$lambda$0(cancellableReadAction.kt:41)
+	at com.intellij.openapi.application.impl.ApplicationImpl.tryRunReadAction(ApplicationImpl.java:1133)
+	at com.intellij.openapi.application.rw.CancellableReadActionKt$cancellableReadActionInternal$1.invoke$lambda$1(cancellableReadAction.kt:39)
+	at com.intellij.openapi.progress.util.ProgressIndicatorUtilService.runActionAndCancelBeforeWrite(ProgressIndicatorUtilService.java:63)
+	at com.intellij.openapi.progress.util.ProgressIndicatorUtils.runActionAndCancelBeforeWrite(ProgressIndicatorUtils.java:133)
+	at com.intellij.openapi.application.rw.CancellableReadActionKt$cancellableReadActionInternal$1.invoke(cancellableReadAction.kt:37)
+	at com.intellij.openapi.progress.CoroutinesKt.blockingContext(coroutines.kt:248)
+	at com.intellij.openapi.application.rw.CancellableReadActionKt.cancellableReadActionInternal(cancellableReadAction.kt:34)
+	at com.intellij.openapi.application.rw.InternalReadAction.tryReadCancellable(InternalReadAction.kt:94)
+	at com.intellij.openapi.application.rw.InternalReadAction.tryReadAction(InternalReadAction.kt:76)
+	at com.intellij.openapi.application.rw.InternalReadAction.readLoop(InternalReadAction.kt:63)
+	at com.intellij.openapi.application.rw.InternalReadAction.access$readLoop(InternalReadAction.kt:14)
+	at com.intellij.openapi.application.rw.InternalReadAction$runReadAction$4.invokeSuspend(InternalReadAction.kt:42)
+	at com.intellij.openapi.application.rw.InternalReadAction$runReadAction$4.invoke(InternalReadAction.kt)
+	at com.intellij.openapi.application.rw.InternalReadAction$runReadAction$4.invoke(InternalReadAction.kt)
+	at kotlinx.coroutines.intrinsics.UndispatchedKt.startUndispatchedOrReturn(Undispatched.kt:78)
+	at kotlinx.coroutines.BuildersKt__Builders_commonKt.withContext(Builders.common.kt:167)
+	at kotlinx.coroutines.BuildersKt.withContext(Unknown Source)
+	at com.intellij.openapi.application.rw.InternalReadAction.runReadAction(InternalReadAction.kt:38)
+	at com.intellij.openapi.application.rw.PlatformReadWriteActionSupport.executeReadAction(PlatformReadWriteActionSupport.kt:38)
+	at com.intellij.openapi.application.ReadWriteActionSupport.executeReadAction$default(ReadWriteActionSupport.kt:15)
+	at com.intellij.openapi.application.CoroutinesKt.constrainedReadAction(coroutines.kt:58)
+	at com.intellij.openapi.application.CoroutinesKt.readAction(coroutines.kt:25)
+	at com.intellij.ui.DeferredIconImpl$scheduleCalculationIfNeeded$1$invokeSuspend$$inlined$evaluateDeferred$1.invokeSuspend(IconDeferrerImpl.kt:91)
+	at com.intellij.ui.DeferredIconImpl$scheduleCalculationIfNeeded$1$invokeSuspend$$inlined$evaluateDeferred$1.invoke(IconDeferrerImpl.kt)
+	at com.intellij.ui.DeferredIconImpl$scheduleCalculationIfNeeded$1$invokeSuspend$$inlined$evaluateDeferred$1.invoke(IconDeferrerImpl.kt)
+	at kotlinx.coroutines.intrinsics.UndispatchedKt.startUndispatchedOrReturn(Undispatched.kt:78)
+	at kotlinx.coroutines.BuildersKt__Builders_commonKt.withContext(Builders.common.kt:167)
+	at kotlinx.coroutines.BuildersKt.withContext(Unknown Source)
+	at com.intellij.ui.DeferredIconImpl$scheduleCalculationIfNeeded$1.invokeSuspend(DeferredIconImpl.kt:374)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:584)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:793)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:697)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:684)
+	Suppressed: kotlinx.coroutines.internal.DiagnosticCoroutineContextException: [CoroutineName(com.intellij.ui.IconCalculatingService), StandaloneCoroutine{Cancelling}@69f38794, Dispatchers.Default]
+2023-08-30 20:54:42,947 [95114205]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 20:54:46,146 [95117404]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 20:54:50,757 [95122015]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 20:54:52,113 [95123371]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 20:54:54,881 [95126139]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 20:54:56,484 [95127742]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 20:54:58,701 [95129959]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 20:58:00,596 [95311854]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.PhpClassImpl]
+2023-08-30 20:58:00,890 [95312148]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.PhpClassImpl]
+2023-08-30 20:58:01,654 [95312912]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.PhpClassImpl]
+2023-08-30 20:58:12,486 [95323744]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.ParameterImpl]
+2023-08-30 20:58:17,192 [95328450]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 20:58:23,175 [95334433]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.PhpClassImpl]
+2023-08-30 20:58:25,060 [95336318]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.PhpClassImpl]
+2023-08-30 20:58:26,985 [95338243]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 20:58:28,119 [95339377]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 20:58:30,974 [95342232]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 20:58:32,437 [95343695]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 20:58:32,596 [95343854]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 20:58:48,945 [95360203]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 20:58:51,047 [95362305]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.ParameterImpl]
+2023-08-30 20:59:02,578 [95373836]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 20:59:02,954 [95374212]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 20:59:06,953 [95378211]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 20:59:09,038 [95380296]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 20:59:10,090 [95381348]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 20:59:10,696 [95381954]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:00:15,135 [95446393]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:00:15,514 [95446772]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:00:22,300 [95453558]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:00:22,502 [95453760]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:00:26,162 [95457420] SEVERE - #c.i.o.a.i.CoroutineExceptionHandlerImpl - Unhandled exception in [CoroutineName(com.intellij.ui.IconCalculatingService), StandaloneCoroutine{Cancelling}@541f0b53, Dispatchers.Default]
+com.intellij.psi.PsiInvalidElementAccessException: Element class com.intellij.psi.impl.source.tree.LazyParseableElement of type DOC_COMMENT (class com.jetbrains.php.lang.documentation.phpdoc.psi.stubs.PhpDocCommentElementType)
+	at com.intellij.psi.PsiInvalidElementAccessException.createByNode(PsiInvalidElementAccessException.java:80)
+	at com.intellij.psi.impl.source.SubstrateRef$2.getContainingFile(SubstrateRef.java:74)
+	at com.intellij.extapi.psi.StubBasedPsiElementBase.getContainingFile(StubBasedPsiElementBase.java:235)
+	at com.intellij.extapi.psi.StubBasedPsiElementBase.getProject(StubBasedPsiElementBase.java:271)
+	at com.intellij.psi.util.CachedValuesManager.getCachedValue(CachedValuesManager.java:155)
+	at com.intellij.psi.util.CachedValuesManager.getCachedValue(CachedValuesManager.java:121)
+	at com.jetbrains.php.lang.documentation.phpdoc.PhpDocUtil.hasOnlyNoInspectionTag(PhpDocUtil.java:855)
+	at com.jetbrains.php.lang.psi.PhpPsiUtil.getPrevPsiSiblingSkippingCommentsWithOnlyNoInspectionTag(PhpPsiUtil.java:688)
+	at com.jetbrains.php.lang.psi.PhpPsiUtil.getDocCommentFor(PhpPsiUtil.java:670)
+	at com.jetbrains.php.lang.psi.PhpPsiUtil.getDocCommentFor(PhpPsiUtil.java:634)
+	at com.jetbrains.php.lang.psi.elements.impl.PhpNamedElementImpl.getDocComment(PhpNamedElementImpl.java:118)
+	at com.jetbrains.php.lang.psi.elements.impl.FunctionImpl.getDocComment(FunctionImpl.java:94)
+	at com.jetbrains.php.lang.documentation.phpdoc.PhpDocUtil.getFinalDocTag(PhpDocUtil.java:1066)
+	at com.jetbrains.php.PhpClassMemberIconProvider.getMethodIcon(PhpClassMemberIconProvider.java:184)
+	at com.jetbrains.php.lang.psi.elements.impl.MethodImpl.lambda$static$0(MethodImpl.java:45)
+	at com.intellij.ui.DeferredIconImpl.evaluate(DeferredIconImpl.kt:279)
+	at com.intellij.ui.DeferredIconImpl$scheduleCalculationIfNeeded$1$result$1$1.invoke(DeferredIconImpl.kt:218)
+	at com.intellij.ui.DeferredIconImpl$scheduleCalculationIfNeeded$1$result$1$1.invoke(DeferredIconImpl.kt:218)
+	at com.intellij.openapi.application.rw.InternalReadAction.insideReadAction(InternalReadAction.kt:105)
+	at com.intellij.openapi.application.rw.InternalReadAction.access$insideReadAction(InternalReadAction.kt:14)
+	at com.intellij.openapi.application.rw.InternalReadAction$tryReadCancellable$2.invoke(InternalReadAction.kt:95)
+	at com.intellij.openapi.application.rw.InternalReadAction$tryReadCancellable$2.invoke(InternalReadAction.kt:94)
+	at com.intellij.openapi.application.rw.CancellableReadActionKt$cancellableReadActionInternal$1.invoke$lambda$1$lambda$0(cancellableReadAction.kt:41)
+	at com.intellij.openapi.application.impl.ApplicationImpl.tryRunReadAction(ApplicationImpl.java:1133)
+	at com.intellij.openapi.application.rw.CancellableReadActionKt$cancellableReadActionInternal$1.invoke$lambda$1(cancellableReadAction.kt:39)
+	at com.intellij.openapi.progress.util.ProgressIndicatorUtilService.runActionAndCancelBeforeWrite(ProgressIndicatorUtilService.java:63)
+	at com.intellij.openapi.progress.util.ProgressIndicatorUtils.runActionAndCancelBeforeWrite(ProgressIndicatorUtils.java:133)
+	at com.intellij.openapi.application.rw.CancellableReadActionKt$cancellableReadActionInternal$1.invoke(cancellableReadAction.kt:37)
+	at com.intellij.openapi.progress.CoroutinesKt.blockingContext(coroutines.kt:248)
+	at com.intellij.openapi.application.rw.CancellableReadActionKt.cancellableReadActionInternal(cancellableReadAction.kt:34)
+	at com.intellij.openapi.application.rw.InternalReadAction.tryReadCancellable(InternalReadAction.kt:94)
+	at com.intellij.openapi.application.rw.InternalReadAction.tryReadAction(InternalReadAction.kt:76)
+	at com.intellij.openapi.application.rw.InternalReadAction.readLoop(InternalReadAction.kt:63)
+	at com.intellij.openapi.application.rw.InternalReadAction.access$readLoop(InternalReadAction.kt:14)
+	at com.intellij.openapi.application.rw.InternalReadAction$runReadAction$4.invokeSuspend(InternalReadAction.kt:42)
+	at com.intellij.openapi.application.rw.InternalReadAction$runReadAction$4.invoke(InternalReadAction.kt)
+	at com.intellij.openapi.application.rw.InternalReadAction$runReadAction$4.invoke(InternalReadAction.kt)
+	at kotlinx.coroutines.intrinsics.UndispatchedKt.startUndispatchedOrReturn(Undispatched.kt:78)
+	at kotlinx.coroutines.BuildersKt__Builders_commonKt.withContext(Builders.common.kt:167)
+	at kotlinx.coroutines.BuildersKt.withContext(Unknown Source)
+	at com.intellij.openapi.application.rw.InternalReadAction.runReadAction(InternalReadAction.kt:38)
+	at com.intellij.openapi.application.rw.PlatformReadWriteActionSupport.executeReadAction(PlatformReadWriteActionSupport.kt:38)
+	at com.intellij.openapi.application.ReadWriteActionSupport.executeReadAction$default(ReadWriteActionSupport.kt:15)
+	at com.intellij.openapi.application.CoroutinesKt.constrainedReadAction(coroutines.kt:58)
+	at com.intellij.openapi.application.CoroutinesKt.readAction(coroutines.kt:25)
+	at com.intellij.ui.DeferredIconImpl$scheduleCalculationIfNeeded$1$invokeSuspend$$inlined$evaluateDeferred$1.invokeSuspend(IconDeferrerImpl.kt:91)
+	at com.intellij.ui.DeferredIconImpl$scheduleCalculationIfNeeded$1$invokeSuspend$$inlined$evaluateDeferred$1.invoke(IconDeferrerImpl.kt)
+	at com.intellij.ui.DeferredIconImpl$scheduleCalculationIfNeeded$1$invokeSuspend$$inlined$evaluateDeferred$1.invoke(IconDeferrerImpl.kt)
+	at kotlinx.coroutines.intrinsics.UndispatchedKt.startUndispatchedOrReturn(Undispatched.kt:78)
+	at kotlinx.coroutines.BuildersKt__Builders_commonKt.withContext(Builders.common.kt:167)
+	at kotlinx.coroutines.BuildersKt.withContext(Unknown Source)
+	at com.intellij.ui.DeferredIconImpl$scheduleCalculationIfNeeded$1.invokeSuspend(DeferredIconImpl.kt:374)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:584)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:793)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:697)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:684)
+2023-08-30 21:00:26,167 [95457425] SEVERE - #c.i.o.a.i.CoroutineExceptionHandlerImpl - IntelliJ IDEA 2023.2.1  Build #IU-232.9559.62
+2023-08-30 21:00:26,168 [95457426] SEVERE - #c.i.o.a.i.CoroutineExceptionHandlerImpl - JDK: 17.0.8; VM: OpenJDK 64-Bit Server VM; Vendor: JetBrains s.r.o.
+2023-08-30 21:00:26,168 [95457426] SEVERE - #c.i.o.a.i.CoroutineExceptionHandlerImpl - OS: Linux
+2023-08-30 21:00:26,169 [95457427] SEVERE - #c.i.o.a.i.CoroutineExceptionHandlerImpl - Plugin to blame: PHP version: 232.9559.64
+Exception in thread "DefaultDispatcher-worker-4" com.intellij.psi.PsiInvalidElementAccessException: Element class com.intellij.psi.impl.source.tree.LazyParseableElement of type DOC_COMMENT (class com.jetbrains.php.lang.documentation.phpdoc.psi.stubs.PhpDocCommentElementType)
+	at com.intellij.psi.PsiInvalidElementAccessException.createByNode(PsiInvalidElementAccessException.java:80)
+	at com.intellij.psi.impl.source.SubstrateRef$2.getContainingFile(SubstrateRef.java:74)
+	at com.intellij.extapi.psi.StubBasedPsiElementBase.getContainingFile(StubBasedPsiElementBase.java:235)
+	at com.intellij.extapi.psi.StubBasedPsiElementBase.getProject(StubBasedPsiElementBase.java:271)
+	at com.intellij.psi.util.CachedValuesManager.getCachedValue(CachedValuesManager.java:155)
+	at com.intellij.psi.util.CachedValuesManager.getCachedValue(CachedValuesManager.java:121)
+	at com.jetbrains.php.lang.documentation.phpdoc.PhpDocUtil.hasOnlyNoInspectionTag(PhpDocUtil.java:855)
+	at com.jetbrains.php.lang.psi.PhpPsiUtil.getPrevPsiSiblingSkippingCommentsWithOnlyNoInspectionTag(PhpPsiUtil.java:688)
+	at com.jetbrains.php.lang.psi.PhpPsiUtil.getDocCommentFor(PhpPsiUtil.java:670)
+	at com.jetbrains.php.lang.psi.PhpPsiUtil.getDocCommentFor(PhpPsiUtil.java:634)
+	at com.jetbrains.php.lang.psi.elements.impl.PhpNamedElementImpl.getDocComment(PhpNamedElementImpl.java:118)
+	at com.jetbrains.php.lang.psi.elements.impl.FunctionImpl.getDocComment(FunctionImpl.java:94)
+	at com.jetbrains.php.lang.documentation.phpdoc.PhpDocUtil.getFinalDocTag(PhpDocUtil.java:1066)
+	at com.jetbrains.php.PhpClassMemberIconProvider.getMethodIcon(PhpClassMemberIconProvider.java:184)
+	at com.jetbrains.php.lang.psi.elements.impl.MethodImpl.lambda$static$0(MethodImpl.java:45)
+	at com.intellij.ui.DeferredIconImpl.evaluate(DeferredIconImpl.kt:279)
+	at com.intellij.ui.DeferredIconImpl$scheduleCalculationIfNeeded$1$result$1$1.invoke(DeferredIconImpl.kt:218)
+	at com.intellij.ui.DeferredIconImpl$scheduleCalculationIfNeeded$1$result$1$1.invoke(DeferredIconImpl.kt:218)
+	at com.intellij.openapi.application.rw.InternalReadAction.insideReadAction(InternalReadAction.kt:105)
+	at com.intellij.openapi.application.rw.InternalReadAction.access$insideReadAction(InternalReadAction.kt:14)
+	at com.intellij.openapi.application.rw.InternalReadAction$tryReadCancellable$2.invoke(InternalReadAction.kt:95)
+	at com.intellij.openapi.application.rw.InternalReadAction$tryReadCancellable$2.invoke(InternalReadAction.kt:94)
+	at com.intellij.openapi.application.rw.CancellableReadActionKt$cancellableReadActionInternal$1.invoke$lambda$1$lambda$0(cancellableReadAction.kt:41)
+	at com.intellij.openapi.application.impl.ApplicationImpl.tryRunReadAction(ApplicationImpl.java:1133)
+	at com.intellij.openapi.application.rw.CancellableReadActionKt$cancellableReadActionInternal$1.invoke$lambda$1(cancellableReadAction.kt:39)
+	at com.intellij.openapi.progress.util.ProgressIndicatorUtilService.runActionAndCancelBeforeWrite(ProgressIndicatorUtilService.java:63)
+	at com.intellij.openapi.progress.util.ProgressIndicatorUtils.runActionAndCancelBeforeWrite(ProgressIndicatorUtils.java:133)
+	at com.intellij.openapi.application.rw.CancellableReadActionKt$cancellableReadActionInternal$1.invoke(cancellableReadAction.kt:37)
+	at com.intellij.openapi.progress.CoroutinesKt.blockingContext(coroutines.kt:248)
+	at com.intellij.openapi.application.rw.CancellableReadActionKt.cancellableReadActionInternal(cancellableReadAction.kt:34)
+	at com.intellij.openapi.application.rw.InternalReadAction.tryReadCancellable(InternalReadAction.kt:94)
+	at com.intellij.openapi.application.rw.InternalReadAction.tryReadAction(InternalReadAction.kt:76)
+	at com.intellij.openapi.application.rw.InternalReadAction.readLoop(InternalReadAction.kt:63)
+	at com.intellij.openapi.application.rw.InternalReadAction.access$readLoop(InternalReadAction.kt:14)
+	at com.intellij.openapi.application.rw.InternalReadAction$runReadAction$4.invokeSuspend(InternalReadAction.kt:42)
+	at com.intellij.openapi.application.rw.InternalReadAction$runReadAction$4.invoke(InternalReadAction.kt)
+	at com.intellij.openapi.application.rw.InternalReadAction$runReadAction$4.invoke(InternalReadAction.kt)
+	at kotlinx.coroutines.intrinsics.UndispatchedKt.startUndispatchedOrReturn(Undispatched.kt:78)
+	at kotlinx.coroutines.BuildersKt__Builders_commonKt.withContext(Builders.common.kt:167)
+	at kotlinx.coroutines.BuildersKt.withContext(Unknown Source)
+	at com.intellij.openapi.application.rw.InternalReadAction.runReadAction(InternalReadAction.kt:38)
+	at com.intellij.openapi.application.rw.PlatformReadWriteActionSupport.executeReadAction(PlatformReadWriteActionSupport.kt:38)
+	at com.intellij.openapi.application.ReadWriteActionSupport.executeReadAction$default(ReadWriteActionSupport.kt:15)
+	at com.intellij.openapi.application.CoroutinesKt.constrainedReadAction(coroutines.kt:58)
+	at com.intellij.openapi.application.CoroutinesKt.readAction(coroutines.kt:25)
+	at com.intellij.ui.DeferredIconImpl$scheduleCalculationIfNeeded$1$invokeSuspend$$inlined$evaluateDeferred$1.invokeSuspend(IconDeferrerImpl.kt:91)
+	at com.intellij.ui.DeferredIconImpl$scheduleCalculationIfNeeded$1$invokeSuspend$$inlined$evaluateDeferred$1.invoke(IconDeferrerImpl.kt)
+	at com.intellij.ui.DeferredIconImpl$scheduleCalculationIfNeeded$1$invokeSuspend$$inlined$evaluateDeferred$1.invoke(IconDeferrerImpl.kt)
+	at kotlinx.coroutines.intrinsics.UndispatchedKt.startUndispatchedOrReturn(Undispatched.kt:78)
+	at kotlinx.coroutines.BuildersKt__Builders_commonKt.withContext(Builders.common.kt:167)
+	at kotlinx.coroutines.BuildersKt.withContext(Unknown Source)
+	at com.intellij.ui.DeferredIconImpl$scheduleCalculationIfNeeded$1.invokeSuspend(DeferredIconImpl.kt:374)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:584)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:793)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:697)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:684)
+	Suppressed: kotlinx.coroutines.internal.DiagnosticCoroutineContextException: [CoroutineName(com.intellij.ui.IconCalculatingService), StandaloneCoroutine{Cancelling}@541f0b53, Dispatchers.Default]
+2023-08-30 21:00:31,690 [95462948]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:00:35,119 [95466377]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:01:13,923 [95505181]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:01:29,274 [95520532]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:01:33,694 [95524952]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:01:34,322 [95525580]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:01:36,066 [95527324]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:01:37,060 [95528318]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:01:38,263 [95529521]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:02:13,082 [95564340]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:02:13,470 [95564728]   WARN - #c.j.p.PhpIndex - Invalid Signature '
+")'
+2023-08-30 21:02:14,018 [95565276]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:02:14,848 [95566106]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:02:20,303 [95571561]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:02:21,205 [95572463]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:02:29,096 [95580354]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:02:29,386 [95580644]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:02:31,503 [95582761]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:02:32,523 [95583781]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:02:37,358 [95588616]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:02:38,823 [95590081]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:02:47,354 [95598612]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:03:04,315 [95615573]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:03:04,633 [95615891]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:03:09,763 [95621021]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:03:12,631 [95623889]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:03:18,328 [95629586]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:03:29,522 [95640780]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:03:30,562 [95641820]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:03:32,010 [95643268]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:03:33,905 [95645163]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:03:34,795 [95646053]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:03:40,354 [95651612]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:03:47,500 [95658758]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:03:47,796 [95659054]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:03:52,773 [95664031]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:03:53,698 [95664956]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:03:55,379 [95666637]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:03:56,935 [95668193]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:03:58,424 [95669682]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:04:05,002 [95676260]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Traversable<#ᢐ\TKey.,#ᢐ\TValue.>'
+2023-08-30 21:04:27,024 [95698282]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:04:29,369 [95700627]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:04:32,980 [95704238]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:04:42,014 [95713272]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:05:07,160 [95738418]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:05:09,219 [95740477]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:05:14,856 [95746114]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:05:21,314 [95752572]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:05:22,937 [95754195]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:05:23,756 [95755014] SEVERE - #c.i.i.p.PluginManager - Comparison method violates its general contract!
+java.lang.IllegalArgumentException: Comparison method violates its general contract!
+	at java.base/java.util.TimSort.mergeLo(TimSort.java:781)
+	at java.base/java.util.TimSort.mergeAt(TimSort.java:518)
+	at java.base/java.util.TimSort.mergeCollapse(TimSort.java:448)
+	at java.base/java.util.TimSort.sort(TimSort.java:245)
+	at java.base/java.util.Arrays.sort(Arrays.java:1307)
+	at java.base/java.util.ArrayList.sort(ArrayList.java:1721)
+	at com.intellij.openapi.editor.impl.view.EditorPainter$Session.getInnerHighlighterAttributes(EditorPainter.java:658)
+	at com.intellij.openapi.editor.impl.view.EditorPainter$Session$1.paint(EditorPainter.java:382)
+	at com.intellij.openapi.editor.impl.view.EditorPainter$Session.paintLineFragments(EditorPainter.java:1520)
+	at com.intellij.openapi.editor.impl.view.EditorPainter$Session.paintBackground(EditorPainter.java:358)
+	at com.intellij.openapi.editor.impl.view.EditorPainter$Session.paint(EditorPainter.java:186)
+	at com.intellij.openapi.editor.impl.view.EditorPainter.paint(EditorPainter.java:71)
+	at com.intellij.openapi.editor.impl.view.EditorView.paint(EditorView.java:280)
+	at com.intellij.openapi.editor.impl.EditorImpl.lambda$paint$26(EditorImpl.java:1985)
+	at com.intellij.openapi.application.ReadAction.lambda$run$1(ReadAction.java:64)
+	at com.intellij.openapi.application.impl.ApplicationImpl.runReadAction(ApplicationImpl.java:923)
+	at com.intellij.openapi.application.ReadAction.compute(ReadAction.java:76)
+	at com.intellij.openapi.application.ReadAction.run(ReadAction.java:63)
+	at com.intellij.openapi.editor.impl.EditorImpl.paint(EditorImpl.java:1960)
+	at com.intellij.openapi.editor.impl.EditorComponentImpl.paintComponent(EditorComponentImpl.java:280)
+	at java.desktop/javax.swing.JComponent.paint(JComponent.java:1115)
+	at com.intellij.openapi.editor.impl.EditorComponentImpl.paint(EditorComponentImpl.java:145)
+	at java.desktop/javax.swing.JComponent.paintChildren(JComponent.java:955)
+	at java.desktop/javax.swing.JComponent.paint(JComponent.java:1124)
+	at java.desktop/javax.swing.JViewport.paint(JViewport.java:736)
+	at com.intellij.ui.components.JBViewport.paint(JBViewport.java:237)
+	at java.desktop/javax.swing.JComponent.paintChildren(JComponent.java:955)
+	at java.desktop/javax.swing.JComponent.paint(JComponent.java:1124)
+	at java.desktop/javax.swing.JComponent.paintToOffscreen(JComponent.java:5312)
+	at java.desktop/javax.swing.RepaintManager$PaintManager.paintDoubleBufferedImpl(RepaintManager.java:1668)
+	at java.desktop/javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(RepaintManager.java:1643)
+	at java.desktop/javax.swing.RepaintManager$PaintManager.paint(RepaintManager.java:1580)
+	at java.desktop/javax.swing.RepaintManager.paint(RepaintManager.java:1347)
+	at java.desktop/javax.swing.JComponent._paintImmediately(JComponent.java:5260)
+	at java.desktop/javax.swing.JComponent.paintImmediately(JComponent.java:5070)
+	at java.desktop/javax.swing.RepaintManager$4.run(RepaintManager.java:882)
+	at java.desktop/javax.swing.RepaintManager$4.run(RepaintManager.java:865)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86)
+	at java.desktop/javax.swing.RepaintManager.paintDirtyRegions(RepaintManager.java:865)
+	at java.desktop/javax.swing.RepaintManager.paintDirtyRegions(RepaintManager.java:838)
+	at java.desktop/javax.swing.RepaintManager.prePaintDirtyRegions(RepaintManager.java:787)
+	at java.desktop/javax.swing.RepaintManager$ProcessingRunnable.run(RepaintManager.java:1909)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:318)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:792)
+	at java.desktop/java.awt.EventQueue$3.run(EventQueue.java:739)
+	at java.desktop/java.awt.EventQueue$3.run(EventQueue.java:733)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:761)
+	at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.kt:685)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent$lambda$10(IdeEventQueue.kt:589)
+	at com.intellij.openapi.application.impl.ApplicationImpl.runWithoutImplicitRead(ApplicationImpl.java:1485)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.kt:589)
+	at com.intellij.ide.IdeEventQueue.access$_dispatchEvent(IdeEventQueue.kt:67)
+	at com.intellij.ide.IdeEventQueue$dispatchEvent$processEventRunnable$1$1$1.compute(IdeEventQueue.kt:369)
+	at com.intellij.ide.IdeEventQueue$dispatchEvent$processEventRunnable$1$1$1.compute(IdeEventQueue.kt:368)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.computePrioritized(CoreProgressManager.java:787)
+	at com.intellij.ide.IdeEventQueue$dispatchEvent$processEventRunnable$1$1.invoke(IdeEventQueue.kt:368)
+	at com.intellij.ide.IdeEventQueue$dispatchEvent$processEventRunnable$1$1.invoke(IdeEventQueue.kt:363)
+	at com.intellij.ide.IdeEventQueueKt.performActivity$lambda$1(IdeEventQueue.kt:992)
+	at com.intellij.openapi.application.TransactionGuardImpl.performActivity(TransactionGuardImpl.java:105)
+	at com.intellij.ide.IdeEventQueueKt.performActivity(IdeEventQueue.kt:992)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent$lambda$7(IdeEventQueue.kt:363)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.kt:400)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:207)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:128)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:117)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:105)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:92)
+2023-08-30 21:05:23,761 [95755019] SEVERE - #c.i.i.p.PluginManager - IntelliJ IDEA 2023.2.1  Build #IU-232.9559.62
+2023-08-30 21:05:23,761 [95755019] SEVERE - #c.i.i.p.PluginManager - JDK: 17.0.8; VM: OpenJDK 64-Bit Server VM; Vendor: JetBrains s.r.o.
+2023-08-30 21:05:23,761 [95755019] SEVERE - #c.i.i.p.PluginManager - OS: Linux
+2023-08-30 21:05:23,976 [95755234]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:05:34,535 [95765793]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:05:37,253 [95768511]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:06:01,761 [95793019]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:06:02,778 [95794036]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:06:24,984 [95816242]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:06:27,648 [95818906]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:06:31,838 [95823096]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:06:37,949 [95829207]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:06:38,926 [95830184]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:07:47,446 [95898704]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:07:49,284 [95900542]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:07:49,978 [95901236]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:07:50,313 [95901571]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:07:50,515 [95901773]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:07:51,675 [95902933]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:07:53,497 [95904755]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:08:06,889 [95918147]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:08:25,608 [95936866]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:08:26,271 [95937529]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:08:28,464 [95939722]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:08:29,742 [95941000]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:08:36,778 [95948036]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:08:39,819 [95951077]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:08:46,911 [95958169]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:08:48,522 [95959780]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:08:49,778 [95961036]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:08:50,103 [95961361]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:08:50,376 [95961634]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:08:56,173 [95967431]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:09:09,310 [95980568]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:09:17,200 [95988458]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:09:26,809 [95998067]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:09:29,649 [96000907]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:09:30,248 [96001506]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:09:33,794 [96005052]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:09:35,843 [96007101]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:09:36,372 [96007630]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:09:38,025 [96009283]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:09:46,598 [96017856]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:09:47,688 [96018946]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:09:49,090 [96020348]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:09:49,462 [96020720]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:09:51,882 [96023140]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:09:53,860 [96025118]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:09:55,642 [96026900]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:09:57,697 [96028955]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:10:02,797 [96034055]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:10:04,397 [96035655]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:10:05,079 [96036337]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:10:13,277 [96044535]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:10:20,395 [96051653]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:10:21,545 [96052803]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:10:22,932 [96054190]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:10:26,711 [96057969]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:10:27,068 [96058326]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:10:28,822 [96060080]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:10:32,982 [96064240]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:10:38,543 [96069801]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:10:43,593 [96074851]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:10:51,885 [96083143]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:10:54,550 [96085808]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:10:56,960 [96088218]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:11:01,617 [96092875]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:11:07,828 [96099086]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:11:08,142 [96099400]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:11:08,527 [96099785]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:11:08,772 [96100030]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:11:09,501 [96100759]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:11:13,309 [96104567]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:11:15,959 [96107217]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:11:16,703 [96107961]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:11:16,985 [96108243]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:11:17,912 [96109170]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:11:18,565 [96109823]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:11:19,240 [96110498]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:11:21,353 [96112611]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:11:21,806 [96113064]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:11:22,096 [96113354]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:11:27,786 [96119044]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:11:28,804 [96120062]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:11:30,062 [96121320]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:11:31,538 [96122796]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:11:49,679 [96140937]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:11:50,013 [96141271]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:11:50,307 [96141565]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:11:50,917 [96142175]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.ParameterImpl]
+2023-08-30 21:11:56,731 [96147989]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.ParameterImpl]
+2023-08-30 21:14:47,544 [96318802]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:14:48,022 [96319280]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:14:48,243 [96319501]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:14:48,917 [96320175]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:14:49,185 [96320443]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:14:49,377 [96320635]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:14:53,460 [96324718]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:15:41,410 [96372668]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:15:56,303 [96387561]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:16:01,021 [96392279]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:16:21,753 [96413011]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-30 21:16:21,924 [96413182]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-31 06:41:00,395 [130291653]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-31 06:41:02,738 [130293996]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-31 06:41:16,988 [130308246]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-31 06:41:19,449 [130310707]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-31 06:41:22,166 [130313424]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-31 06:41:23,805 [130315063]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-31 06:42:27,828 [130379086]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-31 06:42:30,543 [130381801]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-31 06:42:32,573 [130383831]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-31 06:42:39,825 [130391083]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-31 06:42:45,786 [130397044]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-31 06:42:48,034 [130399292]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-31 06:42:48,921 [130400179]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-31 06:42:49,524 [130400782]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-31 06:43:00,658 [130411916]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-31 06:44:45,768 [130517026]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-31 06:44:46,406 [130517664]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-31 06:44:46,711 [130517969]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-31 06:44:47,397 [130518655]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-31 06:44:52,340 [130523598]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]

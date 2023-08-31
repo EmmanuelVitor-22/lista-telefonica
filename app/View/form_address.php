@@ -3,7 +3,7 @@
     include 'header.php';
     ?>
 </div>
-<form>
+<form method="POST" action="/../lista-telefonica/app/Model/Contact.php">
     <!--Contact-->
     <div class="form-row">
         <div class="form-group col-md-6">
@@ -57,5 +57,5 @@
     </div>
 
 
-    <button type="submit" class="btn btn-primary">Save</button>
+    <button type="submit" class="btn btn-primary" >Save</button>
 </form>

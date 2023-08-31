@@ -5,6 +5,8 @@ namespace App\Model;
 use http\Exception;
 use Src\config\DatabaseConnection;
 require_once __DIR__ . '/../../vendor/autoload.php';
+require_once __DIR__ . '/../View/form_address.php';
+
 
 class Contact extends DatabaseConnection
 {
@@ -34,27 +36,50 @@ class Contact extends DatabaseConnection
 
     }
 
-    /**
-     * @return array
-     */
-//    public static function findAll(): array
-//    {
-//        $find = self::$pdo;
-//        $query = $find->query('select * from contatos;');
-//        $telefones = $query->fetchAll(\PDO::FETCH_ASSOC);
-//
-//        $tels = [];
-//        foreach ($telefones as $t) {
-//            $tel = new Contact($t['contato_id'],
-//                $t['name'],
-//                $t['email'],
-//
-//            );
-//            $tels[] = $tel;
-//        }
-//
-//        return $tels;
-//    }
+    public function insert($contact)
+    {
+        $pdo = self::$pdo;
+        
+    }
+
+    public function insertPhone(Contact $contact)
+    {
+        $pdo = self::$pdo;
+        foreach ($contact->getPhones() as $phone) {
+
+           $insertPhone = $pdo->prepare('insert into phones (area_code, number, contact_id)
+                                                                    values (:area_code,:number,:contact_id)');
+
+           $success = $insertPhone->execute([':area_code' => $phone->getAreaCode(),
+            ':number' => $phone->getNumber(),
+            ':contact_id]' =>$contact->getId()]);
+           if (!$success){
+               return false;
+           }
+            #definindo o id
+           $phone->defineId($pdo->lastInsertId());
+        }
+
+        return true;
+    }
+    public function insertAddress(Contact $contact)
+    {
+        $pdo = self::$pdo;
+        foreach ($contact->getAddress() as $address) {
+
+            $insertAddres = $pdo->prepare('insert into addresses (street, number, complement, zip_code, city, state)
+                                                values (:street, :number, :complement, :zip_code, :city, :state);');
+
+            $success = $insertAddres->execute([':street' => $address-> , :number, :complement, :zip_code, :city, :state);
+            if (!$success){
+                return false;
+            }
+            #definindo o id
+            $phone->defineId($pdo->lastInsertId());
+        }
+
+        return true;
+    }
 
     /**
      * @return array
@@ -175,11 +200,11 @@ class Contact extends DatabaseConnection
         $this->email = $email;
     }
     /**
-     * @return array
+     * @return Phone[]
      */
-    public function getPhone(): array
+    public function getPhones(): array
     {
-        return $this->phone;
+        return $this->phones;
     }
     /**
      * @return Address
