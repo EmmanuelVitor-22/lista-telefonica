@@ -2626,3 +2626,62 @@ java.lang.IllegalArgumentException: Comparison method violates its general contr
 2023-08-31 06:44:46,711 [130517969]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
 2023-08-31 06:44:47,397 [130518655]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
 2023-08-31 06:44:52,340 [130523598]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-31 14:03:15,166 [156826424]   WARN - #c.i.o.a.i.ActionUpdater - 371 ms to grab EDT for LiveEditIssueNotificationAction#update@EditorInspectionsToolbar (com.android.tools.idea.editors.liveedit.ui.LiveEditIssueNotificationAction)
+2023-08-31 14:03:59,372 [156870630] SEVERE - com.jediterm.terminal.model.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2023-08-31 14:03:59,373 [156870631] SEVERE - com.jediterm.terminal.model.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2023-08-31 14:03:59,859 [156871117] SEVERE - com.jediterm.terminal.model.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2023-08-31 14:04:00,363 [156871621] SEVERE - com.jediterm.terminal.model.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2023-08-31 14:04:00,364 [156871622] SEVERE - com.jediterm.terminal.model.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2023-08-31 14:04:00,870 [156872128] SEVERE - com.jediterm.terminal.model.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2023-08-31 14:04:01,377 [156872635] SEVERE - com.jediterm.terminal.model.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2023-08-31 14:04:01,377 [156872635] SEVERE - com.jediterm.terminal.model.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2023-08-31 14:04:01,889 [156873147] SEVERE - com.jediterm.terminal.model.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2023-08-31 18:50:02,541 [174033799]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.VariableImpl]
+2023-08-31 19:00:56,261 [174687519]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-31 19:00:56,723 [174687981]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-31 19:00:57,545 [174688803]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-31 19:01:01,002 [174692260]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-31 19:01:25,555 [174716813]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-31 19:01:27,381 [174718639]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-31 19:01:30,282 [174721540]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-31 19:01:32,011 [174723269]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-31 19:02:00,077 [174751335]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-31 19:02:02,783 [174754041]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-31 19:02:06,615 [174757873]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-31 19:02:08,023 [174759281]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-31 19:02:09,682 [174760940]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-31 19:02:12,409 [174763667]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-31 19:02:13,146 [174764404]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-31 19:02:13,388 [174764646]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-31 19:02:13,718 [174764976]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-31 19:06:14,644 [175005902]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.PhpClassImpl]
+2023-08-31 19:06:15,796 [175007054]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-31 19:06:16,218 [175007476]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-31 19:06:21,396 [175012654]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-31 19:06:25,173 [175016431]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-31 19:06:27,913 [175019171]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-31 19:08:31,712 [175142970]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-31 19:08:34,045 [175145303]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-31 19:08:45,819 [175157077]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-31 19:08:46,457 [175157715]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-31 19:08:47,431 [175158689]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-31 19:08:57,773 [175169031]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-31 19:09:16,628 [175187886]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-31 19:09:18,388 [175189646]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-31 19:09:39,214 [175210472]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-31 19:09:40,581 [175211839]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-31 19:31:00,105 [176491363]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.VariableImpl]
+2023-08-31 19:31:10,275 [176501533]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.VariableImpl]
+2023-08-31 19:31:23,921 [176515179]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.VariableImpl]
+2023-08-31 19:38:13,719 [176924977]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-31 19:38:25,284 [176936542]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-31 19:38:29,565 [176940823]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-31 19:38:30,183 [176941441]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-08-31 20:44:27,591 [180898849] SEVERE - com.jediterm.terminal.model.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2023-08-31 20:44:27,592 [180898850] SEVERE - com.jediterm.terminal.model.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2023-08-31 20:44:27,623 [180898881] SEVERE - com.jediterm.terminal.model.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2023-08-31 20:44:27,623 [180898881] SEVERE - com.jediterm.terminal.model.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2023-08-31 20:44:28,112 [180899370] SEVERE - com.jediterm.terminal.model.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2023-08-31 20:44:28,112 [180899370] SEVERE - com.jediterm.terminal.model.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2023-08-31 20:44:28,618 [180899876] SEVERE - com.jediterm.terminal.model.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2023-08-31 20:44:28,721 [180899979] SEVERE - com.jediterm.terminal.model.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0

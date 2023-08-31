@@ -46,14 +46,6 @@ class Phone
     }
 
     /**
-     * @param string $areaCode
-     */
-    public function setAreaCode(string $areaCode): void
-    {
-        $this->areaCode = $areaCode;
-    }
-
-    /**
      * @return string
      */
     public function getNumber(): string
@@ -61,13 +53,7 @@ class Phone
         return $this->number;
     }
 
-    /**
-     * @param string $number
-     */
-    public function setNumber(string $number): void
-    {
-        $this->number = $number;
-    }
+
 
 
 
