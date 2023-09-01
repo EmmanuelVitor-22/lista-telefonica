@@ -2,7 +2,9 @@
 
 namespace App\Model;
 
-class Address
+use Src\config\DatabaseConnection;
+
+class Address extends DatabaseConnection
 {
     private ?int $address_id ;
     private string $street ;
@@ -32,6 +34,30 @@ class Address
         $this->state = $state;
     }
 
+
+    public function insertAddress(): bool
+    {
+        $pdo = DatabaseConnection::connect();;
+
+        $insertAddress = $pdo->prepare('insert into addresses (street, number, complement, zip_code, city, state)
+                                                values (:street, :number, :complement, :zip_code, :city, :state);');
+
+        $success = $insertAddress->execute([':street' => $this->getStreet(),
+            ':number' =>$this->getNumber(),
+            ':complement'=>$this->getComplement(),
+            ':zip_code'=> $this->getZipCode(),
+            ':city' =>$this->getCity(),
+            ':state'=>$this->getState()
+        ]);
+
+        if (!$success){
+            return false;
+        }
+
+        #definindo o id
+        $this->defineId($pdo->lastInsertId());
+        return true;
+    }
     public function getAddressId(): ?int
     {
         return $this->address_id;

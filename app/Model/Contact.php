@@ -10,7 +10,6 @@ require_once __DIR__ . '/../View/cadastro.php';
 
 class Contact extends DatabaseConnection
 {
-
     private static $pdo;
     private ?int $id;
     private string $name;
@@ -44,76 +43,40 @@ class Contact extends DatabaseConnection
         return $this->update($contact);
         
     }
-    public function insert(Contact $contact): bool
+    public function insertContato()
     {
-        $pdo = self::$pdo;
-        $insertContact = $pdo->prepare('insert into  (name, email, address_id)
-                                                      values (:name, :email, :address_id);');
+        $pdo = DatabaseConnection::connect();
 
-       $success =  $insertContact->execute([':name'=>$contact->getName(),
-            ':email'=> $contact->getEmail(),
-            ':address_id'=>$contact->getAddress()->getAddressId()]);
+        $insertContact = $pdo->prepare('INSERT INTO contacts (name, email, address_id)
+                                        VALUES (:name, :email, :address_id)');
 
-        if (!$success){
+        // ... (outros campos de contato)
+
+        $success = $insertContact->execute([
+            ':name' => $this->getName(),
+            ':email' => $this->getEmail(),
+            ':address_id' => $this->getAddress()->getAddressId()
+        ]);
+
+        if ($success) {
+            $this->defineId($pdo->lastInsertId());
+            $this->getAddress()->insertAddress();
+            foreach ($this->getPhones() as $phone) {
+                $phone->setContactId($this->getId());
+                $phone->insertPhone();
+            }
+            return true;
+        } else {
             return false;
         }
-
-        $contact->defineId($pdo->lastInsertId());
-        $this->insertPhone($contact);
-        $this->insertAddress($contact);
-
-        return true;
     }
 
-    public function insertPhone(Contact $contact): bool
-    {
-        $pdo = self::$pdo;
-        foreach ($contact->getPhones() as $phone) {
-
-           $insertPhone = $pdo->prepare('insert into phones (area_code, number, contact_id)
-                                                                    values (:area_code,:number,:contact_id)');
-
-           $success = $insertPhone->execute([':area_code' => $phone->getAreaCode(),
-            ':number' => $phone->getNumber(),
-            ':contact_id]' =>$contact->getId()]);
-           if (!$success){
-               return false;
-           }
-            #definindo o id
-           $phone->defineId($pdo->lastInsertId());
-        }
-
-        return true;
-    }
     //poderia ser feito no metodo de feito no metodo de insert contato, porém assim respeita o SOLID
-    public function insertAddress(Contact $contact): bool
-    {
-            $pdo = self::$pdo;
-            $address = $contact->getAddress();
 
-            $insertAddress = $pdo->prepare('insert into addresses (street, number, complement, zip_code, city, state)
-                                                values (:street, :number, :complement, :zip_code, :city, :state);');
-
-            $success = $insertAddress->execute([':street' => $address->getStreet(),
-                                               ':number' =>$address->getNumber(),
-                                               ':complement'=>$address->getComplement(),
-                                               ':zip_code'=> $address->getZipCode(),
-                                               ':city' =>$address->getCity(),
-                                               ':state'=>$address->getState()
-            ]);
-
-            if (!$success){
-                return false;
-            }
-            #definindo o id
-            $address->defineId($pdo->lastInsertId());
-
-        return true;
-    }
 
     private function update(Contact $contact): bool
     {
-        $pdo =  self::$pdo;
+        $pdo =  DatabaseConnection::connect();
 
         $update = $pdo->prepare('UPDATE contacts SET  name = :name, email = :email
                                                         WHERE contact_id = :contact_id;');
@@ -134,7 +97,7 @@ class Contact extends DatabaseConnection
     }
     private function updatePhone(Contact $contact): bool
     {
-        $pdo =  self::$pdo;
+        $pdo =  DatabaseConnection::connect();
         foreach ($contact->getPhones() as $phone) {
             $update = $pdo->prepare('UPDATE phones 
                                       SET area_code = :area_code, number = :number 
@@ -151,7 +114,7 @@ class Contact extends DatabaseConnection
     }
     private function updateAddress(Contact $contact): bool
     {
-        $pdo =  self::$pdo;
+        $pdo =  DatabaseConnection::connect();
         $address = $contact->getAddress();
 
             $update = $pdo->prepare('UPDATE addresses 
@@ -181,7 +144,7 @@ class Contact extends DatabaseConnection
      */
     public function findAll(): array
     {
-        $pdo = self::$pdo;
+        $pdo = DatabaseConnection::connect();
         $result = $pdo->query('SELECT contacts.*, addresses.*, phones.*
                                                      FROM contacts
                                                      LEFT JOIN addresses ON contacts.address_id = addresses.address_id
@@ -207,7 +170,7 @@ class Contact extends DatabaseConnection
 
     public function removeById($id): bool
     {
-        $pdo = self::$pdo;
+        $pdo = DatabaseConnection::connect();
 
         $smt = $pdo->prepare('DELETE FROM contacts WHERE contact_id = :contact_id');
         $smt->bindValue(':contact_id',$id,\PDO::PARAM_INT);
@@ -216,7 +179,7 @@ class Contact extends DatabaseConnection
     }
     public function removeAll(): bool
     {
-        $pdo = self::$pdo;
+        $pdo = DatabaseConnection::connect();
         try {
             $smt = $pdo->prepare('DELETE FROM contacts');
             return $smt->execute();
