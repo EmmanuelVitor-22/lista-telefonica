@@ -9,9 +9,9 @@ class Phone extends DatabaseConnection
     private ?int $phone_id;
     private string $areaCode;
     private string $number;
-    private int $contact_id;
+    private ?int $contact_id;
 
-    public function __construct(?int $phone_id , string $areaCode, string $number, int $contact_id)
+    public function __construct(?int $phone_id , string $areaCode, string $number, ?int $contact_id)
     {
         $this->phone_id = $phone_id;
         $this->areaCode = $areaCode;
@@ -23,14 +23,13 @@ class Phone extends DatabaseConnection
     {
         $pdo = DatabaseConnection::connect();
 
-
             $insertPhone = $pdo->prepare('insert into phones (area_code, number, contact_id)
                                                                     values (:area_code,:number,:contact_id)');
 
             $success = $insertPhone->execute([
                         ':area_code' => $this->getAreaCode(),
                         ':number' => $this->getNumber(),
-                        ':contact_id]' =>$contact->getId()
+                        ':contact_id' =>$this->getContactId()
             ]);
 
             if (!$success){
@@ -39,6 +38,23 @@ class Phone extends DatabaseConnection
             #definindo o id
             $this->defineId($pdo->lastInsertId());
             return true;
+    }
+
+
+    public function updatePhone(): bool
+    {
+        $pdo =  DatabaseConnection::connect();
+            $update = $pdo->prepare('UPDATE phones 
+                                      SET area_code = :area_code, number = :number 
+                                      WHERE phone_id = :phone_id');
+            $success =  $update->execute([
+                ':area_code' => $this->getAreaCode(),
+                ':number' => $this->getNumber()
+            ]);
+            if (!$success){
+                return false;
+            }
+        return true;
     }
 
     public function formattedPhone():string

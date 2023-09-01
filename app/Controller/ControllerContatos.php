@@ -1,46 +1,52 @@
 <?php
 
-namespace Controller;
 
+
+require_once __DIR__ . '/../../vendor/autoload.php';
 use App\Model\Contact;
 use App\Model\Address;
 use App\Model\Phone;
 
-require_once __DIR__ . '/../../vendor/autoload.php';
+try {
 
-class ControllerContatos
-{
-    public function exibirFormulario()
-    {
-        require_once 'View/cadastro.php';
-    }
-
-    public function cadastrarContato($postData)
-    {
-        $name = $postData["name"];
-        $email = $postData["email"];
-        $street = $postData["street"];
-        $number = $postData["number"];
-        $complement = $postData["complement"];
-        $zipCode = $postData["zipCode"];
-        $city = $postData["city"];
-        $state = $postData["state"];
-        $areaCode = $postData["areaCode"];
-        $phoneNumber = $postData["phoneNumber"];
+        $name = $_POST["name"] = 'a';
+        $email = $_POST["email"] = 'a';
+        $street = $_POST["street"] = 'a';
+        $number = $_POST["number"] = 'a';
+        $complement = $_POST["complement"] = 'a';
+        $zipCode = $_POST["zipCode"] = 'a';
+        $city = $_POST["city"] = 'a';
+        $state = $_POST["state"] = 'a';
+        $areaCode1 = $_POST["areaCode1"] = 'a';
+        $phoneNumber1 = $_POST["phoneNumber1"] = 'a';
+        $areaCode2 = $_POST["areaCode2"] = 'a';
+        $phoneNumber2 = $_POST["phoneNumber2"] = 'a';
 
         // Criar objetos de endereço e telefone
+        $contact = new Contact(null, $name, $email, new Address());
         $address = new Address(null, $street, $number, $complement, $zipCode, $city, $state);
-        $phone = new Phone(null, $areaCode, $phoneNumber);
+        $phone = new Phone(null, $areaCode1, $phoneNumber1, $contact->getId());
+        $phone2 = new Phone(null, $areaCode2, $phoneNumber2, $contact->getId());
 
         // Criar objeto de contato com endereço e telefone
-        $contact = new Contact(null, $name, $email, $address);
-        $contact->addPhone($phone);
+        $contact->setPhones($phone);
+        $contact->setPhones($phone2);
+        $contact->setAddress($address);
 
-        // Inserir o contato no banco de dados
-        if ($contact->insertContato()) {
-            echo "Contato cadastrado com sucesso!";
-        } else {
-            echo "Erro ao cadastrar o contato.";
-        }
+    // Inserir o contato no banco de dados
+    if ($contact->insertContato()) {
+        print_r($contact);
+        echo "Contato cadastrado com sucesso!";
+
+    } else {
+        echo "Erro ao cadastrar o contato.";
     }
+
+}catch (\Exception $exception){
+    echo $exception->getMessage();
 }
+
+
+
+
+

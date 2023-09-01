@@ -54,10 +54,34 @@ class Address extends DatabaseConnection
             return false;
         }
 
-        #definindo o id
         $this->defineId($pdo->lastInsertId());
         return true;
     }
+    public function updateAddress(): bool
+    {
+        $pdo =  DatabaseConnection::connect();
+
+        $update = $pdo->prepare('UPDATE addresses 
+                                            SET street = :street, number = :number, 
+                                                complement = :complement, zip_code = :zip_code, 
+                                                city = :city, state = :state 
+                                            WHERE address_id = :address_id');
+
+        $success = $update->execute([
+            ':street' => $this->getStreet(),
+            ':number' => $this->getNumber(),
+            ':complement' => $this->getComplement(),
+            ':zip_code' => $this->getZipCode(),
+            ':city' => $this->getCity(),
+            ':state' => $this->getState()
+        ]);
+
+        if (!$success){
+            return false;
+        }
+        return true;
+    }
+
     public function getAddressId(): ?int
     {
         return $this->address_id;
