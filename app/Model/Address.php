@@ -38,23 +38,24 @@ class Address extends DatabaseConnection
     public function insertAddress(): bool
     {
         $pdo = DatabaseConnection::connect();;
-
-        $insertAddress = $pdo->prepare('insert into addresses (street, number, complement, zip_code, city, state)
+        if ($this->getAddressId() === null) {
+            $insertAddress = $pdo->prepare('insert into addresses (street, number, complement, zip_code, city, state)
                                                 values (:street, :number, :complement, :zip_code, :city, :state);');
 
-        $success = $insertAddress->execute([':street' => $this->getStreet(),
-            ':number' =>$this->getNumber(),
-            ':complement'=>$this->getComplement(),
-            ':zip_code'=> $this->getZipCode(),
-            ':city' =>$this->getCity(),
-            ':state'=>$this->getState()
-        ]);
+            $success = $insertAddress->execute([':street' => $this->getStreet(),
+                ':number' => $this->getNumber(),
+                ':complement' => $this->getComplement(),
+                ':zip_code' => $this->getZipCode(),
+                ':city' => $this->getCity(),
+                ':state' => $this->getState()
+            ]);
 
-        if (!$success){
-            return false;
+            if (!$success) {
+                return false;
+            }
+
+            $this->defineId($pdo->lastInsertId());
         }
-
-        $this->defineId($pdo->lastInsertId());
         return true;
     }
     public function updateAddress(): bool
@@ -92,12 +93,12 @@ class Address extends DatabaseConnection
      * é o mesmo que "setId
      * @param int|null $id
      */
-    public function defineId(int $id):void
+    public function defineId(?int $id):void
     {
-        if (!is_null($this->id)){
-            throw  new  \DomainException("Você só pode definir um ID por vez");
+        if (!is_null($this->address_id) && $this->address_id !== $id) {
+            throw new \DomainException("Você só pode definir um ID por vez");
         }
-        $this->id = $id;
+        $this->address_id = $id;
     }
 
     public function getStreet(): string

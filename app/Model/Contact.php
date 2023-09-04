@@ -63,15 +63,18 @@ class Contact extends DatabaseConnection
         }
 
         $this->defineId($pdo->lastInsertId());
+
         $this->getAddress()->insertAddress();
+
         foreach ($this->getPhones() as $phone) {
             $phone->setContactId($this->getId());
+            print_r('teste');
             $phone->insertPhone();
         }
         return true;
     }
 
-    //poderia ser feito no metodo de feito no metodo de insert contato, porém assim respeita o SOLID
+
 
 
     public function update(): bool

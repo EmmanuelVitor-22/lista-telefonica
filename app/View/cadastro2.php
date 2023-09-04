@@ -11,24 +11,24 @@
         <!-- Campos de dados do contato -->
         <div class="form-group">
             <label for="name">Nome:</label>
-            <input type="text" class="form-control" name="name" >
+            <input type="text" class="form-control" name="name" required>
         </div>
 
         <div class="form-group">
             <label for="email">Email:</label>
-            <input type="email" class="form-control" name="email" >
+            <input type="email" class="form-control" name="email" required>
         </div>
 
         <!-- Campos de endereço -->
         <div class="form-row">
             <div class="form-group col-md-6">
                 <label for="street">Rua:</label>
-                <input type="text" class="form-control" name="street" >
+                <input type="text" class="form-control" name="street" required>
             </div>
 
             <div class="form-group col-md-3">
                 <label for="number">Número:</label>
-                <input type="text" class="form-control" name="number" >
+                <input type="text" class="form-control" name="number" required>
             </div>
 
             <div class="form-group col-md-3">
@@ -40,17 +40,17 @@
         <div class="form-row">
             <div class="form-group col-md-4">
                 <label for="zipCode">CEP:</label>
-                <input type="text" class="form-control" name="zipCode" >
+                <input type="text" class="form-control" name="zipCode" required>
             </div>
 
             <div class="form-group col-md-4">
                 <label for="city">Cidade:</label>
-                <input type="text" class="form-control" name="city" >
+                <input type="text" class="form-control" name="city" required>
             </div>
 
             <div class="form-group col-md-4">
                 <label for="state">Estado:</label>
-                <input type="text" class="form-control" name="state" >
+                <input type="text" class="form-control" name="state" required>
             </div>
         </div>
 
@@ -61,11 +61,11 @@
                 <h2>Telefone 1</h2>
                 <div class="mb-3">
                     <label for="areaCode1" class="form-label">Código de Área:</label>
-                    <input type="text" class="form-control" id="areaCode1" name="areaCode1" >
+                    <input type="text" class="form-control" id="areaCode1" name="areaCode1" required>
                 </div>
                 <div class="mb-3">
                     <label for="phoneNumber1" class="form-label">Número de Telefone:</label>
-                    <input type="text" class="form-control" id="phoneNumber1" name="phoneNumber1" >
+                    <input type="text" class="form-control" id="phoneNumber1" name="phoneNumber1" required>
                 </div>
             </div>
 
@@ -74,11 +74,11 @@
                 <h2>Telefone 2</h2>
                 <div class="mb-3">
                     <label for="areaCode2" class="form-label">Código de Área:</label>
-                    <input type="text" class="form-control" id="areaCode2" name="areaCode2" >
+                    <input type="text" class="form-control" id="areaCode2" name="areaCode2" required>
                 </div>
                 <div class="mb-3">
                     <label for="phoneNumber2" class="form-label">Número de Telefone:</label>
-                    <input type="text" class="form-control" id="phoneNumber2" name="phoneNumber2" >
+                    <input type="text" class="form-control" id="phoneNumber2" name="phoneNumber2" required>
                 </div>
             </div>
         </div>
