@@ -8,7 +8,7 @@ use App\Model\Phone;
 
 class ControllerContatos
 {
-    public function cadastrarDados($dados)
+    public function cadastrarDados($dados):void
     {
         $address = new Address(
             null,
@@ -55,10 +55,11 @@ class ControllerContatos
                 $phone1->insertPhone();
                 $phone2->insertPhone();
 
+                $contact->setPhones($phone1);
+                $contact->setPhones($phone2);
+
                 echo "Contato cadastrado com sucesso!";
-                echo '<pre>';
-                var_dump($contact);
-                echo '</pre>';
+
             } else {
                 echo "Erro ao cadastrar o contato.";
             }

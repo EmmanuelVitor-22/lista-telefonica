@@ -5,9 +5,8 @@ use App\Model\Contact;
 $ct = new Contact();
 
 
-//print_r($ct->removeById(9));
+//print_r($ct->removeAll());
 
 echo '<pre>';
 print_r($ct->findAll());
-
 echo '</pre>';
