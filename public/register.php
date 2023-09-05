@@ -7,7 +7,7 @@
 <body>
 <div class="container">
     <h1 class="mt-4">Cadastro de Contato</h1>
-    <form method="post" action="../Controller/controller.php">
+    <form method="post" action="../app/Controller/controller.php">
         <!-- Campos de dados do contato -->
         <div class="form-group">
             <label for="name">Nome:</label>

@@ -57,6 +57,9 @@ class Phone extends DatabaseConnection
         return true;
     }
 
+    /**
+     * @return string
+     */
     public function formattedPhone():string
     {
         return "($this->areaCode) $this->number";
