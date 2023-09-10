@@ -1,13 +1,17 @@
 <?php
 
 namespace App\Controller;
-
+require __DIR__ . '/../../vendor/autoload.php';
 use App\Model\Address;
 use App\Model\Contact;
 use App\Model\Phone;
 
 class ControllerContatos
 {
+
+
+
+
     public function cadastrarDados($dados):void
     {
         $address = new Address(
@@ -29,9 +33,9 @@ class ControllerContatos
         );
 
         if ($address->insertAddress()) {
+
             $id = $address->getAddressId();
             $address->defineId($id);
-//            $addressId = $address->getAddressId();
 
             $contact->getAddress()->defineId($id);
 
@@ -68,5 +72,13 @@ class ControllerContatos
         }
     }
 
+    public static function processaDados()
+    {
+        $contactObj = new Contact();
+        $contacts = $contactObj->findAll();
+
+        require __DIR__ . "/../../public/list-contacts.php";
+
+    }
 
 }
