@@ -1,13 +1,11 @@
-
-<head>
-    <title>Cadastro de Contato</title>
-    <!-- Incluir os links para o Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-</head>
+<?php include __DIR__ . '/views/header.php'; ?>
 <body>
 <div class="container">
-    <h1 class="mt-4">Cadastro de Contato</h1>
-    <form method="post" action="list-contacts.php">
+    <div class="jumbotron">
+        <h1 class="mt-4">Contact Register</h1>
+    </div>
+
+    <form method="post" action="/list-contacts">
         <!-- Campos de dados do contato -->
         <div class="form-group">
             <label for="name">Nome:</label>
@@ -84,13 +82,11 @@
         </div>
 
 
-
         <button type="submit" class="btn btn-primary">Cadastrar</button>
     </form>
 
 </div>
-
-</body>
+<?php include __DIR__ . '/views/footer.php'; ?>
 
 
 

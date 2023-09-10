@@ -2,16 +2,14 @@
 require __DIR__ . '/../vendor/autoload.php';
 use App\Controller\ControllerContatos;
 
-include __DIR__ . '/app/View/header.php';
-include __DIR__ . '/app/View/list_contacts.php';
 
+//dispacher ( ou frontcontroller) : recebe as requisições e envia para a controller
 switch ($_SERVER['PATH_INFO']){
     case  '/list-contacts':
-//    require_once __DIR__ . '/list-contacts.php';
-    ControllerContatos::processaDados();
+        ControllerContatos::findAll();
     break;
     case  '/register':
-    require_once __DIR__ . '/register.php';
+        ControllerContatos::registerRequest();
     break;
     default :
         echo "404";

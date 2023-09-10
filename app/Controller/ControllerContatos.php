@@ -10,25 +10,25 @@ class ControllerContatos
 {
 
 
-
-
-    public function cadastrarDados($dados):void
+    public function saveData():void
     {
+
+
         $address = new Address(
             null,
-            $dados['street'],
-            $dados['number'],
-            $dados['complement'],
-            $dados['zipCode'],
-            $dados['city'],
-            $dados['state']
+            $_POST['street'],
+            $_POST['number'],
+            $_POST['complement'],
+            $_POST['zipCode'],
+            $_POST['city'],
+            $_POST['state']
         );
 
 
         $contact = new Contact(
             null,
-            $dados['name'],
-            $dados['email'],
+            $_POST['name'],
+            $_POST['email'],
             $address
         );
 
@@ -44,15 +44,15 @@ class ControllerContatos
 
                 $phone1 = new Phone(
                     null,
-                    $dados['areaCode1'],
-                    $dados['phoneNumber1'],
+                    $_POST['areaCode1'],
+                    $_POST['phoneNumber1'],
                     $contactId
                 );
 
                 $phone2 = new Phone(
                     null,
-                    $dados['areaCode2'],
-                    $dados['phoneNumber2'],
+                    $_POST['areaCode2'],
+                    $_POST['phoneNumber2'],
                     $contactId
                 );
 
@@ -70,15 +70,19 @@ class ControllerContatos
         } else {
             echo "Erro ao cadastrar o endereço.";
         }
+        require __DIR__ . "/../../public/register-contacts.php";
     }
 
-    public static function processaDados()
+    public static function findAll()
     {
         $contactObj = new Contact();
         $contacts = $contactObj->findAll();
 
         require __DIR__ . "/../../public/list-contacts.php";
-
     }
-
+    public static function registerRequest()
+    {
+        require __DIR__ . "/../../public/register-contacts.php";
+    }
+    //pensar em criar um titulo dinamico
 }

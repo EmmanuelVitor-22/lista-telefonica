@@ -1,16 +1,12 @@
-<div>
+<?php include __DIR__ . '/views/header.php'; ?>
 
+<div class="container">
+    <div class="jumbotron">
+        <h1 class="mt-4">Contact List</h1>
+    </div>
+    <a href="/register" class="btn btn-primary mb-2">New</a>
+    <div class="container">
 
-    <head>
-        <title>Cadastro de Contato</title>
-        <!-- Incluir os links para o Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    </head>
-
-    <dive class="container">
-        <div class="jumbotron">
-            <h1 class="mt-4">Lista de Contatos</h1>
-        </div>
         <table class="table">
             <thead>
             <tr>
@@ -39,8 +35,6 @@
             <?php endforeach; ?>
 
         </table>
-    </dive>
-    <a href="/register" class="btn btn-primary mb-2">New</a>
-
-
-</div>
+    </div>
+<div class="container">
+<?php include __DIR__ . '/views/footer.php'; ?>
