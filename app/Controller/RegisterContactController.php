@@ -76,14 +76,13 @@ class RegisterContactController
                 $contact->setPhones($phone1);
                 $contact->setPhones($phone2);
 
-                echo "Contato cadastrado com sucesso!";
                 header('Location: /list-contacts'); // Corrected header function argument.
 
             } else {
-                echo "Erro ao cadastrar o contato.";
+               http_response_code(404);
             }
         } else {
-            echo "Erro ao cadastrar o endereço.";
+           http_response_code(404);
         }
     }
 

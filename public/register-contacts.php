@@ -5,7 +5,7 @@
         <h1 class="mt-4">Contact Register</h1>
     </div>
 
-    <form method="post" action="/salvar-curso">
+    <form method="post" action="/save-contact">
         <!-- Campos de dados do contato -->
         <div class="form-group">
             <label for="name">Nome:</label>

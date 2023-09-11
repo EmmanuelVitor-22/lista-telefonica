@@ -101,6 +101,23 @@ class Address extends DatabaseConnection
         $this->address_id = $id;
     }
 
+    /**
+     * @return string
+     */
+    public function formatAddress(): string
+    {
+        $address = $this->getStreet() . ', ' . $this->getNumber();
+
+        if (!empty($this->getComplement())) {
+            $address .= ' - ' . $this->getComplement();
+        }
+
+        $address .= PHP_EOL . $this->getCity() . ' - ' . $this->getState() . ', ' . $this->getZipCode();
+
+        return $address;
+    }
+
+
     public function getStreet(): string
     {
         return $this->street;

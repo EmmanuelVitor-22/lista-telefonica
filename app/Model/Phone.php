@@ -23,21 +23,27 @@ class Phone extends DatabaseConnection
     {
         $pdo = DatabaseConnection::connect();
 
-            $insertPhone = $pdo->prepare('insert into phones (area_code, number, contact_id)
-                                                                    values (:area_code,:number,:contact_id)');
+        // Valide o comprimento dos campos antes da inserção
+        if (strlen($this->getAreaCode()) > 4 || strlen($this->getNumber()) > 10) {
+            throw new \InvalidArgumentException("Área ou número de telefone muito longo.");
+        }
 
-            $success = $insertPhone->execute([
-                        ':area_code' => $this->getAreaCode(),
-                        ':number' => $this->getNumber(),
-                        ':contact_id' =>$this->getContactId()
-            ]);
+        $insertPhone = $pdo->prepare('INSERT INTO phones (area_code, number, contact_id) VALUES (:area_code, :number, :contact_id)');
 
-            if (!$success){
-                return false;
-            }
-            #definindo o id
-            $this->defineId($pdo->lastInsertId());
-            return true;
+        $success = $insertPhone->execute([
+            ':area_code' => $this->getAreaCode(),
+            ':number' => $this->getNumber(),
+            ':contact_id' => $this->getContactId()
+        ]);
+
+        if (!$success) {
+            return false;
+        }
+
+        // Defina o ID
+        $this->defineId($pdo->lastInsertId());
+
+        return true;
     }
 
 
@@ -105,6 +111,16 @@ class Phone extends DatabaseConnection
     public function setContactId(?int $contact_id): void
     {
         $this->contact_id = $contact_id;
+    }
+
+    public function setAreaCode(string $areaCode): void
+    {
+        $this->areaCode = $areaCode;
+    }
+
+    public function setNumber(string $number): void
+    {
+        $this->number = $number;
     }
 
 

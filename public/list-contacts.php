@@ -18,34 +18,40 @@
             </tr>
             </thead>
             <tbody>
-            <?php foreach ($contacts as $contact): ?>
+            <?php if (!empty($contacts)): ?>
+                <?php foreach ($contacts as $contact): ?>
+                    <tr>
+
+                        <td><?=  $contact->getId(); ?></td>
+                        <td><?=  $contact->getName(); ?></td>
+                        <td><?=  $contact->getEmail(); ?></td>
+                        <td><?= $contact->getAddress()->formatAddress(); ?></td>
+                        <td>
+                        <td>
+                            <?php
+                            foreach ($contact->getPhones() as $phone) {
+                                echo $phone->formattedPhone() . "<br>";
+                            }
+                            ?>
+                        </td>
+                        <td>
+                            <a href="/update?id=<?= $contact->getId(); ?>" class="btn btn-primary btn-sm">Update</a>
+                            <a href="/delete?id=<?= $contact->getId(); ?>" class="btn btn-danger btn-sm">Delete</a>
+
+                        </td>
+                    </tr>
+
+                <?php endforeach; ?>
+                <?php else: ?>
                 <tr>
-
-                    <td><?=  $contact->getId(); ?></td>
-                    <td><?=  $contact->getName(); ?></td>
-                    <td><?=  $contact->getEmail(); ?></td>
-                    <td>
-                        <?php
-                        foreach ($contact->getPhones() as $phone) {
-                            echo $phone->formattedPhone() . "<br>";
-                        }
-                        ?>
-                    </td>
-                    <td>
-                        <a href="/update" class="btn btn-primary btn-sm">Update</a>
-                        <a href="/delete?id=<?= $contact->getId(); ?>" class="btn btn-danger btn-sm">Delete</a>
-
-                    </td>
-
+                    <td colspan="7">No contacts found.</td>
                 </tr>
+            <?php endif; ?>
 
-            <?php endforeach; ?>
 
         </table>
-        <div class="d-flex justify-content-between">
-            <a href="/register" class="btn btn-danger  mb-2">Delete all</a>
-            <a href="/register" class="btn btn-primary mb-2">New</a>
-        </div>
+        <a href="/delete-all" class="btn btn-danger mb-2">Delete All</a>
+        <a href="/register" class="btn btn-primary mb-2">New</a>
     </div>
 <div class="container">
 <?php include __DIR__ . '/views/footer.php'; ?>
