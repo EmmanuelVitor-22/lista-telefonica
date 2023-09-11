@@ -25,15 +25,9 @@ switch ($_SERVER['PATH_INFO']) {
         DeleteContactController::deleteAll();
         break;
     case  '/update':
-        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
-            $contactId = $_POST['contact_id'];
+            UpdateContactController::updateContact();
 
-
-            UpdateContactController::updateContact($contactId);
-        } else {
-            http_response_code(400);
-        }
         break;
     default :
         http_response_code(404);

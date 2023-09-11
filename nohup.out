@@ -11172,3 +11172,8 @@ Info  | RdCoroutineScope          | 63:DefaultDispatcher-worker-45 | RdCoroutine
 2023-09-11 01:06:10,112 [1653103]   WARN - #c.i.o.a.i.ActionUpdater - 856 ms to grab EDT for ToolWindowHeader$2#update@ToolwindowTitle (com.intellij.toolWindow.ToolWindowHeader$2)
 2023-09-11 01:06:10,114 [1653105]   WARN - #c.i.o.a.i.ActionUpdater - 835 ms to grab EDT for EditorMarkupModelImpl$TrafficLightAction#update@EditorInspectionsToolbar (com.intellij.openapi.editor.impl.EditorMarkupModelImpl$TrafficLightAction)
 2023-09-11 01:25:38,501 [2821492]   WARN - #c.i.o.a.i.ActionUpdater - 371 ms to grab EDT for DeviceAndSnapshotComboBoxAction#update@MainToolbar (com.android.tools.idea.run.deployment.DeviceAndSnapshotComboBoxAction)
+2023-09-11 01:29:57,073 [3080064]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 01:29:57,910 [3080901]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 01:31:30,468 [3173459]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 01:31:43,915 [3186906]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 01:35:16,717 [3399708]   WARN - #c.i.o.a.i.ActionUpdater - 421 ms to grab EDT for ToolWindowHeader$2#update@ToolwindowTitle (com.intellij.toolWindow.ToolWindowHeader$2)
