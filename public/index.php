@@ -1,18 +1,27 @@
 <?php
 require __DIR__ . '/../vendor/autoload.php';
-use App\Controller\ControllerContatos;
+
+use App\Controller\DeleteContactController;
+use App\Controller\RegisterContactController;
+use App\Controller\ListContactsController;
 
 
 //dispacher ( ou frontcontroller) : recebe as requisições e envia para a controller
 switch ($_SERVER['PATH_INFO']){
     case  '/list-contacts':
-        ControllerContatos::findAll();
+        ListContactsController::findAll();
     break;
     case  '/register':
-        ControllerContatos::registerRequest();
+        RegisterContactController::registerRequest();
+    break;
+    case  '/salvar-curso':
+        RegisterContactController::saveData();
+    break;
+    case  '/delete':
+        DeleteContactController::deleteById();
     break;
     default :
-        echo "404";
+        http_response_code(404);
         break;
-    
+
 }

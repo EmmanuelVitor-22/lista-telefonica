@@ -135,16 +135,30 @@ class Contact extends DatabaseConnection
         return $dataListContact;
     }
 
-    public function removeById($id): bool
+    public function deleteById(int $contactId): bool
     {
         $pdo = DatabaseConnection::connect();
 
-        $smt = $pdo->prepare('DELETE FROM contacts WHERE contact_id = :contact_id');
-        $smt->bindValue(':contact_id',$id,\PDO::PARAM_INT);
 
-        return $smt->execute();
+        try {
+            $pdo->beginTransaction();
+
+            // Primeiro, exclua os telefones associados a este contato
+            $phoneStatement = $pdo->prepare('DELETE FROM phones WHERE contact_id = :contact_id');
+            $phoneStatement->bindValue(':contact_id', $contactId, \PDO::PARAM_INT);
+            $phoneStatement->execute();
+
+            $pdo->commit();
+
+            return true;
+        } catch (\PDOException $exception) {
+            // Em caso de erro, faça rollback e retorne false
+            $pdo->rollBack();
+            throw new \PDOException($exception->getMessage());
+        }
     }
-    public function removeAll(): bool
+
+    public function deleteAll(): bool
     {
         $pdo = DatabaseConnection::connect();
         try {
