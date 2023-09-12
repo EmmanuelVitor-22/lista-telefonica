@@ -132,7 +132,7 @@ class Contact extends DatabaseConnection
                 );
             }
             $dataListContact[$row['contact_id']]->setAddress(new Address($row['address_id'], $row ['street'],
-                $row['number'], $row['complement'],
+                $row['house_number'], $row['complement'],
                 $row['zip_code'], $row['city'], $row['state']));
 
             $dataListContact[$row['contact_id']]->setPhones(new Phone($row['phone_id'], $row['area_code'],
@@ -174,7 +174,7 @@ class Contact extends DatabaseConnection
 
         $contact->setAddress(new Address($row['address_id'], $row['street'], $row['number'], $row['complement'], $row['zip_code'], $row['city'], $row['state']));
 
-        $contact->setPhones(new Phone($row['phone_id'], $row['area_code'], $row['number'], $row['contact_id']));
+        $contact->setPhones([new Phone($row['phone_id'], $row['area_code'], $row['number'], $row['contact_id'])]);
 
         return $contact;
     }
@@ -225,18 +225,16 @@ class Contact extends DatabaseConnection
     }
 
 
-
     /**
-     * @param ?int $id
-     * @param string $area_code
-     * @param string $number
-     * correspomde ao metodo addPhone
+     * @param $phones
+     * @return void
      */
     public function setPhones($phones): void
     {
         if (is_array($phones)) {
-            $this->phones = $phones;
-        } elseif ($phones instanceof Phone) {
+            $this->phones[] = $phones;
+        }
+        elseif ($phones instanceof Phone) {
             $this->phones = [$phones];
         } else {
             throw new \InvalidArgumentException("O argumento deve ser do tipo Phone ou um array de Phones.");

@@ -23,7 +23,6 @@ class Phone extends DatabaseConnection
     {
         $pdo = DatabaseConnection::connect();
 
-        // Valide o comprimento dos campos antes da inserção
         if (strlen($this->getAreaCode()) > 4 || strlen($this->getNumber()) > 10) {
             throw new \InvalidArgumentException("Área ou número de telefone muito longo.");
         }

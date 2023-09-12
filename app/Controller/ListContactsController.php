@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\Model\Contact;
+require  __DIR__ . '/../Model/Contact.php';
 
 class ListContactsController
 {
@@ -11,8 +12,9 @@ class ListContactsController
     {
         $contactObj = new Contact();
         $contacts = $contactObj->findAll();
-
         require __DIR__ . "/../../public/list-contacts.php";
     }
 
 }
+//$l = new ListContactsController();
+//$l::findAll();

@@ -15,7 +15,7 @@ class RegisterContactController
         // Dar segurança ao input
         //$x = filter_var($_POST['x'], FILTER_SANITIZE_STRING); está depreciado, outra opção é essa
         $street = htmlspecialchars($_POST['street']);
-        $number = filter_var($_POST['number'], FILTER_SANITIZE_NUMBER_INT);
+        $numberHome = filter_var($_POST['numberHome'], FILTER_SANITIZE_NUMBER_INT);
         $complement = htmlspecialchars($_POST['complement']);
         $zipCode = htmlspecialchars($_POST['zipCode']);
         $city = htmlspecialchars($_POST['city']);
@@ -28,16 +28,28 @@ class RegisterContactController
         $phoneNumber1 = filter_var($_POST['phoneNumber1'], FILTER_SANITIZE_NUMBER_INT);
         $areaCode2 = filter_var($_POST['areaCode2'], FILTER_SANITIZE_NUMBER_INT);
         $phoneNumber2 = filter_var($_POST['phoneNumber2'], FILTER_SANITIZE_NUMBER_INT);
-
+//        var_dump([$street,
+//                $numberHome,
+//                $complement,
+//                $zipCode,
+//                $city,
+//                $state,
+//                $name,
+//                $email,
+//                $areaCode1,
+//                $phoneNumber1,
+//                $areaCode2,
+//                $phoneNumber2 ]);
         $address = new Address(
             null,
             $street,
-            $number,
+            $numberHome,
             $complement,
             $zipCode,
             $city,
             $state
         );
+
 
         $contact = new Contact(
             null,
@@ -45,6 +57,7 @@ class RegisterContactController
             $email,
             $address
         );
+
 
         if ($address->insertAddress()) {
 
@@ -56,6 +69,7 @@ class RegisterContactController
             if ($contact->insertContato()) {
                 $contactId = $contact->getId();
 
+                $phones =[];
                 $phone1 = new Phone(
                     null,
                     $areaCode1,
@@ -73,9 +87,15 @@ class RegisterContactController
                 $phone1->insertPhone();
                 $phone2->insertPhone();
 
-                $contact->setPhones($phone1);
-                $contact->setPhones($phone2);
+                $phones[] = $phone1;
+                $phones[] = $phone2;
 
+                $contact->setPhones($phones);
+//
+//                echo '<pre>';
+//                print_r($contact);
+//                echo '</pre>';
+//                exit();
                 header('Location: /list-contacts'); // Corrected header function argument.
 
             } else {
@@ -88,7 +108,7 @@ class RegisterContactController
 
 
 
-    public static function registerRequest()
+    public static function registerRequest(): void
     {
         require __DIR__ . "/../../public/register-contacts.php";
     }

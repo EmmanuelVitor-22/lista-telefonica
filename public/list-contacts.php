@@ -20,24 +20,28 @@
             <tbody>
             <?php if (!empty($contacts)): ?>
                 <?php foreach ($contacts as $contact): ?>
+
                     <tr>
 
                         <td><?= $contact->getId(); ?></td>
                         <td><?= $contact->getName(); ?></td>
                         <td><?= $contact->getEmail(); ?></td>
                         <td><?= $contact->getAddress()->formatAddress(); ?></td>
+
                         <td>
                         <td>
+
                             <?php
-                            foreach ($contact->getPhones() as $phone) {
-                                echo $phone->formattedPhone() . "<br>";
+                            $phones = $contact->getPhones();
+                                foreach ($phones as $phone) {
+                                    echo $phone->formattedPhone() . "<br>";
+
                             }
                             ?>
                         </td>
                         <td>
                             <a href="/update?id=<?= $contact->getId(); ?>" class="btn btn-primary btn-sm">Update</a>
                             <a href="/delete?id=<?= $contact->getId(); ?>" class="btn btn-danger btn-sm">Delete</a>
-
                         </td>
                     </tr>
 

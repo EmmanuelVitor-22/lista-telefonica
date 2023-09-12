@@ -149,11 +149,11 @@ include __DIR__ . '/views/header.php'; ?>
             <div class="form-row">
                 <div class="form-group">
                     <label for="inputAreaCode">AreaCode</label>
-                    <input type="text" class="form-control" name="phone[<?php echo $phone->getId(); ?>][area_code]" value="<?php echo $phone->getAreaCode(); ?>">
+                    <input type="text" class="form-control" name="inputAreaCode[<?php echo $phone->getId(); ?>][area_code]" value="<?php echo $phone->getAreaCode(); ?>">
                 </div>
                 <div class="form-group">
                     <label for="inputNumber">Number</label>
-                    <input type="text" class="form-control" name="phone[<?php echo $phone->getId(); ?>][phone_number]" value="<?php echo $phone->getNumber(); ?>">
+                    <input type="text" class="form-control" name="inputNumber[<?php echo $phone->getId(); ?>][phone_number]" value="<?php echo $phone->getNumber(); ?>">
                 </div>
             </div>
         <?php endforeach; ?>
