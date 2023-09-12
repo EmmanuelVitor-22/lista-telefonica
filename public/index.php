@@ -25,9 +25,10 @@ switch ($_SERVER['PATH_INFO']) {
         DeleteContactController::deleteAll();
         break;
     case  '/update':
-
+            UpdateContactController::displayUpdateForm();
+        break;
+    case  '/update-contact':
             UpdateContactController::updateContact();
-
         break;
     default :
         http_response_code(404);

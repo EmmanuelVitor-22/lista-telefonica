@@ -11177,3 +11177,385 @@ Info  | RdCoroutineScope          | 63:DefaultDispatcher-worker-45 | RdCoroutine
 2023-09-11 01:31:30,468 [3173459]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
 2023-09-11 01:31:43,915 [3186906]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
 2023-09-11 01:35:16,717 [3399708]   WARN - #c.i.o.a.i.ActionUpdater - 421 ms to grab EDT for ToolWindowHeader$2#update@ToolwindowTitle (com.intellij.toolWindow.ToolWindowHeader$2)
+CompileCommand: exclude com/intellij/openapi/vfs/impl/FilePartNodeRoot.trieDescend bool exclude = true
+2023-09-11 11:00:19,278 [37302269] SEVERE - com.jediterm.terminal.model.TerminalTextBuffer - Attempt to get line out of bounds: 41 >= 41
+2023-09-11 11:00:19,279 [37302270] SEVERE - com.jediterm.terminal.model.TerminalTextBuffer - Attempt to get line out of bounds: 41 >= 41
+2023-09-11 13:41:18,169 [46961160] SEVERE - com.jediterm.terminal.model.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2023-09-11 13:41:18,170 [46961161] SEVERE - com.jediterm.terminal.model.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2023-09-11 13:41:18,667 [46961658] SEVERE - com.jediterm.terminal.model.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2023-09-11 13:41:18,667 [46961658] SEVERE - com.jediterm.terminal.model.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2023-09-11 13:41:19,203 [46962194] SEVERE - com.jediterm.terminal.model.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2023-09-11 13:41:19,686 [46962677] SEVERE - com.jediterm.terminal.model.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2023-09-11 13:41:19,687 [46962678] SEVERE - com.jediterm.terminal.model.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2023-09-11 13:41:20,179 [46963170] SEVERE - com.jediterm.terminal.model.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2023-09-11 13:41:32,094 [46975085]   WARN - #c.i.o.a.i.ActionUpdater - 486 ms to grab EDT for ToggleAmendCommitModeAction#update@ChangesView.CommitToolbar (com.intellij.vcs.commit.ToggleAmendCommitModeAction)
+2023-09-11 13:41:32,114 [46975105]   WARN - #c.i.o.a.i.ActionUpdater - 468 ms to grab EDT for ExpandAllAction#update@ChangesViewToolbar (com.intellij.ide.actions.ExpandAllAction)
+2023-09-11 13:43:03,612 [47066603] SEVERE - com.jediterm.terminal.model.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2023-09-11 13:43:03,613 [47066604] SEVERE - com.jediterm.terminal.model.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2023-09-11 13:43:03,636 [47066627] SEVERE - com.jediterm.terminal.model.TerminalTextBuffer - Attempt to erase characters in line: -1
+2023-09-11 13:43:03,637 [47066628] SEVERE - com.jediterm.terminal.model.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2023-09-11 21:16:06,915 [74249906] SEVERE - com.jediterm.terminal.model.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2023-09-11 21:16:06,916 [74249907] SEVERE - com.jediterm.terminal.model.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2023-09-11 21:16:07,397 [74250388] SEVERE - com.jediterm.terminal.model.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2023-09-11 21:16:07,398 [74250389] SEVERE - com.jediterm.terminal.model.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2023-09-11 21:16:07,702 [74250693] SEVERE - com.jediterm.terminal.model.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2023-09-11 21:16:07,770 [74250761] SEVERE - com.jediterm.terminal.model.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2023-09-11 21:16:07,771 [74250762] SEVERE - com.jediterm.terminal.model.TerminalTextBuffer - Attempt to get line out of bounds: -1 < 0
+2023-09-11 21:28:21,545 [74984536]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 21:28:28,355 [74991346]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 21:28:37,218 [75000209]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 22:09:10,344 [77433335]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 22:33:23,844 [78886835]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.PhpClassImpl]
+2023-09-11 22:34:01,790 [78924781]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.PhpNamespaceImpl]
+2023-09-11 22:34:13,193 [78936184]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 22:34:42,051 [78965042]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 22:36:49,678 [79092669]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.PhpClassImpl]
+2023-09-11 22:37:31,925 [79134916]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 22:37:45,140 [79148131]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 22:38:40,653 [79203644]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 22:39:02,404 [79225395]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 22:39:06,100 [79229091]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 22:39:10,819 [79233810]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 22:39:42,010 [79265001]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 22:39:43,781 [79266772]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 22:39:52,788 [79275779]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 22:39:54,898 [79277889]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 22:39:55,805 [79278796]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 22:39:56,507 [79279498]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 22:39:58,995 [79281986]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 22:40:00,129 [79283120]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 22:41:33,275 [79376266]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 22:41:34,310 [79377301]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 22:41:38,565 [79381556]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 22:49:39,800 [79862791] SEVERE - com.jediterm.terminal.model.TerminalTextBuffer - Attempt to get line out of bounds: 20 >= 20
+2023-09-11 22:49:39,801 [79862792] SEVERE - com.jediterm.terminal.model.TerminalTextBuffer - Attempt to get line out of bounds: 20 >= 20
+2023-09-11 22:53:59,333 [80122324]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 22:54:00,356 [80123347]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 22:54:00,928 [80123919]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 22:54:05,404 [80128395]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 22:54:07,846 [80130837]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 22:54:09,858 [80132849]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 22:54:10,635 [80133626]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 22:54:13,397 [80136388]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 22:54:14,345 [80137336]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 22:54:20,661 [80143652]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 22:56:02,810 [80245801]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.PhpClassImpl]
+2023-09-11 22:56:04,578 [80247569]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.PhpClassImpl]
+2023-09-11 23:06:07,669 [80850660]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 23:10:12,534 [81095525]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 23:10:13,670 [81096661] SEVERE - #c.i.o.a.i.CoroutineExceptionHandlerImpl - Unhandled exception in [CoroutineName(com.intellij.ui.IconCalculatingService), StandaloneCoroutine{Cancelling}@37a5e4f, Dispatchers.Default]
+com.intellij.psi.PsiInvalidElementAccessException: Element class com.intellij.psi.impl.source.tree.CompositeElement of type CLASS (class com.jetbrains.php.lang.psi.stubs.PhpClassElementType)
+	at com.intellij.psi.PsiInvalidElementAccessException.createByNode(PsiInvalidElementAccessException.java:80)
+	at com.intellij.psi.impl.source.SubstrateRef$2.getContainingFile(SubstrateRef.java:74)
+	at com.intellij.extapi.psi.StubBasedPsiElementBase.getContainingFile(StubBasedPsiElementBase.java:235)
+	at com.intellij.extapi.psi.StubBasedPsiElementBase.getProject(StubBasedPsiElementBase.java:271)
+	at com.jetbrains.php.lang.psi.elements.impl.PhpClassImpl.lambda$static$1(PhpClassImpl.java:95)
+	at com.jetbrains.php.lang.psi.elements.impl.PhpClassImpl.lambda$static$2(PhpClassImpl.java:146)
+	at com.jetbrains.php.lang.psi.elements.impl.PhpClassImpl.lambda$getIcon$22(PhpClassImpl.java:721)
+	at com.intellij.ui.DeferredIconImpl.evaluate(DeferredIconImpl.kt:279)
+	at com.intellij.ui.DeferredIconImpl$scheduleCalculationIfNeeded$1$result$1$1.invoke(DeferredIconImpl.kt:218)
+	at com.intellij.ui.DeferredIconImpl$scheduleCalculationIfNeeded$1$result$1$1.invoke(DeferredIconImpl.kt:218)
+	at com.intellij.openapi.application.rw.InternalReadAction.insideReadAction(InternalReadAction.kt:105)
+	at com.intellij.openapi.application.rw.InternalReadAction.access$insideReadAction(InternalReadAction.kt:14)
+	at com.intellij.openapi.application.rw.InternalReadAction$tryReadCancellable$2.invoke(InternalReadAction.kt:95)
+	at com.intellij.openapi.application.rw.InternalReadAction$tryReadCancellable$2.invoke(InternalReadAction.kt:94)
+	at com.intellij.openapi.application.rw.CancellableReadActionKt$cancellableReadActionInternal$1.invoke$lambda$1$lambda$0(cancellableReadAction.kt:41)
+	at com.intellij.openapi.application.impl.ApplicationImpl.tryRunReadAction(ApplicationImpl.java:1133)
+	at com.intellij.openapi.application.rw.CancellableReadActionKt$cancellableReadActionInternal$1.invoke$lambda$1(cancellableReadAction.kt:39)
+	at com.intellij.openapi.progress.util.ProgressIndicatorUtilService.runActionAndCancelBeforeWrite(ProgressIndicatorUtilService.java:63)
+	at com.intellij.openapi.progress.util.ProgressIndicatorUtils.runActionAndCancelBeforeWrite(ProgressIndicatorUtils.java:133)
+	at com.intellij.openapi.application.rw.CancellableReadActionKt$cancellableReadActionInternal$1.invoke(cancellableReadAction.kt:37)
+	at com.intellij.openapi.progress.CoroutinesKt.blockingContext(coroutines.kt:248)
+	at com.intellij.openapi.application.rw.CancellableReadActionKt.cancellableReadActionInternal(cancellableReadAction.kt:34)
+	at com.intellij.openapi.application.rw.InternalReadAction.tryReadCancellable(InternalReadAction.kt:94)
+	at com.intellij.openapi.application.rw.InternalReadAction.tryReadAction(InternalReadAction.kt:76)
+	at com.intellij.openapi.application.rw.InternalReadAction.readLoop(InternalReadAction.kt:63)
+	at com.intellij.openapi.application.rw.InternalReadAction.access$readLoop(InternalReadAction.kt:14)
+	at com.intellij.openapi.application.rw.InternalReadAction$runReadAction$4.invokeSuspend(InternalReadAction.kt:42)
+	at com.intellij.openapi.application.rw.InternalReadAction$runReadAction$4.invoke(InternalReadAction.kt)
+	at com.intellij.openapi.application.rw.InternalReadAction$runReadAction$4.invoke(InternalReadAction.kt)
+	at kotlinx.coroutines.intrinsics.UndispatchedKt.startUndispatchedOrReturn(Undispatched.kt:78)
+	at kotlinx.coroutines.BuildersKt__Builders_commonKt.withContext(Builders.common.kt:167)
+	at kotlinx.coroutines.BuildersKt.withContext(Unknown Source)
+	at com.intellij.openapi.application.rw.InternalReadAction.runReadAction(InternalReadAction.kt:38)
+	at com.intellij.openapi.application.rw.PlatformReadWriteActionSupport.executeReadAction(PlatformReadWriteActionSupport.kt:38)
+	at com.intellij.openapi.application.ReadWriteActionSupport.executeReadAction$default(ReadWriteActionSupport.kt:15)
+	at com.intellij.openapi.application.CoroutinesKt.constrainedReadAction(coroutines.kt:58)
+	at com.intellij.openapi.application.CoroutinesKt.readAction(coroutines.kt:25)
+	at com.intellij.ui.DeferredIconImpl$scheduleCalculationIfNeeded$1$invokeSuspend$$inlined$evaluateDeferred$1.invokeSuspend(IconDeferrerImpl.kt:91)
+	at com.intellij.ui.DeferredIconImpl$scheduleCalculationIfNeeded$1$invokeSuspend$$inlined$evaluateDeferred$1.invoke(IconDeferrerImpl.kt)
+	at com.intellij.ui.DeferredIconImpl$scheduleCalculationIfNeeded$1$invokeSuspend$$inlined$evaluateDeferred$1.invoke(IconDeferrerImpl.kt)
+	at kotlinx.coroutines.intrinsics.UndispatchedKt.startUndispatchedOrReturn(Undispatched.kt:78)
+	at kotlinx.coroutines.BuildersKt__Builders_commonKt.withContext(Builders.common.kt:167)
+	at kotlinx.coroutines.BuildersKt.withContext(Unknown Source)
+	at com.intellij.ui.DeferredIconImpl$scheduleCalculationIfNeeded$1.invokeSuspend(DeferredIconImpl.kt:374)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:584)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:793)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:697)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:684)
+2023-09-11 23:10:13,686 [81096677] SEVERE - #c.i.o.a.i.CoroutineExceptionHandlerImpl - IntelliJ IDEA 2023.2.1  Build #IU-232.9559.62
+2023-09-11 23:10:13,687 [81096678] SEVERE - #c.i.o.a.i.CoroutineExceptionHandlerImpl - JDK: 17.0.8; VM: OpenJDK 64-Bit Server VM; Vendor: JetBrains s.r.o.
+2023-09-11 23:10:13,687 [81096678] SEVERE - #c.i.o.a.i.CoroutineExceptionHandlerImpl - OS: Linux
+2023-09-11 23:10:13,690 [81096681] SEVERE - #c.i.o.a.i.CoroutineExceptionHandlerImpl - Plugin to blame: PHP version: 232.9559.64
+Exception in thread "DefaultDispatcher-worker-1" com.intellij.psi.PsiInvalidElementAccessException: Element class com.intellij.psi.impl.source.tree.CompositeElement of type CLASS (class com.jetbrains.php.lang.psi.stubs.PhpClassElementType)
+	at com.intellij.psi.PsiInvalidElementAccessException.createByNode(PsiInvalidElementAccessException.java:80)
+	at com.intellij.psi.impl.source.SubstrateRef$2.getContainingFile(SubstrateRef.java:74)
+	at com.intellij.extapi.psi.StubBasedPsiElementBase.getContainingFile(StubBasedPsiElementBase.java:235)
+	at com.intellij.extapi.psi.StubBasedPsiElementBase.getProject(StubBasedPsiElementBase.java:271)
+	at com.jetbrains.php.lang.psi.elements.impl.PhpClassImpl.lambda$static$1(PhpClassImpl.java:95)
+	at com.jetbrains.php.lang.psi.elements.impl.PhpClassImpl.lambda$static$2(PhpClassImpl.java:146)
+	at com.jetbrains.php.lang.psi.elements.impl.PhpClassImpl.lambda$getIcon$22(PhpClassImpl.java:721)
+	at com.intellij.ui.DeferredIconImpl.evaluate(DeferredIconImpl.kt:279)
+	at com.intellij.ui.DeferredIconImpl$scheduleCalculationIfNeeded$1$result$1$1.invoke(DeferredIconImpl.kt:218)
+	at com.intellij.ui.DeferredIconImpl$scheduleCalculationIfNeeded$1$result$1$1.invoke(DeferredIconImpl.kt:218)
+	at com.intellij.openapi.application.rw.InternalReadAction.insideReadAction(InternalReadAction.kt:105)
+	at com.intellij.openapi.application.rw.InternalReadAction.access$insideReadAction(InternalReadAction.kt:14)
+	at com.intellij.openapi.application.rw.InternalReadAction$tryReadCancellable$2.invoke(InternalReadAction.kt:95)
+	at com.intellij.openapi.application.rw.InternalReadAction$tryReadCancellable$2.invoke(InternalReadAction.kt:94)
+	at com.intellij.openapi.application.rw.CancellableReadActionKt$cancellableReadActionInternal$1.invoke$lambda$1$lambda$0(cancellableReadAction.kt:41)
+	at com.intellij.openapi.application.impl.ApplicationImpl.tryRunReadAction(ApplicationImpl.java:1133)
+	at com.intellij.openapi.application.rw.CancellableReadActionKt$cancellableReadActionInternal$1.invoke$lambda$1(cancellableReadAction.kt:39)
+	at com.intellij.openapi.progress.util.ProgressIndicatorUtilService.runActionAndCancelBeforeWrite(ProgressIndicatorUtilService.java:63)
+	at com.intellij.openapi.progress.util.ProgressIndicatorUtils.runActionAndCancelBeforeWrite(ProgressIndicatorUtils.java:133)
+	at com.intellij.openapi.application.rw.CancellableReadActionKt$cancellableReadActionInternal$1.invoke(cancellableReadAction.kt:37)
+	at com.intellij.openapi.progress.CoroutinesKt.blockingContext(coroutines.kt:248)
+	at com.intellij.openapi.application.rw.CancellableReadActionKt.cancellableReadActionInternal(cancellableReadAction.kt:34)
+	at com.intellij.openapi.application.rw.InternalReadAction.tryReadCancellable(InternalReadAction.kt:94)
+	at com.intellij.openapi.application.rw.InternalReadAction.tryReadAction(InternalReadAction.kt:76)
+	at com.intellij.openapi.application.rw.InternalReadAction.readLoop(InternalReadAction.kt:63)
+	at com.intellij.openapi.application.rw.InternalReadAction.access$readLoop(InternalReadAction.kt:14)
+	at com.intellij.openapi.application.rw.InternalReadAction$runReadAction$4.invokeSuspend(InternalReadAction.kt:42)
+	at com.intellij.openapi.application.rw.InternalReadAction$runReadAction$4.invoke(InternalReadAction.kt)
+	at com.intellij.openapi.application.rw.InternalReadAction$runReadAction$4.invoke(InternalReadAction.kt)
+	at kotlinx.coroutines.intrinsics.UndispatchedKt.startUndispatchedOrReturn(Undispatched.kt:78)
+	at kotlinx.coroutines.BuildersKt__Builders_commonKt.withContext(Builders.common.kt:167)
+	at kotlinx.coroutines.BuildersKt.withContext(Unknown Source)
+	at com.intellij.openapi.application.rw.InternalReadAction.runReadAction(InternalReadAction.kt:38)
+	at com.intellij.openapi.application.rw.PlatformReadWriteActionSupport.executeReadAction(PlatformReadWriteActionSupport.kt:38)
+	at com.intellij.openapi.application.ReadWriteActionSupport.executeReadAction$default(ReadWriteActionSupport.kt:15)
+	at com.intellij.openapi.application.CoroutinesKt.constrainedReadAction(coroutines.kt:58)
+	at com.intellij.openapi.application.CoroutinesKt.readAction(coroutines.kt:25)
+	at com.intellij.ui.DeferredIconImpl$scheduleCalculationIfNeeded$1$invokeSuspend$$inlined$evaluateDeferred$1.invokeSuspend(IconDeferrerImpl.kt:91)
+	at com.intellij.ui.DeferredIconImpl$scheduleCalculationIfNeeded$1$invokeSuspend$$inlined$evaluateDeferred$1.invoke(IconDeferrerImpl.kt)
+	at com.intellij.ui.DeferredIconImpl$scheduleCalculationIfNeeded$1$invokeSuspend$$inlined$evaluateDeferred$1.invoke(IconDeferrerImpl.kt)
+	at kotlinx.coroutines.intrinsics.UndispatchedKt.startUndispatchedOrReturn(Undispatched.kt:78)
+	at kotlinx.coroutines.BuildersKt__Builders_commonKt.withContext(Builders.common.kt:167)
+	at kotlinx.coroutines.BuildersKt.withContext(Unknown Source)
+	at com.intellij.ui.DeferredIconImpl$scheduleCalculationIfNeeded$1.invokeSuspend(DeferredIconImpl.kt:374)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:584)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:793)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:697)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:684)
+	Suppressed: kotlinx.coroutines.internal.DiagnosticCoroutineContextException: [CoroutineName(com.intellij.ui.IconCalculatingService), StandaloneCoroutine{Cancelling}@37a5e4f, Dispatchers.Default]
+Exception in thread "DefaultDispatcher-worker-7" com.intellij.psi.PsiInvalidElementAccessException: Element class com.intellij.psi.impl.source.tree.CompositeElement of type CLASS (class com.jetbrains.php.lang.psi.stubs.PhpClassElementType)
+	at com.intellij.psi.PsiInvalidElementAccessException.createByNode(PsiInvalidElementAccessException.java:80)
+	at com.intellij.psi.impl.source.SubstrateRef$2.getContainingFile(SubstrateRef.java:74)
+	at com.intellij.extapi.psi.StubBasedPsiElementBase.getContainingFile(StubBasedPsiElementBase.java:235)
+	at com.intellij.extapi.psi.StubBasedPsiElementBase.getProject(StubBasedPsiElementBase.java:271)
+	at com.jetbrains.php.lang.psi.elements.impl.PhpClassImpl.lambda$static$1(PhpClassImpl.java:95)
+	at com.jetbrains.php.lang.psi.elements.impl.PhpClassImpl.lambda$static$2(PhpClassImpl.java:146)
+	at com.jetbrains.php.lang.psi.elements.impl.PhpClassImpl.lambda$getIcon$22(PhpClassImpl.java:721)
+	at com.intellij.ui.DeferredIconImpl.evaluate(DeferredIconImpl.kt:279)
+	at com.intellij.ui.DeferredIconImpl$scheduleCalculationIfNeeded$1$result$1$1.invoke(DeferredIconImpl.kt:218)
+	at com.intellij.ui.DeferredIconImpl$scheduleCalculationIfNeeded$1$result$1$1.invoke(DeferredIconImpl.kt:218)
+	at com.intellij.openapi.application.rw.InternalReadAction.insideReadAction(InternalReadAction.kt:105)
+	at com.intellij.openapi.application.rw.InternalReadAction.access$insideReadAction(InternalReadAction.kt:14)
+	at com.intellij.openapi.application.rw.InternalReadAction$tryReadCancellable$2.invoke(InternalReadAction.kt:95)
+	at com.intellij.openapi.application.rw.InternalReadAction$tryReadCancellable$2.invoke(InternalReadAction.kt:94)
+	at com.intellij.openapi.application.rw.CancellableReadActionKt$cancellableReadActionInternal$1.invoke$lambda$1$lambda$0(cancellableReadAction.kt:41)
+	at com.intellij.openapi.application.impl.ApplicationImpl.tryRunReadAction(ApplicationImpl.java:1133)
+	at com.intellij.openapi.application.rw.CancellableReadActionKt$cancellableReadActionInternal$1.invoke$lambda$1(cancellableReadAction.kt:39)
+	at com.intellij.openapi.progress.util.ProgressIndicatorUtilService.runActionAndCancelBeforeWrite(ProgressIndicatorUtilService.java:63)
+	at com.intellij.openapi.progress.util.ProgressIndicatorUtils.runActionAndCancelBeforeWrite(ProgressIndicatorUtils.java:133)
+	at com.intellij.openapi.application.rw.CancellableReadActionKt$cancellableReadActionInternal$1.invoke(cancellableReadAction.kt:37)
+	at com.intellij.openapi.progress.CoroutinesKt.blockingContext(coroutines.kt:248)
+	at com.intellij.openapi.application.rw.CancellableReadActionKt.cancellableReadActionInternal(cancellableReadAction.kt:34)
+	at com.intellij.openapi.application.rw.InternalReadAction.tryReadCancellable(InternalReadAction.kt:94)
+	at com.intellij.openapi.application.rw.InternalReadAction.tryReadAction(InternalReadAction.kt:76)
+	at com.intellij.openapi.application.rw.InternalReadAction.readLoop(InternalReadAction.kt:63)
+	at com.intellij.openapi.application.rw.InternalReadAction.access$readLoop(InternalReadAction.kt:14)
+	at com.intellij.openapi.application.rw.InternalReadAction$runReadAction$4.invokeSuspend(InternalReadAction.kt:42)
+	at com.intellij.openapi.application.rw.InternalReadAction$runReadAction$4.invoke(InternalReadAction.kt)
+	at com.intellij.openapi.application.rw.InternalReadAction$runReadAction$4.invoke(InternalReadAction.kt)
+	at kotlinx.coroutines.intrinsics.UndispatchedKt.startUndispatchedOrReturn(Undispatched.kt:78)
+	at kotlinx.coroutines.BuildersKt__Builders_commonKt.withContext(Builders.common.kt:167)
+	at kotlinx.coroutines.BuildersKt.withContext(Unknown Source)
+	at com.intellij.openapi.application.rw.InternalReadAction.runReadAction(InternalReadAction.kt:38)
+	at com.intellij.openapi.application.rw.PlatformReadWriteActionSupport.executeReadAction(PlatformReadWriteActionSupport.kt:38)
+	at com.intellij.openapi.application.ReadWriteActionSupport.executeReadAction$default(ReadWriteActionSupport.kt:15)
+	at com.intellij.openapi.application.CoroutinesKt.constrainedReadAction(coroutines.kt:58)
+	at com.intellij.openapi.application.CoroutinesKt.readAction(coroutines.kt:25)
+	at com.intellij.ui.DeferredIconImpl$scheduleCalculationIfNeeded$1$invokeSuspend$$inlined$evaluateDeferred$1.invokeSuspend(IconDeferrerImpl.kt:91)
+	at com.intellij.ui.DeferredIconImpl$scheduleCalculationIfNeeded$1$invokeSuspend$$inlined$evaluateDeferred$1.invoke(IconDeferrerImpl.kt)
+	at com.intellij.ui.DeferredIconImpl$scheduleCalculationIfNeeded$1$invokeSuspend$$inlined$evaluateDeferred$1.invoke(IconDeferrerImpl.kt)
+	at kotlinx.coroutines.intrinsics.UndispatchedKt.startUndispatchedOrReturn(Undispatched.kt:78)
+	at kotlinx.coroutines.BuildersKt__Builders_commonKt.withContext(Builders.common.kt:167)
+	at kotlinx.coroutines.BuildersKt.withContext(Unknown Source)
+	at com.intellij.ui.DeferredIconImpl$scheduleCalculationIfNeeded$1.invokeSuspend(DeferredIconImpl.kt:374)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:584)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:793)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:697)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:684)
+	Suppressed: kotlinx.coroutines.internal.DiagnosticCoroutineContextException: [CoroutineName(com.intellij.ui.IconCalculatingService), StandaloneCoroutine{Cancelling}@66640a3e, Dispatchers.Default]
+Exception in thread "DefaultDispatcher-worker-6" com.intellij.psi.PsiInvalidElementAccessException: Element class com.intellij.psi.impl.source.tree.CompositeElement of type CLASS (class com.jetbrains.php.lang.psi.stubs.PhpClassElementType)
+	at com.intellij.psi.PsiInvalidElementAccessException.createByNode(PsiInvalidElementAccessException.java:80)
+	at com.intellij.psi.impl.source.SubstrateRef$2.getContainingFile(SubstrateRef.java:74)
+	at com.intellij.extapi.psi.StubBasedPsiElementBase.getContainingFile(StubBasedPsiElementBase.java:235)
+	at com.intellij.extapi.psi.StubBasedPsiElementBase.getProject(StubBasedPsiElementBase.java:271)
+	at com.jetbrains.php.lang.psi.elements.impl.PhpClassImpl.lambda$static$1(PhpClassImpl.java:95)
+	at com.jetbrains.php.lang.psi.elements.impl.PhpClassImpl.lambda$static$2(PhpClassImpl.java:146)
+	at com.jetbrains.php.lang.psi.elements.impl.PhpClassImpl.lambda$getIcon$22(PhpClassImpl.java:721)
+	at com.intellij.ui.DeferredIconImpl.evaluate(DeferredIconImpl.kt:279)
+	at com.intellij.ui.DeferredIconImpl$scheduleCalculationIfNeeded$1$result$1$1.invoke(DeferredIconImpl.kt:218)
+	at com.intellij.ui.DeferredIconImpl$scheduleCalculationIfNeeded$1$result$1$1.invoke(DeferredIconImpl.kt:218)
+	at com.intellij.openapi.application.rw.InternalReadAction.insideReadAction(InternalReadAction.kt:105)
+	at com.intellij.openapi.application.rw.InternalReadAction.access$insideReadAction(InternalReadAction.kt:14)
+	at com.intellij.openapi.application.rw.InternalReadAction$tryReadCancellable$2.invoke(InternalReadAction.kt:95)
+	at com.intellij.openapi.application.rw.InternalReadAction$tryReadCancellable$2.invoke(InternalReadAction.kt:94)
+	at com.intellij.openapi.application.rw.CancellableReadActionKt$cancellableReadActionInternal$1.invoke$lambda$1$lambda$0(cancellableReadAction.kt:41)
+	at com.intellij.openapi.application.impl.ApplicationImpl.tryRunReadAction(ApplicationImpl.java:1133)
+	at com.intellij.openapi.application.rw.CancellableReadActionKt$cancellableReadActionInternal$1.invoke$lambda$1(cancellableReadAction.kt:39)
+	at com.intellij.openapi.progress.util.ProgressIndicatorUtilService.runActionAndCancelBeforeWrite(ProgressIndicatorUtilService.java:63)
+	at com.intellij.openapi.progress.util.ProgressIndicatorUtils.runActionAndCancelBeforeWrite(ProgressIndicatorUtils.java:133)
+	at com.intellij.openapi.application.rw.CancellableReadActionKt$cancellableReadActionInternal$1.invoke(cancellableReadAction.kt:37)
+	at com.intellij.openapi.progress.CoroutinesKt.blockingContext(coroutines.kt:248)
+	at com.intellij.openapi.application.rw.CancellableReadActionKt.cancellableReadActionInternal(cancellableReadAction.kt:34)
+	at com.intellij.openapi.application.rw.InternalReadAction.tryReadCancellable(InternalReadAction.kt:94)
+	at com.intellij.openapi.application.rw.InternalReadAction.tryReadAction(InternalReadAction.kt:76)
+	at com.intellij.openapi.application.rw.InternalReadAction.readLoop(InternalReadAction.kt:63)
+	at com.intellij.openapi.application.rw.InternalReadAction.access$readLoop(InternalReadAction.kt:14)
+	at com.intellij.openapi.application.rw.InternalReadAction$runReadAction$4.invokeSuspend(InternalReadAction.kt:42)
+	at com.intellij.openapi.application.rw.InternalReadAction$runReadAction$4.invoke(InternalReadAction.kt)
+	at com.intellij.openapi.application.rw.InternalReadAction$runReadAction$4.invoke(InternalReadAction.kt)
+	at kotlinx.coroutines.intrinsics.UndispatchedKt.startUndispatchedOrReturn(Undispatched.kt:78)
+	at kotlinx.coroutines.BuildersKt__Builders_commonKt.withContext(Builders.common.kt:167)
+	at kotlinx.coroutines.BuildersKt.withContext(Unknown Source)
+	at com.intellij.openapi.application.rw.InternalReadAction.runReadAction(InternalReadAction.kt:38)
+	at com.intellij.openapi.application.rw.PlatformReadWriteActionSupport.executeReadAction(PlatformReadWriteActionSupport.kt:38)
+	at com.intellij.openapi.application.ReadWriteActionSupport.executeReadAction$default(ReadWriteActionSupport.kt:15)
+	at com.intellij.openapi.application.CoroutinesKt.constrainedReadAction(coroutines.kt:58)
+	at com.intellij.openapi.application.CoroutinesKt.readAction(coroutines.kt:25)
+	at com.intellij.ui.DeferredIconImpl$scheduleCalculationIfNeeded$1$invokeSuspend$$inlined$evaluateDeferred$1.invokeSuspend(IconDeferrerImpl.kt:91)
+	at com.intellij.ui.DeferredIconImpl$scheduleCalculationIfNeeded$1$invokeSuspend$$inlined$evaluateDeferred$1.invoke(IconDeferrerImpl.kt)
+	at com.intellij.ui.DeferredIconImpl$scheduleCalculationIfNeeded$1$invokeSuspend$$inlined$evaluateDeferred$1.invoke(IconDeferrerImpl.kt)
+	at kotlinx.coroutines.intrinsics.UndispatchedKt.startUndispatchedOrReturn(Undispatched.kt:78)
+	at kotlinx.coroutines.BuildersKt__Builders_commonKt.withContext(Builders.common.kt:167)
+	at kotlinx.coroutines.BuildersKt.withContext(Unknown Source)
+	at com.intellij.ui.DeferredIconImpl$scheduleCalculationIfNeeded$1.invokeSuspend(DeferredIconImpl.kt:374)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:584)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:793)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:697)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:684)
+	Suppressed: kotlinx.coroutines.internal.DiagnosticCoroutineContextException: [CoroutineName(com.intellij.ui.IconCalculatingService), StandaloneCoroutine{Cancelling}@6b3e855e, Dispatchers.Default]
+2023-09-11 23:17:54,125 [81557116]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Traversable<#ᢐ\TKey.,#ᢐ\TValue.>'
+2023-09-11 23:19:43,808 [81666799]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 23:19:48,426 [81671417]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 23:19:53,253 [81676244]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 23:21:51,407 [81794398]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 23:21:58,437 [81801428]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 23:22:00,294 [81803285]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 23:22:03,157 [81806148]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 23:22:04,226 [81807217]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 23:22:23,023 [81826014]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 23:24:21,017 [81944008]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+Exception in thread "DefaultDispatcher-worker-2" com.intellij.psi.PsiInvalidElementAccessException: Element class com.intellij.psi.impl.source.tree.CompositeElement of type CLASS (class com.jetbrains.php.lang.psi.stubs.PhpClassElementType)
+	at com.intellij.psi.PsiInvalidElementAccessException.createByNode(PsiInvalidElementAccessException.java:80)
+	at com.intellij.psi.impl.source.SubstrateRef$2.getContainingFile(SubstrateRef.java:74)
+	at com.intellij.extapi.psi.StubBasedPsiElementBase.getContainingFile(StubBasedPsiElementBase.java:235)
+	at com.intellij.extapi.psi.StubBasedPsiElementBase.getProject(StubBasedPsiElementBase.java:271)
+	at com.jetbrains.php.lang.psi.elements.impl.PhpClassImpl.lambda$static$1(PhpClassImpl.java:95)
+	at com.jetbrains.php.lang.psi.elements.impl.PhpClassImpl.lambda$static$2(PhpClassImpl.java:146)
+	at com.jetbrains.php.lang.psi.elements.impl.PhpClassImpl.lambda$getIcon$22(PhpClassImpl.java:721)
+	at com.intellij.ui.DeferredIconImpl.evaluate(DeferredIconImpl.kt:279)
+	at com.intellij.ui.DeferredIconImpl$scheduleCalculationIfNeeded$1$result$1$1.invoke(DeferredIconImpl.kt:218)
+	at com.intellij.ui.DeferredIconImpl$scheduleCalculationIfNeeded$1$result$1$1.invoke(DeferredIconImpl.kt:218)
+	at com.intellij.openapi.application.rw.InternalReadAction.insideReadAction(InternalReadAction.kt:105)
+	at com.intellij.openapi.application.rw.InternalReadAction.access$insideReadAction(InternalReadAction.kt:14)
+	at com.intellij.openapi.application.rw.InternalReadAction$tryReadCancellable$2.invoke(InternalReadAction.kt:95)
+	at com.intellij.openapi.application.rw.InternalReadAction$tryReadCancellable$2.invoke(InternalReadAction.kt:94)
+	at com.intellij.openapi.application.rw.CancellableReadActionKt$cancellableReadActionInternal$1.invoke$lambda$1$lambda$0(cancellableReadAction.kt:41)
+	at com.intellij.openapi.application.impl.ApplicationImpl.tryRunReadAction(ApplicationImpl.java:1133)
+	at com.intellij.openapi.application.rw.CancellableReadActionKt$cancellableReadActionInternal$1.invoke$lambda$1(cancellableReadAction.kt:39)
+	at com.intellij.openapi.progress.util.ProgressIndicatorUtilService.runActionAndCancelBeforeWrite(ProgressIndicatorUtilService.java:63)
+	at com.intellij.openapi.progress.util.ProgressIndicatorUtils.runActionAndCancelBeforeWrite(ProgressIndicatorUtils.java:133)
+	at com.intellij.openapi.application.rw.CancellableReadActionKt$cancellableReadActionInternal$1.invoke(cancellableReadAction.kt:37)
+	at com.intellij.openapi.progress.CoroutinesKt.blockingContext(coroutines.kt:248)
+	at com.intellij.openapi.application.rw.CancellableReadActionKt.cancellableReadActionInternal(cancellableReadAction.kt:34)
+	at com.intellij.openapi.application.rw.InternalReadAction.tryReadCancellable(InternalReadAction.kt:94)
+	at com.intellij.openapi.application.rw.InternalReadAction.tryReadAction(InternalReadAction.kt:76)
+	at com.intellij.openapi.application.rw.InternalReadAction.readLoop(InternalReadAction.kt:63)
+	at com.intellij.openapi.application.rw.InternalReadAction.access$readLoop(InternalReadAction.kt:14)
+	at com.intellij.openapi.application.rw.InternalReadAction$runReadAction$4.invokeSuspend(InternalReadAction.kt:42)
+	at com.intellij.openapi.application.rw.InternalReadAction$runReadAction$4.invoke(InternalReadAction.kt)
+	at com.intellij.openapi.application.rw.InternalReadAction$runReadAction$4.invoke(InternalReadAction.kt)
+	at kotlinx.coroutines.intrinsics.UndispatchedKt.startUndispatchedOrReturn(Undispatched.kt:78)
+	at kotlinx.coroutines.BuildersKt__Builders_commonKt.withContext(Builders.common.kt:167)
+	at kotlinx.coroutines.BuildersKt.withContext(Unknown Source)
+	at com.intellij.openapi.application.rw.InternalReadAction.runReadAction(InternalReadAction.kt:38)
+	at com.intellij.openapi.application.rw.PlatformReadWriteActionSupport.executeReadAction(PlatformReadWriteActionSupport.kt:38)
+	at com.intellij.openapi.application.ReadWriteActionSupport.executeReadAction$default(ReadWriteActionSupport.kt:15)
+	at com.intellij.openapi.application.CoroutinesKt.constrainedReadAction(coroutines.kt:58)
+	at com.intellij.openapi.application.CoroutinesKt.readAction(coroutines.kt:25)
+	at com.intellij.ui.DeferredIconImpl$scheduleCalculationIfNeeded$1$invokeSuspend$$inlined$evaluateDeferred$1.invokeSuspend(IconDeferrerImpl.kt:91)
+	at com.intellij.ui.DeferredIconImpl$scheduleCalculationIfNeeded$1$invokeSuspend$$inlined$evaluateDeferred$1.invoke(IconDeferrerImpl.kt)
+	at com.intellij.ui.DeferredIconImpl$scheduleCalculationIfNeeded$1$invokeSuspend$$inlined$evaluateDeferred$1.invoke(IconDeferrerImpl.kt)
+	at kotlinx.coroutines.intrinsics.UndispatchedKt.startUndispatchedOrReturn(Undispatched.kt:78)
+	at kotlinx.coroutines.BuildersKt__Builders_commonKt.withContext(Builders.common.kt:167)
+	at kotlinx.coroutines.BuildersKt.withContext(Unknown Source)
+	at com.intellij.ui.DeferredIconImpl$scheduleCalculationIfNeeded$1.invokeSuspend(DeferredIconImpl.kt:374)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:584)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:793)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:697)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:684)
+	Suppressed: kotlinx.coroutines.internal.DiagnosticCoroutineContextException: [CoroutineName(com.intellij.ui.IconCalculatingService), StandaloneCoroutine{Cancelling}@11e3d6e9, Dispatchers.Default]
+2023-09-11 23:24:27,070 [81950061]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 23:24:28,312 [81951303]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 23:24:29,162 [81952153]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 23:24:30,435 [81953426]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 23:24:33,246 [81956237]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 23:27:01,242 [82104233]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 23:27:04,111 [82107102]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 23:27:05,062 [82108053]   WARN - #c.j.p.PhpIndex - Invalid Signature '\class-string<#ᢐ\T.>'
+2023-09-11 23:27:07,767 [82110758]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 23:27:10,174 [82113165]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 23:27:16,043 [82119034]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 23:27:17,061 [82120052]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 23:27:20,106 [82123097]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 23:27:38,332 [82141323]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 23:28:11,819 [82174810]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 23:28:13,824 [82176815]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 23:28:14,147 [82177138]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 23:38:32,707 [82795698]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 23:38:33,695 [82796686]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 23:38:34,827 [82797818]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 23:38:49,093 [82812084]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 23:38:52,706 [82815697]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 23:39:37,652 [82860643]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 23:39:56,066 [82879057]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 23:39:58,367 [82881358]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 23:39:59,461 [82882452]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 23:40:02,691 [82885682]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 23:40:07,430 [82890421]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 23:40:15,626 [82898617]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.PhpClassImpl]
+2023-09-11 23:40:19,977 [82902968]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 23:40:20,574 [82903565]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 23:40:20,879 [82903870]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 23:40:22,155 [82905146]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 23:40:49,000 [82931991]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 23:41:34,290 [82977281]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 23:41:34,941 [82977932]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 23:43:45,486 [83108477]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 23:44:14,383 [83137374]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 23:44:15,735 [83138726]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 23:44:16,377 [83139368]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-11 23:44:16,678 [83139669]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]

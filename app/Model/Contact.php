@@ -81,40 +81,32 @@ class Contact extends DatabaseConnection
     {
         $pdo = DatabaseConnection::connect();
 
-        try {
-            $pdo->beginTransaction();
+        if ($this->getId() === null) {
+            throw new \InvalidArgumentException("O ID do contato deve ser definido para realizar a atualização.");
+        }
 
-            $existingContact = $pdo->query('SELECT * FROM contacts WHERE contact_id = :contact_id', [':contact_id' => $this->getId()])->fetch();
+        $updateContact = $pdo->prepare('UPDATE contacts
+                                    SET name = :name, email = :email, address_id = :address_id
+                                    WHERE contact_id = :contact_id');
 
-            if (!$existingContact) {
-                throw new \Exception('Contact not found.');
-            }
+        $success = $updateContact->execute([
+            ':contact_id' => $this->getId(),
+            ':name' => $this->getName(),
+            ':email' => $this->getEmail(),
+            ':address_id' => $this->getAddress()->getAddressId()
+        ]);
 
-            $update = $pdo->prepare('UPDATE contacts SET name = :name, email = :email WHERE contact_id = :contact_id');
-
-            $success = $update->execute([
-                ':name' => $this->getName(),
-                ':email' => $this->getEmail(),
-                ':contact_id' => $this->getId(),
-            ]);
-
-            if (!$success) {
-                throw new \Exception('Failed to update contact.');
-            }
-
-            $this->getAddress()->updateAddress();
-
-            foreach ($this->getPhones() as $phone) {
-                $phone->updatePhone();
-            }
-
-            $pdo->commit();
-
-            return true;
-        } catch (\Exception $e) {
-            $pdo->rollBack();
+        if (!$success) {
             return false;
         }
+
+        // Atualize os números de telefone, se necessário
+        foreach ($this->getPhones() as $phone) {
+            $phone->setContactId($this->getId());
+            $phone->updatePhone(); // Suponha que você tenha um método 'updatePhone' na classe 'Phone' para atualizar os telefones.
+        }
+
+        return true;
     }
 
 
@@ -149,6 +141,44 @@ class Contact extends DatabaseConnection
 
         return $dataListContact;
     }
+    /**
+     * Busca um contato pelo ID.
+     *
+     * @param int $contactId O ID do contato a ser buscado.
+     * @return Contact|null O contato encontrado ou null se não encontrado.
+     */
+    public static  function findById(int $contactId): Contact
+    {
+        $pdo = DatabaseConnection::connect();
+
+        $selectContact = $pdo->prepare('SELECT contacts.*, addresses.*, phones.*
+                                    FROM contacts
+                                    LEFT JOIN addresses ON contacts.address_id = addresses.address_id
+                                    JOIN phones ON contacts.contact_id = phones.contact_id
+                                    WHERE contacts.contact_id = :contact_id');
+
+        $selectContact->bindParam(':contact_id', $contactId, \PDO::PARAM_INT);
+        $selectContact->execute();
+
+        $row = $selectContact->fetch(\PDO::FETCH_ASSOC);
+
+        if (!$row) {
+            throw new \Exception(" Contato não encontrado");// Contato não encontrado
+        }
+
+        $contact = new Contact(
+            $row['contact_id'],
+            $row['name'],
+            $row['email']
+        );
+
+        $contact->setAddress(new Address($row['address_id'], $row['street'], $row['number'], $row['complement'], $row['zip_code'], $row['city'], $row['state']));
+
+        $contact->setPhones(new Phone($row['phone_id'], $row['area_code'], $row['number'], $row['contact_id']));
+
+        return $contact;
+    }
+
 
     public function deleteById(int $contactId): bool
     {
@@ -195,15 +225,22 @@ class Contact extends DatabaseConnection
     }
 
 
+
     /**
      * @param ?int $id
      * @param string $area_code
      * @param string $number
      * correspomde ao metodo addPhone
      */
-    public function setPhones(Phone $phone): void
+    public function setPhones($phones): void
     {
-        $this->phones[] = $phone;
+        if (is_array($phones)) {
+            $this->phones = $phones;
+        } elseif ($phones instanceof Phone) {
+            $this->phones = [$phones];
+        } else {
+            throw new \InvalidArgumentException("O argumento deve ser do tipo Phone ou um array de Phones.");
+        }
     }
 
     public function setAddress(Address $address): void

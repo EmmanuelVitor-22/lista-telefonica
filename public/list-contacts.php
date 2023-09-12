@@ -22,9 +22,9 @@
                 <?php foreach ($contacts as $contact): ?>
                     <tr>
 
-                        <td><?=  $contact->getId(); ?></td>
-                        <td><?=  $contact->getName(); ?></td>
-                        <td><?=  $contact->getEmail(); ?></td>
+                        <td><?= $contact->getId(); ?></td>
+                        <td><?= $contact->getName(); ?></td>
+                        <td><?= $contact->getEmail(); ?></td>
                         <td><?= $contact->getAddress()->formatAddress(); ?></td>
                         <td>
                         <td>
@@ -41,8 +41,8 @@
                         </td>
                     </tr>
 
-                <?php endforeach; ?>
-                <?php else: ?>
+                    <?php endforeach; ?>
+                    <?php else: ?>
                 <tr>
                     <td colspan="7">No contacts found.</td>
                 </tr>
