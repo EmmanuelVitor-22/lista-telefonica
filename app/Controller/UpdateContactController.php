@@ -69,7 +69,7 @@ class UpdateContactController
 
             $contact = Contact::findById($contactId);
             if ($contact) {
-                require __DIR__ . "/../../public/update-contact.php";
+                require __DIR__ . "/../../public/register-contacts.php";
                 return;
             }
         }

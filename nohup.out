@@ -13088,3 +13088,30 @@ Exception in thread "DefaultDispatcher-worker-1" com.intellij.psi.PsiInvalidElem
 2023-09-13 02:12:13,069 [178416060]   WARN - #c.i.o.a.i.ActionUpdater - 318 ms to grab EDT for FontEditorPreview$ToggleBoldFontAction#update@ContextToolbar (com.intellij.application.options.colors.FontEditorPreview$ToggleBoldFontAction)
 2023-09-13 02:12:13,069 [178416060]   WARN - #c.i.o.a.i.ActionUpdater - 318 ms to grab EDT for LiveEditIssueNotificationAction#update@EditorInspectionsToolbar (com.android.tools.idea.editors.liveedit.ui.LiveEditIssueNotificationAction)
 2023-09-13 02:20:27,967 [178910958]   WARN - #c.i.i.n.ide - Data rule [navigationBarItem] returned invalid context item of type [class com.jetbrains.php.lang.psi.elements.impl.MethodImpl]
+2023-09-13 13:55:15,491 [220598482]   WARN - #c.i.o.a.i.ActionUpdater - 304 ms to grab EDT for LiveEditIssueNotificationAction#update@EditorInspectionsToolbar (com.android.tools.idea.editors.liveedit.ui.LiveEditIssueNotificationAction)
+2023-09-13 13:55:23,600 [220606591]   WARN - #c.j.p.PhpIndex - Completing type '#C\App\Model\Contact' took 596ms, visited:[#C\App\Model\Contact]
+2023-09-13 13:55:23,618 [220606609]   WARN - #c.j.p.PhpIndex - Completing type '#M#C\App\Model\Contact.findById' took 614ms, visited:[#M#C\App\Model\Contact.findById]
+2023-09-13 13:55:23,622 [220606613]   WARN - #c.j.p.PhpIndex - Completing type '#π(#M#M#C\App\Model\Contact.findById.getAddress)' took 618ms, visited:[#π(#M#M#C\App\Model\Contact.findById.getAddress)]
+2023-09-13 13:55:24,183 [220607174]   WARN - #c.i.o.a.i.ActionUpdater - 450 ms to grab EDT for DeviceAndSnapshotComboBoxAction#update@MainToolbar (com.android.tools.idea.run.deployment.DeviceAndSnapshotComboBoxAction)
+2023-09-13 13:55:33,865 [220616856]   WARN - #c.i.o.a.i.ActionUpdater - 398 ms to grab EDT for EditorMarkupModelImpl$TrafficLightAction#update@EditorInspectionsToolbar (com.intellij.openapi.editor.impl.EditorMarkupModelImpl$TrafficLightAction)
+2023-09-13 13:55:33,866 [220616857]   WARN - #c.i.o.a.i.ActionUpdater - 398 ms to grab EDT for ToolWindowHeader$2#update@ToolwindowTitle (com.intellij.toolWindow.ToolWindowHeader$2)
+2023-09-13 13:55:38,684 [220621675]   WARN - #c.i.o.a.i.ActionUpdater - 314 ms to grab EDT for DeviceAndSnapshotComboBoxAction#update@MainToolbar (com.android.tools.idea.run.deployment.DeviceAndSnapshotComboBoxAction)
+2023-09-13 13:55:40,071 [220623062]   WARN - #c.j.p.PhpIndex - Completing type '#C\App\Model\Contact' took 654ms, visited:[#C\App\Model\Contact]
+2023-09-13 13:55:40,075 [220623066]   WARN - #c.j.p.PhpIndex - Completing type '#M#C\App\Model\Contact.findById' took 658ms, visited:[#M#C\App\Model\Contact.findById]
+2023-09-13 13:55:40,078 [220623069]   WARN - #c.j.p.PhpIndex - Completing type '#π(#M#M#C\App\Model\Contact.findById.getAddress)' took 662ms, visited:[#π(#M#M#C\App\Model\Contact.findById.getAddress)]
+2023-09-13 13:55:51,910 [220634901]   WARN - #c.j.p.PhpIndex - Completing type '#C\App\Model\Contact' took 624ms, visited:[#C\App\Model\Contact]
+2023-09-13 13:55:51,915 [220634906]   WARN - #c.j.p.PhpIndex - Completing type '#M#C\App\Model\Contact.findById' took 629ms, visited:[#M#C\App\Model\Contact.findById]
+2023-09-13 13:55:51,919 [220634910]   WARN - #c.j.p.PhpIndex - Completing type '#π(#M#M#C\App\Model\Contact.findById.getAddress)' took 636ms, visited:[#π(#M#M#C\App\Model\Contact.findById.getAddress)]
+2023-09-13 13:55:54,014 [220637005]   WARN - #c.i.o.a.i.ActionUpdater - 578 ms to grab EDT for DeviceAndSnapshotComboBoxAction#update@MainToolbar (com.android.tools.idea.run.deployment.DeviceAndSnapshotComboBoxAction)
+2023-09-13 13:55:54,788 [220637779]   WARN - #c.i.o.a.i.ActionUpdater - 387 ms to grab EDT for FontEditorPreview$RestorePreviewTextAction#update@ContextToolbar (com.intellij.application.options.colors.FontEditorPreview$RestorePreviewTextAction)
+2023-09-13 13:55:56,237 [220639228]   WARN - #c.j.p.PhpIndex - Completing type '#C\App\Model\Contact' took 774ms, visited:[#C\App\Model\Contact]
+2023-09-13 13:55:56,277 [220639268]   WARN - #c.j.p.PhpIndex - Completing type '#M#C\App\Model\Contact.findById' took 815ms, visited:[#M#C\App\Model\Contact.findById]
+2023-09-13 13:55:56,288 [220639279]   WARN - #c.j.p.PhpIndex - Completing type '#π(#M#M#C\App\Model\Contact.findById.getAddress)' took 824ms, visited:[#π(#M#M#C\App\Model\Contact.findById.getAddress)]
+2023-09-13 13:55:59,237 [220642228]   WARN - #c.j.p.PhpIndex - Completing type '#C\App\Model\Contact' took 957ms, visited:[#C\App\Model\Contact]
+2023-09-13 13:55:59,242 [220642233]   WARN - #c.j.p.PhpIndex - Completing type '#M#C\App\Model\Contact.findById' took 962ms, visited:[#M#C\App\Model\Contact.findById]
+2023-09-13 13:55:59,244 [220642235]   WARN - #c.j.p.PhpIndex - Completing type '#π(#M#M#C\App\Model\Contact.findById.getAddress)' took 965ms, visited:[#π(#M#M#C\App\Model\Contact.findById.getAddress)]
+2023-09-13 13:56:38,617 [220681608]   WARN - #c.i.o.a.i.ActionUpdater - 516 ms to grab EDT for FontEditorPreview$RestorePreviewTextAction#update@ContextToolbar (com.intellij.application.options.colors.FontEditorPreview$RestorePreviewTextAction)
+2023-09-13 13:57:23,603 [220726594]   WARN - #c.i.o.a.i.ActionUpdater - 445 ms to grab EDT for FontEditorPreview$RestorePreviewTextAction#update@ContextToolbar (com.intellij.application.options.colors.FontEditorPreview$RestorePreviewTextAction)
+2023-09-13 13:57:54,330 [220757321]   WARN - #c.i.o.a.i.ActionUpdater - 503 ms to grab EDT for FontEditorPreview$RestorePreviewTextAction#update@ContextToolbar (com.intellij.application.options.colors.FontEditorPreview$RestorePreviewTextAction)
+2023-09-13 13:58:12,748 [220775739]   WARN - #c.j.p.PhpIndex - Completing type '#Vcontact' took 560ms, visited:[#Vcontact]
+2023-09-13 13:59:14,821 [220837812]   WARN - #c.i.o.a.i.ActionUpdater - 312 ms to grab EDT for DockToolWindowAction#update@ToolwindowTitle (com.intellij.openapi.wm.impl.DockToolWindowAction)

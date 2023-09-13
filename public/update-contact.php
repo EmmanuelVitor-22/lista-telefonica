@@ -68,24 +68,28 @@
                 Phones
             </div>
             <div class="card-body">
-                <?php
-                $phones = $contact->getPhones();
-                $counter = 1;
-                foreach ($phones as $phone): ?>
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <label for="areaCode<?php echo $counter; ?>">Area Code:</label>
-                            <input type="text" class="form-control" name="areaCode<?php echo $counter; ?>" value="<?php echo $phone->getAreaCode(); ?>">
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="phoneNumber<?php echo $counter; ?>">Number:</label>
-                            <input type="tel" class="form-control" name="phoneNumber<?php echo $counter; ?>" value="<?php echo $phone->getNumber(); ?>" required>
-                        </div>
-                    </div>
-                    <?php
-                    $counter++;
-                endforeach; ?>
+<!--                --><?php
+//                $phones = $contact->getPhones();
+//                $counter = 1;
+//                foreach ($phones as $phone): ?>
+<!--                    <div class="form-row">-->
+<!--                        <div class="form-group col-md-6">-->
+<!--                            <label for="areaCode--><?php //echo $counter; ?><!--">Area Code:</label>-->
+<!--                            <input type="text" class="form-control" name="areaCode--><?php //echo $counter; ?><!--" value="--><?php //echo $phone->getAreaCode(); ?><!--">-->
+<!--                        </div>-->
+<!--                        <div class="form-group col-md-6">-->
+<!--                            <label for="phoneNumber--><?php //echo $counter; ?><!--">Number:</label>-->
+<!--                            <input type="tel" class="form-control" name="phoneNumber--><?php //echo $counter; ?><!--" value="--><?php //echo $phone->getNumber(); ?><!--" required>-->
+<!--                        </div>-->
+<!--                    </div>-->
 
+<!--                    --><?php
+//                    $counter++;
+//                endforeach; ?>
+                <?php $counter = 1; foreach ($contact->getPhones() as $phone): ?>
+                    <input type="text" name="phones[<?= $counter ?>][areaCode]" value="<?= $phone->getAreaCode() ?>">
+                    <input type="text" name="phones[<?= $counter ?>][number]" value="<?= $phone->getNumber() ?>">
+                    <?php $counter++; endforeach; ?>
 
             </div>
         </div>

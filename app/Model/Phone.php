@@ -52,14 +52,17 @@ class Phone extends DatabaseConnection
             $update = $pdo->prepare('UPDATE phones 
                                       SET area_code = :area_code, number = :number 
                                       WHERE phone_id = :phone_id');
-            $success =  $update->execute([
+        try {
+            $success = $update->execute([
                 ':area_code' => $this->getAreaCode(),
-                ':number' => $this->getNumber()
+                ':number' => $this->getNumber(),
+                ':phone_id' => $this->getId()
             ]);
-            if (!$success){
-                return false;
-            }
-        return true;
+        } catch (PDOException $e) {
+            echo "Error: " . $e->getMessage();
+            return false;
+        }
+
     }
 
     /**
