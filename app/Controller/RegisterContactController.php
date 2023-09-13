@@ -91,11 +91,7 @@ class RegisterContactController
                 $phones[] = $phone2;
 
                 $contact->setPhones($phones);
-//
-//                echo '<pre>';
-//                print_r($contact);
-//                echo '</pre>';
-//                exit();
+
                 header('Location: /list-contacts'); // Corrected header function argument.
 
             } else {

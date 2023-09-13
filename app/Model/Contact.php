@@ -85,9 +85,10 @@ class Contact extends DatabaseConnection
             throw new \InvalidArgumentException("O ID do contato deve ser definido para realizar a atualização.");
         }
 
+        // Atualize o contato
         $updateContact = $pdo->prepare('UPDATE contacts
-                                    SET name = :name, email = :email, address_id = :address_id
-                                    WHERE contact_id = :contact_id');
+        SET name = :name, email = :email, address_id = :address_id
+        WHERE contact_id = :contact_id');
 
         $success = $updateContact->execute([
             ':contact_id' => $this->getId(),
@@ -100,10 +101,17 @@ class Contact extends DatabaseConnection
             return false;
         }
 
+        // Atualize o endereço
+        $addressUpdated = $this->getAddress()->updateAddress();
+
+        if (!$addressUpdated) {
+            return false;
+        }
+
         // Atualize os números de telefone, se necessário
         foreach ($this->getPhones() as $phone) {
             $phone->setContactId($this->getId());
-            $phone->updatePhone(); // Suponha que você tenha um método 'updatePhone' na classe 'Phone' para atualizar os telefones.
+            $phone->updatePhone();
         }
 
         return true;
@@ -116,54 +124,63 @@ class Contact extends DatabaseConnection
     public function findAll(): array
     {
         $pdo = DatabaseConnection::connect();
-        $result = $pdo->query('SELECT contacts.*, addresses.*, phones.*
-                                                     FROM contacts
-                                                     LEFT JOIN addresses ON contacts.address_id = addresses.address_id
-                                                     JOIN phones ON contacts.contact_id = phones.contact_id');
+        $result = $pdo->query('SELECT contacts.*, addresses.*, phones.* FROM contacts
+                            LEFT JOIN addresses ON contacts.address_id = addresses.address_id
+                            JOIN phones ON contacts.contact_id = phones.contact_id');
 
         $dataListContact = [];
 
         foreach ($result as $row) {
-            if (!array_key_exists($row['contact_id'], $dataListContact)) {
-                $dataListContact[$row['contact_id']] = new Contact(
-                    $row['contact_id'],
+            $contactId = $row['contact_id'];
+
+            if (!array_key_exists($contactId, $dataListContact)) {
+                $dataListContact[$contactId] = new Contact(
+                    $contactId,
                     $row["name"],
                     $row["email"]
                 );
+                $dataListContact[$contactId]->setAddress(new Address(
+                    $row['address_id'],
+                    $row ['street'],
+                    $row['house_number'],
+                    $row['complement'],
+                    $row['zip_code'],
+                    $row['city'],
+                    $row['state']
+                ));
             }
-            $dataListContact[$row['contact_id']]->setAddress(new Address($row['address_id'], $row ['street'],
-                $row['house_number'], $row['complement'],
-                $row['zip_code'], $row['city'], $row['state']));
 
-            $dataListContact[$row['contact_id']]->setPhones(new Phone($row['phone_id'], $row['area_code'],
-                $row['number'], $row['contact_id']));
+            if (!empty($row['phone_id'])) {
+                $phone = new Phone($row['phone_id'], $row['area_code'], $row['number'], $contactId);
+                $dataListContact[$contactId]->setPhones($phone);
+            }
         }
 
         return $dataListContact;
     }
+
     /**
      * Busca um contato pelo ID.
      *
      * @param int $contactId O ID do contato a ser buscado.
-     * @return Contact|null O contato encontrado ou null se não encontrado.
+     * @return Contact O contato encontrado ou null se não encontrado.
      */
-    public static  function findById(int $contactId): Contact
+    public static function findById(int $contactId): Contact
     {
         $pdo = DatabaseConnection::connect();
 
-        $selectContact = $pdo->prepare('SELECT contacts.*, addresses.*, phones.*
-                                    FROM contacts
-                                    LEFT JOIN addresses ON contacts.address_id = addresses.address_id
-                                    JOIN phones ON contacts.contact_id = phones.contact_id
-                                    WHERE contacts.contact_id = :contact_id');
+        $selectContact = $pdo->prepare('SELECT contacts.*, addresses.*
+                                FROM contacts
+                                LEFT JOIN addresses ON contacts.address_id = addresses.address_id
+                                WHERE contacts.contact_id = :contact_id');
 
-        $selectContact->bindParam(':contact_id', $contactId, \PDO::PARAM_INT);
-        $selectContact->execute();
 
-        $row = $selectContact->fetch(\PDO::FETCH_ASSOC);
+        $selectContact->execute([':contact_id'=> $contactId]);
+
+        $row = $selectContact->fetch();
 
         if (!$row) {
-            throw new \Exception(" Contato não encontrado");// Contato não encontrado
+            throw new \Exception("Contato não encontrado");
         }
 
         $contact = new Contact(
@@ -172,13 +189,20 @@ class Contact extends DatabaseConnection
             $row['email']
         );
 
-        $contact->setAddress(new Address($row['address_id'], $row['street'], $row['number'], $row['complement'], $row['zip_code'], $row['city'], $row['state']));
+        $contact->setAddress(new Address($row['address_id'], $row['street'], $row['house_number'], $row['complement'], $row['zip_code'], $row['city'], $row['state']));
 
-        $contact->setPhones([new Phone($row['phone_id'], $row['area_code'], $row['number'], $row['contact_id'])]);
+        $selectPhones = $pdo->prepare('SELECT phone_id, area_code, number FROM phones WHERE contact_id = :contact_id');
+        $selectPhones->execute([':contact_id'=> $contactId]);
+
+
+
+        while ($phoneRow = $selectPhones->fetch()) {
+            $phone = new Phone($phoneRow['phone_id'], $phoneRow['area_code'], $phoneRow['number'], $contactId);
+            $contact->setPhones($phone);
+        }
 
         return $contact;
     }
-
 
     public function deleteById(int $contactId): bool
     {
@@ -232,10 +256,10 @@ class Contact extends DatabaseConnection
     public function setPhones($phones): void
     {
         if (is_array($phones)) {
-            $this->phones[] = $phones;
+            $this->phones = $phones;
         }
         elseif ($phones instanceof Phone) {
-            $this->phones = [$phones];
+            $this->phones[] = $phones;
         } else {
             throw new \InvalidArgumentException("O argumento deve ser do tipo Phone ou um array de Phones.");
         }
@@ -258,6 +282,8 @@ class Contact extends DatabaseConnection
         }
         $this->id = $id;
     }
+
+
 
     /**
      * @return int|null
@@ -304,6 +330,7 @@ class Contact extends DatabaseConnection
      */
     public function getPhones(): array
     {
+
         return $this->phones;
     }
 

@@ -8,7 +8,7 @@ class Address extends DatabaseConnection
 {
     private ?int $address_id ;
     private string $street ;
-    private string $number ;
+    private string $home_number ;
     private string $complement ;
     private string $zip_code ;
     private string $city ;
@@ -17,17 +17,17 @@ class Address extends DatabaseConnection
     /**
      * @param int|null $address_id
      * @param string $street
-     * @param string $number
+     * @param string $home_number
      * @param string $complement
      * @param string $zip_code
      * @param string $city
      * @param string $state
      */
-    public function __construct(?int $address_id = null , string $street = '', string $number = '', string $complement = '---', string $zip_code = '', string $city = '', string $state = '')
+    public function __construct(?int $address_id = null , string $street = '', string $home_number = '', string $complement = '', string $zip_code = '', string $city = '', string $state = '')
     {
         $this->address_id = $address_id;
         $this->street = $street;
-        $this->number = $number;
+        $this->home_number = $home_number;
         $this->complement = $complement;
         $this->zip_code = $zip_code;
         $this->city = $city;
@@ -39,11 +39,11 @@ class Address extends DatabaseConnection
     {
         $pdo = DatabaseConnection::connect();;
         if ($this->getAddressId() === null) {
-            $insertAddress = $pdo->prepare('insert into addresses (street, number, complement, zip_code, city, state)
-                                                values (:street, :number, :complement, :zip_code, :city, :state);');
+            $insertAddress = $pdo->prepare('insert into addresses (street, house_number, complement, zip_code, city, state)
+                                                values (:street, :house_number, :complement, :zip_code, :city, :state);');
 
             $success = $insertAddress->execute([':street' => $this->getStreet(),
-                ':number' => $this->getNumber(),
+                ':house_number' => $this->getHomeNumber(),
                 ':complement' => $this->getComplement(),
                 ':zip_code' => $this->getZipCode(),
                 ':city' => $this->getCity(),
@@ -63,14 +63,14 @@ class Address extends DatabaseConnection
         $pdo =  DatabaseConnection::connect();
 
         $update = $pdo->prepare('UPDATE addresses 
-                                            SET street = :street, number = :number, 
+                                            SET street = :street, :house_number = house_number, 
                                                 complement = :complement, zip_code = :zip_code, 
                                                 city = :city, state = :state 
                                             WHERE address_id = :address_id');
 
         $success = $update->execute([
             ':street' => $this->getStreet(),
-            ':number' => $this->getNumber(),
+            ':house_number' => $this->getHomeNumber(),
             ':complement' => $this->getComplement(),
             ':zip_code' => $this->getZipCode(),
             ':city' => $this->getCity(),
@@ -106,7 +106,7 @@ class Address extends DatabaseConnection
      */
     public function formatAddress(): string
     {
-        $address = $this->getStreet() . ', ' . $this->getNumber();
+        $address = $this->getStreet() . ', ' . $this->getHomeNumber();
 
         if (!empty($this->getComplement())) {
             $address .= ' - ' . $this->getComplement();
@@ -128,14 +128,14 @@ class Address extends DatabaseConnection
         $this->street = $street;
     }
 
-    public function getNumber(): string
+    public function getHomeNumber(): string
     {
-        return $this->number;
+        return $this->home_number;
     }
 
-    public function setNumber(string $number): void
+    public function setNumber(string $home_number): void
     {
-        $this->number = $number;
+        $this->home_number = $home_number;
     }
 
     public function getComplement(): string

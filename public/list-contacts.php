@@ -33,10 +33,12 @@
 
                             <?php
                             $phones = $contact->getPhones();
-                                foreach ($phones as $phone) {
-                                    echo $phone->formattedPhone() . "<br>";
 
-                            }
+                                foreach ($phones as $phone) {
+
+                                    echo  $phone->formattedPhone() . "<br>";
+
+                                }
                             ?>
                         </td>
                         <td>
