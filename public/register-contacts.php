@@ -25,7 +25,7 @@
             </div>
 
             <div class="form-group col-md-3">
-                <label for="number">Número:</label>
+                <label for="numberHome">Número:</label>
                 <input type="text" class="form-control" name="numberHome" required>
             </div>
 

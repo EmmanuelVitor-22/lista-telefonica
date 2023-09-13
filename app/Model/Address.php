@@ -42,7 +42,8 @@ class Address extends DatabaseConnection
             $insertAddress = $pdo->prepare('insert into addresses (street, house_number, complement, zip_code, city, state)
                                                 values (:street, :house_number, :complement, :zip_code, :city, :state);');
 
-            $success = $insertAddress->execute([':street' => $this->getStreet(),
+            $success = $insertAddress->execute([
+                ':street' => $this->getStreet(),
                 ':house_number' => $this->getHomeNumber(),
                 ':complement' => $this->getComplement(),
                 ':zip_code' => $this->getZipCode(),
@@ -63,7 +64,7 @@ class Address extends DatabaseConnection
         $pdo =  DatabaseConnection::connect();
 
         $update = $pdo->prepare('UPDATE addresses 
-                                            SET street = :street, :house_number = house_number, 
+                                            SET street = :street, house_number = :house_number, 
                                                 complement = :complement, zip_code = :zip_code, 
                                                 city = :city, state = :state 
                                             WHERE address_id = :address_id');
@@ -74,7 +75,8 @@ class Address extends DatabaseConnection
             ':complement' => $this->getComplement(),
             ':zip_code' => $this->getZipCode(),
             ':city' => $this->getCity(),
-            ':state' => $this->getState()
+            ':state' => $this->getState(),
+            ':address_id' => $this->getAddressId()
         ]);
 
         if (!$success){

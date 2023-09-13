@@ -68,20 +68,26 @@
                 Phones
             </div>
             <div class="card-body">
-                <?php for ($i = 1; $i <= 2; $i++): ?>
+                <?php
+                $phones = $contact->getPhones();
+                $counter = 1;
+                foreach ($phones as $phone): ?>
                     <div class="form-row">
                         <div class="form-group col-md-6">
-                            <label for="inputAreaCode<?php echo $i; ?>">Area Code:</label>
-                            <input type="text" class="form-control" name="inputAreaCode<?php echo $i; ?>" value="">
+                            <label for="areaCode<?php echo $counter; ?>">Area Code:</label>
+                            <input type="text" class="form-control" name="areaCode<?php echo $counter; ?>" value="<?php echo $phone->getAreaCode(); ?>">
                         </div>
                         <div class="form-group col-md-6">
-                            <label for="inputNumber<?php echo $i; ?>">Number:</label>
-                            <input type="text" class="form-control" name="inputNumber<?php echo $i; ?>" value="">
+                            <label for="phoneNumber<?php echo $counter; ?>">Number:</label>
+                            <input type="tel" class="form-control" name="phoneNumber<?php echo $counter; ?>" value="<?php echo $phone->getNumber(); ?>" required>
                         </div>
                     </div>
-                <?php endfor; ?>
+                    <?php
+                    $counter++;
+                endforeach; ?>
 
-               </div>
+
+            </div>
         </div>
 
 

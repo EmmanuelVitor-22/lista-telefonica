@@ -16,7 +16,6 @@ class UpdateContactController
     {
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $contactId = (int)$_POST['contact_id'];
-
             $name = $_POST['name'];
             $email = $_POST['email'];
 
@@ -27,40 +26,37 @@ class UpdateContactController
             $city = $_POST['city'];
             $state = $_POST['state'];
 
-            // Dados dos telefones
-            $phones = [];
-            for ($i = 1; $i <= 2; $i++) {
-                $areaCode = $_POST['inputAreaCode' . $i];
-                $phoneNumber = $_POST['inputNumber' . $i];
+            $phoneNumber1 = $_POST['phoneNumber1'];
+            $phoneNumber2 = $_POST['phoneNumber2'];
+            $areaCode1 = $_POST['areaCode1'];
+            $areaCode2 = $_POST['areaCode2'];
 
-                if (!empty($areaCode) && !empty($phoneNumber)) {
-                    $phones[] = new Phone($areaCode, $phoneNumber);
-                }
-            }
+            $addressId = Contact::findById($contactId)->getAddress()->getAddressId();
 
-            $contact = Contact::findById($contactId);
-            if (!$contact) {
-                echo "Contato não encontrado ou ID inválido.";
-                return;
-            }
+            // Crie objetos de modelo com os dados do formulário
+            $updatedAddress = new Address($addressId, $street, $homeNumber, $complement, $zipCode, $city, $state);
+            $updatedContact = new Contact($contactId, $name, $email, $updatedAddress);
 
-            $address = new Address($contact->getAddress()->getAddressId(), $street, $homeNumber, $complement, $zipCode, $city, $state);
-            $contact->setName($name);
-            $contact->setEmail($email);
-            $contact->setAddress($address);
-            $contact->setPhones($phones);
+            // Crie objetos de telefone com os dados do formulário
+            $phone1 = new Phone(null,$phoneNumber1, $areaCode1,$contactId);
+            $phone2 = new Phone(null,$phoneNumber2, $areaCode2,$contactId);
+            $phones = [$phone1, $phone2];
 
-            $success = $contact->update();
+            $updatedContact->setPhones($phones);
+
+            // Execute o método de atualização
+            $success = $updatedContact->update();
 
             if ($success) {
+                // Redirecione para uma página de sucesso ou faça qualquer outra ação necessária
                 header('Location: /list-contacts');
                 exit;
             } else {
+                // Trate erros de atualização, por exemplo, exiba uma mensagem de erro
                 echo "Erro ao atualizar o contato.";
             }
         }
     }
-
 
 
     /**
@@ -72,7 +68,6 @@ class UpdateContactController
             $contactId = (int)$_GET['id'];
 
             $contact = Contact::findById($contactId);
-            var_dump($contact->getPhones());
             if ($contact) {
                 require __DIR__ . "/../../public/update-contact.php";
                 return;
