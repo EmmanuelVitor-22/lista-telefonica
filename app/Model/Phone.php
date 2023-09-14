@@ -62,7 +62,7 @@ class Phone extends DatabaseConnection
             echo "Error: " . $e->getMessage();
             return false;
         }
-
+        return true;
     }
 
     /**
@@ -73,7 +73,6 @@ class Phone extends DatabaseConnection
         return "($this->areaCode) $this->number";
 
     }
-
 
     public function getId(): ?int
     {

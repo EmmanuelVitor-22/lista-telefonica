@@ -5,11 +5,8 @@
         <h1 class="mt-4">Contact Form</h1>
     </div>
 
-    <form method="post" action="<?php echo isset($_GET['contact_id']) ? '/update-contact' : '/save-contact'; ?>">
-        <?php if (isset($_GET['id'])): ?>
-            <!-- Se você está editando um contato existente, inclua um campo oculto com o ID do contato -->
-            <input type="hidden" name="contact_id"value="<?php echo $contact->getId(); ?>">
-        <?php endif; ?>
+    <form method="post" action="/save-contact<?= isset($contact) ? '?id='. $contact->getId() : ''; ?>">
+
 
         <!-- Campos de dados do contato -->
         <div class="form-group">
@@ -78,7 +75,7 @@
         </div>
 
         <button type="submit" class="btn btn-primary">
-            <?php echo isset($_GET['id']) ? 'Atualizar' : 'Cadastrar'; ?>
+            <?php echo isset($_GET['id'])  ? 'Atualizar' : 'Cadastrar'; ?>
         </button>
     </form>
 </div>

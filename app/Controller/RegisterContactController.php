@@ -13,7 +13,6 @@ class RegisterContactController
     public static function saveData(): void
     {
         // Dar segurança ao input
-        //$x = filter_var($_POST['x'], FILTER_SANITIZE_STRING); está depreciado, outra opção é essa
         $street = htmlspecialchars($_POST['street']);
         $numberHome = filter_var($_POST['numberHome'], FILTER_SANITIZE_NUMBER_INT);
         $complement = htmlspecialchars($_POST['complement']);
@@ -28,18 +27,7 @@ class RegisterContactController
         $phoneNumber1 = filter_var($_POST['phoneNumber1'], FILTER_SANITIZE_NUMBER_INT);
         $areaCode2 = filter_var($_POST['areaCode2'], FILTER_SANITIZE_NUMBER_INT);
         $phoneNumber2 = filter_var($_POST['phoneNumber2'], FILTER_SANITIZE_NUMBER_INT);
-//        var_dump([$street,
-//                $numberHome,
-//                $complement,
-//                $zipCode,
-//                $city,
-//                $state,
-//                $name,
-//                $email,
-//                $areaCode1,
-//                $phoneNumber1,
-//                $areaCode2,
-//                $phoneNumber2 ]);
+
         $address = new Address(
             null,
             $street,
@@ -50,7 +38,6 @@ class RegisterContactController
             $state
         );
 
-
         $contact = new Contact(
             null,
             $name,
@@ -58,18 +45,16 @@ class RegisterContactController
             $address
         );
 
-
         if ($address->insertAddress()) {
-
             $id = $address->getAddressId();
             $address->defineId($id);
-
             $contact->getAddress()->defineId($id);
 
-            if ($contact->insertContato()) {
+            // Chame o método save() em vez de insertContato()
+            if ($contact->save($contact)) {
                 $contactId = $contact->getId();
 
-                $phones =[];
+                $phones = [];
                 $phone1 = new Phone(
                     null,
                     $areaCode1,
@@ -95,12 +80,13 @@ class RegisterContactController
                 header('Location: /list-contacts'); // Corrected header function argument.
 
             } else {
-               http_response_code(404);
+                http_response_code(404);
             }
         } else {
-           http_response_code(404);
+            http_response_code(404);
         }
     }
+
 
 
 

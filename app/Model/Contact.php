@@ -24,17 +24,19 @@ class Contact extends DatabaseConnection
      * @param int|null $id
      * @param string $name
      * @param string $email
-     * @param array $phones
      * @param Address $address
      */
-    public function __construct(?int $id = null, string $name = ' ', string $email = ' ', Address $address = new Address())
+    public function __construct(?int $id = null,
+                                string $name = ' ',
+                                string $email = ' ',
+                                ?Address $address = null)
     {
+
         self::$pdo = DatabaseConnection::connect();
         $this->id = $id;
         $this->name = $name;
         $this->email = $email;
-        $this->address = $address;
-
+        $this->address = $address ?? new Address();
     }
 
     public function save(Contact $contact)
@@ -116,7 +118,6 @@ class Contact extends DatabaseConnection
 
         return true;
     }
-
 
     /**
      * @return array

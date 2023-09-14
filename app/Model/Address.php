@@ -135,7 +135,7 @@ class Address extends DatabaseConnection
         return $this->home_number;
     }
 
-    public function setNumber(string $home_number): void
+    public function setHomeNumber(string $home_number): void
     {
         $this->home_number = $home_number;
     }

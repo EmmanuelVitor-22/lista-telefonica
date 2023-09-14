@@ -9,6 +9,7 @@ use App\Controller\UpdateContactController;
 
 //dispacher ( ou frontcontroller) : recebe as requisições e envia para a controller
 switch ($_SERVER['PATH_INFO']) {
+    default:
     case  '/list-contacts':
         ListContactsController::findAll();
         break;
@@ -30,7 +31,7 @@ switch ($_SERVER['PATH_INFO']) {
     case  '/update-contact':
             UpdateContactController::updateContact();
         break;
-    default :
+    case 'qualuqe coisa q n faça sentido' :
         http_response_code(404);
         break;
 

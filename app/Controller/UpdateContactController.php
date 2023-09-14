@@ -15,7 +15,8 @@ class UpdateContactController
     public static function updateContact(): void
     {
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-            $contactId = (int)$_POST['contact_id'];
+            $contactId = (int)$_POST['id'];
+
             $name = $_POST['name'];
             $email = $_POST['email'];
 
@@ -31,21 +32,41 @@ class UpdateContactController
             $areaCode1 = $_POST['areaCode1'];
             $areaCode2 = $_POST['areaCode2'];
 
-            $addressId = Contact::findById($contactId)->getAddress()->getAddressId();
+            $contact = Contact::findById($contactId);
+            //se o id não existir
+            if (!$contact) {
+                echo "Contato não encontrado";
+                return;
+            }
 
-            // Crie objetos de modelo com os dados do formulário
-            $updatedAddress = new Address($addressId, $street, $homeNumber, $complement, $zipCode, $city, $state);
-            $updatedContact = new Contact($contactId, $name, $email, $updatedAddress);
+            $contact->setName($name);
+            $contact->setEmail($email);
 
-            // Crie objetos de telefone com os dados do formulário
-            $phone1 = new Phone(null,$phoneNumber1, $areaCode1,$contactId);
-            $phone2 = new Phone(null,$phoneNumber2, $areaCode2,$contactId);
-            $phones = [$phone1, $phone2];
+            $address = $contact->getAddress();
+            $address->setStreet($street);
+            $address->setHomeNumber($homeNumber);
+            $address->setComplement($complement);
+            $address->setZipCode($zipCode);
+            $address->setCity($city);
+            $address->setState($state);
 
-            $updatedContact->setPhones($phones);
+            $phones = $contact->getPhones();
 
-            // Execute o método de atualização
-            $success = $updatedContact->update();
+            if (count($phones) >=2){
+                $phones[0]->setAreaCode($areaCode1);
+                $phones[0]->setNumber($phoneNumber1);
+                $phones[1]->setAreaCode($areaCode2);
+                $phones[1]->setNumber($phoneNumber2);
+            }else{
+                $phones[0]->setAreaCode($areaCode1);
+                $phones[0]->setNumber($phoneNumber1);
+                $phone2 = new Phone(null, $areaCode2, $phoneNumber2, $contactId);
+                $phones[] =$phone2;
+                //poderia ter uma verificação caso nn haja nenhum telefone, mas como é reuerido. então, tudo certinho
+            }
+
+
+            $success = $contact->save($contact);
 
             if ($success) {
                 // Redirecione para uma página de sucesso ou faça qualquer outra ação necessária
@@ -67,7 +88,9 @@ class UpdateContactController
         if (isset($_GET['id'])) {
             $contactId = (int)$_GET['id'];
 
+
             $contact = Contact::findById($contactId);
+
             if ($contact) {
                 require __DIR__ . "/../../public/register-contacts.php";
                 return;
