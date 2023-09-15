@@ -2,8 +2,8 @@
 require __DIR__ . '/../vendor/autoload.php';
 
 use App\Controller\DeleteContactController;
-use App\Controller\RegisterContactController;
 use App\Controller\ListContactsController;
+use App\Controller\RegisterContactController;
 use App\Controller\UpdateContactController;
 
 
@@ -17,6 +17,9 @@ switch ($_SERVER['PATH_INFO']) {
         RegisterContactController::registerRequest();
         break;
     case  '/save-contact':
+        if (isset($_GET['id'])) {
+            UpdateContactController::updateData();
+        }
         RegisterContactController::saveData();
         break;
     case  '/delete':
@@ -26,10 +29,7 @@ switch ($_SERVER['PATH_INFO']) {
         DeleteContactController::deleteAll();
         break;
     case  '/update':
-            UpdateContactController::displayUpdateForm();
-        break;
-    case  '/update-contact':
-            UpdateContactController::saveData();
+        UpdateContactController::displayUpdateForm();
         break;
     case 'qualuqe coisa q n faça sentido' :
         http_response_code(404);

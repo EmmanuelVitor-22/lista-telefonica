@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 require __DIR__ . '/../../vendor/autoload.php';
+
 use App\Model\Address;
 use App\Model\Contact;
 use App\Model\Phone;
@@ -86,8 +87,6 @@ class RegisterContactController
             http_response_code(404);
         }
     }
-
-
 
 
     public static function registerRequest(): void
