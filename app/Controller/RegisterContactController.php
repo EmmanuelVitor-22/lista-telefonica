@@ -92,7 +92,7 @@ class RegisterContactController
 
     public static function registerRequest(): void
     {
-        require __DIR__ . "/../../public/register-contacts.php";
+        require __DIR__ . "/../../public/form-contact.php";
     }
     //pensar em criar um titulo dinamico
 }

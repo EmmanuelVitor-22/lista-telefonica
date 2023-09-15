@@ -29,7 +29,7 @@ switch ($_SERVER['PATH_INFO']) {
             UpdateContactController::displayUpdateForm();
         break;
     case  '/update-contact':
-            UpdateContactController::updateContact();
+            UpdateContactController::saveData();
         break;
     case 'qualuqe coisa q n faça sentido' :
         http_response_code(404);

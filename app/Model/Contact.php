@@ -26,9 +26,9 @@ class Contact extends DatabaseConnection
      * @param string $email
      * @param Address $address
      */
-    public function __construct(?int $id = null,
-                                string $name = ' ',
-                                string $email = ' ',
+    public function __construct(?int     $id = null,
+                                string   $name = ' ',
+                                string   $email = ' ',
                                 ?Address $address = null)
     {
 
@@ -39,16 +39,17 @@ class Contact extends DatabaseConnection
         $this->address = $address ?? new Address();
     }
 
-    public function save(Contact $contact)
+    public function save(Contact $contact): bool
     {
         if ($contact->getId() == null) {
-            return $this->insertContato();
+            return $this->insertContact();
         }
-        return $this->update();
+        return $this->updateContact();
 
     }
 
-    public function insertContato(): bool
+
+    public function insertContact(): bool
     {
         $pdo = DatabaseConnection::connect();
 
@@ -72,14 +73,13 @@ class Contact extends DatabaseConnection
 
         foreach ($this->getPhones() as $phone) {
             $phone->setContactId($this->getId());
-            print_r('teste');
             $phone->insertPhone();
         }
         return true;
     }
 
 
-    public function update(): bool
+    public function updateContact(): bool
     {
         $pdo = DatabaseConnection::connect();
 
@@ -97,6 +97,7 @@ class Contact extends DatabaseConnection
             ':name' => $this->getName(),
             ':email' => $this->getEmail(),
             ':address_id' => $this->getAddress()->getAddressId()
+
         ]);
 
         if (!$success) {
@@ -176,7 +177,7 @@ class Contact extends DatabaseConnection
                                 WHERE contacts.contact_id = :contact_id');
 
 
-        $selectContact->execute([':contact_id'=> $contactId]);
+        $selectContact->execute([':contact_id' => $contactId]);
 
         $row = $selectContact->fetch();
 
@@ -193,8 +194,7 @@ class Contact extends DatabaseConnection
         $contact->setAddress(new Address($row['address_id'], $row['street'], $row['house_number'], $row['complement'], $row['zip_code'], $row['city'], $row['state']));
 
         $selectPhones = $pdo->prepare('SELECT phone_id, area_code, number FROM phones WHERE contact_id = :contact_id');
-        $selectPhones->execute([':contact_id'=> $contactId]);
-
+        $selectPhones->execute([':contact_id' => $contactId]);
 
 
         while ($phoneRow = $selectPhones->fetch()) {
@@ -258,8 +258,7 @@ class Contact extends DatabaseConnection
     {
         if (is_array($phones)) {
             $this->phones = $phones;
-        }
-        elseif ($phones instanceof Phone) {
+        } elseif ($phones instanceof Phone) {
             $this->phones[] = $phones;
         } else {
             throw new \InvalidArgumentException("O argumento deve ser do tipo Phone ou um array de Phones.");
@@ -283,7 +282,6 @@ class Contact extends DatabaseConnection
         }
         $this->id = $id;
     }
-
 
 
     /**
@@ -331,7 +329,6 @@ class Contact extends DatabaseConnection
      */
     public function getPhones(): array
     {
-
         return $this->phones;
     }
 
@@ -342,7 +339,6 @@ class Contact extends DatabaseConnection
     {
         return $this->address;
     }
-
 
 }
 

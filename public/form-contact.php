@@ -6,7 +6,7 @@
     </div>
 
     <form method="post" action="/save-contact<?= isset($contact) ? '?id='. $contact->getId() : ''; ?>">
-
+        <input type="hidden" name="id" value="<?= $contact->getId(); ?>">
 
         <!-- Campos de dados do contato -->
         <div class="form-group">
