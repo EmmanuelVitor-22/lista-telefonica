@@ -8,7 +8,6 @@ class DeleteContactController
 {
     public static function deleteById(): void
     {
-
         if (isset($_GET['id'])) {
             $contactId = (int)$_GET['id']; // Converta para um número inteiro
 
@@ -21,9 +20,6 @@ class DeleteContactController
             } else {
                 echo "Erro ao excluir o contato.";
             }
-        } else {
-            echo "ID do contato não fornecido na URL.";
-
         }
     }
     public static function deleteAll(): void

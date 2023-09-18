@@ -16,7 +16,6 @@ class UpdateContactController
 
             $contactId = (int)$_POST['id'];
             if (empty($contactId)) {
-
                 echo "ID do contato não fornecido para atualização.";
                 return;
             }
@@ -74,11 +73,9 @@ class UpdateContactController
             $success = $contact->save($contact);
 
             if ($success) {
-                // Redirecione para uma página de sucesso ou faça qualquer outra ação necessária
                 header('Location: /list-contacts');
                 exit;
             } else {
-                // Trate erros de atualização, por exemplo, exiba uma mensagem de erro
                 echo "Erro ao atualizar o contato.";
             }
 

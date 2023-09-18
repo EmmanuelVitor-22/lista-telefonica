@@ -226,7 +226,7 @@ class Contact extends DatabaseConnection
         }
     }
 
-    public function deleteAll(): bool
+    public static function deleteAll(): bool
     {
         $pdo = DatabaseConnection::connect();
         try {

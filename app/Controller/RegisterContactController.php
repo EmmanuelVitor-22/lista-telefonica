@@ -14,20 +14,20 @@ class RegisterContactController
     public static function saveData(): void
     {
         // Dar segurança ao input
-        $street = htmlspecialchars($_POST['street']);
-        $numberHome = filter_var($_POST['numberHome'], FILTER_SANITIZE_NUMBER_INT);
-        $complement = htmlspecialchars($_POST['complement']);
-        $zipCode = htmlspecialchars($_POST['zipCode']);
-        $city = htmlspecialchars($_POST['city']);
-        $state = htmlspecialchars($_POST['state']);
+        $street =$_POST['street'];
+        $numberHome = $_POST['numberHome'];
+        $complement = $_POST['complement'];
+        $zipCode = $_POST['zipCode'];
+        $city = $_POST['city'];
+        $state = $_POST['state'];
 
-        $name = filter_var($_POST['name']);
-        $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
+        $name = $_POST['name'];
+        $email = $_POST['email'];
 
-        $areaCode1 = filter_var($_POST['areaCode1'], FILTER_SANITIZE_NUMBER_INT);
-        $phoneNumber1 = filter_var($_POST['phoneNumber1'], FILTER_SANITIZE_NUMBER_INT);
-        $areaCode2 = filter_var($_POST['areaCode2'], FILTER_SANITIZE_NUMBER_INT);
-        $phoneNumber2 = filter_var($_POST['phoneNumber2'], FILTER_SANITIZE_NUMBER_INT);
+        $areaCode1 = $_POST['areaCode1'];
+        $phoneNumber1 = $_POST['phoneNumber1'];
+        $areaCode2 = $_POST['areaCode2'];
+        $phoneNumber2 = $_POST['phoneNumber2'];
 
         $address = new Address(
             null,
@@ -51,7 +51,7 @@ class RegisterContactController
             $address->defineId($id);
             $contact->getAddress()->defineId($id);
 
-            // Chame o método save() em vez de insertContato()
+
             if ($contact->save($contact)) {
                 $contactId = $contact->getId();
 
@@ -79,7 +79,6 @@ class RegisterContactController
                 $contact->setPhones($phones);
 
                 header('Location: /list-contacts'); // Corrected header function argument.
-
             } else {
                 http_response_code(404);
             }

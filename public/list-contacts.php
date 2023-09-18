@@ -1,4 +1,4 @@
-<?php include __DIR__ . '/views/header.php'; ?>
+<?php include __DIR__ . '/utils/header.php'; ?>
 
 <div class="container">
     <div class="jumbotron">
@@ -61,4 +61,4 @@
         <a href="/register" class="btn btn-primary mb-2">New</a>
     </div>
 <div class="container">
-<?php include __DIR__ . '/views/footer.php'; ?>
+<?php include __DIR__ . '/utils/footer.php'; ?>

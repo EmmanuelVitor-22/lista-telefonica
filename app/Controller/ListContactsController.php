@@ -7,8 +7,7 @@ require  __DIR__ . '/../Model/Contact.php';
 
 class ListContactsController
 {
-
-    public static function findAll()
+    public static function findAll(): void
     {
         $contactObj = new Contact();
         $contacts = $contactObj->findAll();
@@ -16,5 +15,3 @@ class ListContactsController
     }
 
 }
-//$l = new ListContactsController();
-//$l::findAll();
