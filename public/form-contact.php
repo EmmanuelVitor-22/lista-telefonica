@@ -1,14 +1,14 @@
 <?php include __DIR__ . '/utils/header.php'; ?>
 
 <div class="container mt-5">
-
+    <div class="jumbotron">
+        <h1 class="display-4"><?= isset($contact) ? "Update Contact:  " . $contact->getName() : "Create Contact" ?></h1>
+    </div>
     <form method="post" action="/save-contact<?= isset($contact) ? '?id=' . $contact->getId() : ''; ?>">
         <input type="hidden" name="id" value="<?= isset($contact) ? $contact->getId() : ''; ?>">
-        <div class="jumbotron">
-            <h1 class="display-4"><?= isset($contact) ? "Update Contact " . $contact->getName() : "Create Contact" ?></h1>
-        </div>
+
         <div class="row">
-            <!-- Contact Information -->
+
             <div class="col-md-6">
                 <h2>Contact Information</h2>
                 <div class="form-group">
@@ -22,7 +22,7 @@
                 </div>
             </div>
 
-            <!-- Address Information -->
+
             <div class="col-md-6">
                 <h2>Address Information</h2>
                 <div class="form-group">
@@ -55,7 +55,7 @@
         </div>
 
         <div class="row">
-            <!-- Phone 1 -->
+
             <div class="col-md-6">
                 <h2>Phone 1</h2>
                 <div class="form-group">
@@ -68,7 +68,7 @@
                 </div>
             </div>
 
-            <!-- Phone 2 -->
+
             <div class="col-md-6">
                 <h2>Phone 2</h2>
                 <div class="form-group">
